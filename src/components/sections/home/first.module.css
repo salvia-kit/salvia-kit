@@ -1,0 +1,13 @@
+.homeContainer {
+  position: relative;
+  height: calc(100vh - 3rem);
+}
+
+.infoImg {
+  width: 145px;
+  transition: 0.3s;
+}
+
+.infoImg:hover {
+  transform: scale(1.1);
+}
