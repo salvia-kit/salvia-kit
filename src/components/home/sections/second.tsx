@@ -1,8 +1,10 @@
+import Image from 'next/image';
+import ss from '../../../../public/ss.png';
 const HomeSecondSection = () => (
   <section className="flex mb-12 mt-32">
     <div className="w-6/12"></div>
     <div className="w-6/12">
-      <img src="/images/dashboards/dash-v1.png" className="w-full h-auto" />
+      <Image src={ss} />
     </div>
   </section>
 );
