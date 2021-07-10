@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import { ChildrenType } from '@/src/childrenType';
+import { ChildrenType } from '@/src/utils/childrenType';
 
 interface INavbarProps extends ChildrenType {
-  bgColor?: string;
-  textColor?: string;
+  className?: string;
 }
 
 interface INavbarLinkProps extends ChildrenType {
@@ -32,10 +31,8 @@ const style = {
   navbar: `font-light lg:relative lg:flex lg:items-center py-2 lg:flex lg:flex-row lg:justify-start`,
 };
 
-export function Navbar({ bgColor, textColor, children }: INavbarProps) {
-  return (
-    <nav className={`${bgColor} ${textColor} ${style.navbar}`}>{children}</nav>
-  );
+export function Navbar({ className, children }: INavbarProps) {
+  return <nav className={`${className} ${style.navbar}`}>{children}</nav>;
 }
 
 export function NavbarBrand({ children, href }: INavbarBrandProps) {

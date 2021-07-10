@@ -1,0 +1,29 @@
+.homeContainer {
+  position: relative;
+  height: auto;
+}
+
+.infoImg {
+  width: 145px;
+  transition: 0.3s;
+}
+
+.infoImg:hover {
+  transform: scale(1.1);
+}
+
+.image {
+  height: 650px;
+}
+
+@media (min-width: 768px) {
+  .image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image {
+    height: 600px;
+  }
+}

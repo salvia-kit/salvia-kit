@@ -1,5 +1,7 @@
-import { ChildrenType } from '@/src/childrenType';
+import { ChildrenType } from '@/src/utils/childrenType';
 
 export default function Container({ children }: ChildrenType) {
-  return <div className="px-3 lg:px-28">{children}</div>;
+  return (
+    <div className="px-3 2xl:px-40 md:px-4 lg:px-24 xl:px-28">{children}</div>
+  );
 }

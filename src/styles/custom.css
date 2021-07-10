@@ -1,11 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  margin: 3rem 0 0 0;
-}
-
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
