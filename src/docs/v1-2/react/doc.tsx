@@ -14,7 +14,7 @@ export default function DocV1React() {
     <div className="py-8 max-w-full text-gray-700">
       <h2 className="flex mb-16 text-3xl font-medium">
         <Image src="/svg/react.svg" height={30} width={30} alt="React icon" />
-        <span className="pl-2">React Documentation</span>
+        <span className="pl-2">Documentation</span>
       </h2>
       <V1ReactFirstSection />
       <V1ReactSecondSection />
