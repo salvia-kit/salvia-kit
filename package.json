@@ -18,7 +18,10 @@
     "tailwindcss",
     "next",
     "Next.js",
-    "layout"
+    "layout",
+    "nuxt",
+    "react dashboard",
+    "vue dashboard"
   ],
   "scripts": {
     "dev": "next dev",
