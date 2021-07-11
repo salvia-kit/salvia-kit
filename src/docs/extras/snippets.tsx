@@ -1,4 +1,4 @@
-const V1ReactSnippet = () => (
+const ReactSnippet = () => (
   <pre className="px-4 py-1 max-w-full text-blue-700 font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
     {`[ 
   {
@@ -21,4 +21,4 @@ const V1ReactSnippet = () => (
   </pre>
 );
 
-export default V1ReactSnippet;
+export { ReactSnippet };

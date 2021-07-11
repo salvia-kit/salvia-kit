@@ -1,5 +1,5 @@
-import V1ReactSnippet from '../snippet';
-import { FileIcon, FolderIcon, JsIcon } from '@/src/docs/icons';
+import { ReactSnippet } from '@/src/docs/extras/snippets';
+import { FileIcon, FolderIcon, JsIcon } from '@/src/docs/extras/icons';
 
 const V1ReactThirdSection = () => (
   <section className="mb-12 px-4 md:px-8">
@@ -59,7 +59,7 @@ const V1ReactThirdSection = () => (
       </div>
       <div className="flex flex-wrap mt-8 pl-8">
         <div className="md:w-4/12">
-          <V1ReactSnippet />
+          <ReactSnippet />
         </div>
         <ul className="pt-8 md:pl-4 md:pt-20">
           <li className="mb-2">
