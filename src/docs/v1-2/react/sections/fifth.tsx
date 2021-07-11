@@ -1,14 +1,26 @@
 const V1ReactFifthSection = () => (
   <section className="mb-12 px-4 md:px-8">
-    <h2 className="text-2xl font-medium">Auto Format and Linting</h2>
-    <div className="mt-4">
-      The dashboard is provided with <strong>eslint</strong>,
-      <strong className="px-1">prettier</strong>,
-      <strong className="px-1">lint-staged</strong>et
-      <strong className="px-1">husky.</strong>Before each commit, the
-      <strong className="px-1">pre-commit</strong>hook will be triggered to run
-      prettier to format the code and eslint to analyze the code for possible
-      errors.
+    <h2 className="text-2xl font-medium">Export</h2>
+    <p className="mt-4">
+      As there is no vendor lock-in, if you already have a dashboard, you can
+      just copy the small configuration from
+      <strong className="px-1">tailwind.config.js</strong>and paste it into your
+      <strong className="px-1">tailwind.config.js</strong>configuration file.
+      then copy the
+      <strong className="px-1">dashboard</strong>folder into your project
+    </p>
+    <div className="mt-8">
+      <ul className="mt-4 pl-6 list-disc">
+        <li className="mb-3">
+          Add your routes in the
+          <strong className="px-1">dashboard/sidenavigation/data.js</strong>
+          file
+        </li>
+        <li className="mb-3">
+          Replace your layout by the
+          <strong className="px-1">DashboardLayout</strong>component
+        </li>
+      </ul>
     </div>
   </section>
 );

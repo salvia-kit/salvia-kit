@@ -1,4 +1,4 @@
-const V1ReactEighthSection = () => (
+const ComponentsSection = () => (
   <section className="px-4 md:px-8">
     <h2 className="text-2xl font-medium">Components</h2>
     <p className="mt-5">
@@ -18,4 +18,4 @@ const V1ReactEighthSection = () => (
   </section>
 );
 
-export default V1ReactEighthSection;
+export default ComponentsSection;

@@ -1,4 +1,4 @@
-import { FileIcon, FolderIcon, JsIcon } from '@/src/docs/extras/icons';
+import { FileIcon, FolderIcon, JsIcon } from '@/src/docs/common/icons';
 
 const V1NextSecondSection = () => (
   <section className="mb-12 px-4 md:px-8">

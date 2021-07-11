@@ -5,8 +5,8 @@ import V1ReactThirdSection from '@/src/docs/v1-2/react/sections/third';
 import V1ReactFourthSection from '@/src/docs/v1-2/react/sections/fourth';
 import V1ReactFifthSection from '@/src/docs/v1-2/react/sections/fifth';
 import V1ReactSixthSection from '@/src/docs/v1-2/react/sections/sixth';
-import V1ReactSeventhSection from '@/src/docs/v1-2/react/sections/seventh';
-import V1ReactEighthSection from '@/src/docs/v1-2/react/sections/eighth';
+import ComponentsSection from '@/src/docs/common/components';
+import LintersSection from '@/src/docs/common/linters';
 
 // this doc is for the version 1 and 2 of dashboard
 export default function DocV1React() {
@@ -20,10 +20,10 @@ export default function DocV1React() {
       <V1ReactSecondSection />
       <V1ReactThirdSection />
       <V1ReactFourthSection />
+      <LintersSection />
       <V1ReactFifthSection />
       <V1ReactSixthSection />
-      <V1ReactSeventhSection />
-      <V1ReactEighthSection />
+      <ComponentsSection />
     </div>
   );
 }

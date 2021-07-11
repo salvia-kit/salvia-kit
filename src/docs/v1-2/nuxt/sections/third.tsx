@@ -1,5 +1,5 @@
-import { VueSnippet } from '@/src/docs/extras/snippets';
-import { VueIcon, FolderIcon } from '@/src/docs/extras/icons';
+import { VueSnippet } from '@/src/docs/common/snippets';
+import { VueIcon, FolderIcon } from '@/src/docs/common/icons';
 
 const V1NuxtThirdSection = () => (
   <section className="mb-12 px-4 md:px-8">
