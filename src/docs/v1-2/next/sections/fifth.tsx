@@ -1,33 +1,32 @@
 const V1NextFifthSection = () => (
   <section className="mb-12 px-4 md:px-8">
-    <h2 className="text-2xl font-medium">Export</h2>
-    <p className="mt-4">
-      As there is no vendor lock-in, if you already have a dashboard, you can
-      just copy the small configuration from
-      <span className="px-1 font-semibold">tailwind.config.js</span>and paste it
-      into your
-      <span className="px-1 font-semibold">tailwind.config.js</span>
-      configuration file. then copy the
-      <span className="px-1 font-semibold">dashboard</span>folder into your
-      project
+    <h2 className="text-2xl font-medium">Customization</h2>
+    <p className="mt-5">
+      You can customize everything according to your preferences if it doesn't
+      suit you. What we have done is just provide a solid structure for better
+      scalability and readability of the code.
     </p>
-    <div className="mt-8">
-      <ul className="mt-4 pl-6 list-disc">
-        <li className="mb-3">
-          Add your routes in the
-          <span className="px-1 font-semibold">
-            dashboard/sidenavigation/data.js
-          </span>
-          file
-        </li>
-        <li className="mb-3">
-          Replace your layout by the
-          <span className="px-1 font-semibold">DashboardLayout</span> imported
-          from
-          <span className="px-1 font-semibold">dashboard/layout.js</span>
-        </li>
-      </ul>
-    </div>
+    <p className="mt-5">
+      The sidenav scrollbar is hidden by default but you can still scroll with
+      the keyboards if you have several sidenav-items. If you are not a fan of
+      this approach, you can always change its style in the
+      <strong className="px-1">style.module.css</strong>file
+    </p>
+    <p className="mt-5">
+      In the <strong> dashboard/layout.js</strong> file, the
+      <strong className="pl-1">Sidenavigation</strong> component has as prop
+      <strong className="pl-1">mobilePosition</strong>, which indicates the
+      positioning of the sidenav on mobile.
+    </p>
+    <p className="pt-5">This prop can have two possible values :</p>
+    <ul className="mt-4 pl-6 list-disc">
+      <li className="mb-3">
+        <strong>left :</strong> sidenav will be aligned to the left
+      </li>
+      <li>
+        <strong>right :</strong> sidenav will be aligned to the right
+      </li>
+    </ul>
   </section>
 );
 

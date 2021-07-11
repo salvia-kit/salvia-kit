@@ -3,10 +3,10 @@ import V1NextFirstSection from '@/src/docs/v1-2/next/sections/first';
 import V1NextSecondSection from '@/src/docs/v1-2/next/sections/second';
 import V1NextThirdSection from '@/src/docs/v1-2/next/sections/third';
 import V1NextFourthSection from '@/src/docs/v1-2/next/sections/fourth';
-import V1NextSixthSection from '@/src/docs/v1-2/next/sections/sixth';
+import V1NextFifthSection from '@/src/docs/v1-2/next/sections/fifth';
 import LintersSection from '@/src/docs/common/linters';
 import ComponentsSection from '@/src/docs/common/components';
-import V1NextFifthSection from '@/src/docs/v1-2/next/sections/fifth';
+import FeaturesSection from '@/src/docs/common/features';
 
 // this doc is for the version 1 and 2 of dashboard
 export default function DocV1Next() {
@@ -21,13 +21,13 @@ export default function DocV1Next() {
         />
         <span className="pl-2 pt-4">Documentation</span>
       </h2>
+      <FeaturesSection />
       <V1NextFirstSection />
       <V1NextSecondSection />
       <V1NextThirdSection />
-      <V1NextFourthSection />
       <LintersSection />
+      <V1NextFourthSection />
       <V1NextFifthSection />
-      <V1NextSixthSection />
       <ComponentsSection />
     </div>
   );
