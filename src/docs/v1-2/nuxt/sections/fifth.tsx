@@ -1,14 +1,28 @@
 const V1NuxtFifthSection = () => (
   <section className="mb-12 px-4 md:px-8">
-    <h2 className="text-2xl font-medium">Auto Format and Linting</h2>
-    <div className="mt-4">
-      The dashboard is provided with <strong>eslint</strong>,
-      <strong className="px-1">prettier,</strong>
-      <strong>lint-staged</strong> and
-      <strong className="pl-1">husky.</strong> Before each commit, the
-      <strong className="px-1">pre-commit</strong> hook will be triggered to run
-      prettier to format the code and eslint to analyze the code for possible
-      errors.
+    <h2 className="text-2xl font-medium">Export</h2>
+    <p className="mt-4">
+      As there is no vendor lock-in, if you already have a dashboard, you can
+      just copy the small configuration from
+      <span className="pl-1 font-semibold">tailwind.config.js</span> and paste
+      it into your <span className="font-semibold">tailwind.config.js</span>{' '}
+      configuration file. then copy the{' '}
+      <span className="font-semibold">dashboard</span> folder into your project
+    </p>
+    <div className="mt-8">
+      <ul className="mt-4 pl-6 list-disc">
+        <li className="mb-3">
+          Add your routes and items in the
+          <span className="px-1 font-semibold">
+            dashboard/sidenavigation/Items.vue
+          </span>
+          file
+        </li>
+        <li className="mb-3">
+          Replace your layout by the
+          <span className="pl-1 font-semibold">dashboard-layout</span> component
+        </li>
+      </ul>
     </div>
   </section>
 );

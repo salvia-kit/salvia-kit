@@ -5,7 +5,7 @@ import V1NuxtThirdSection from '@/src/docs/v1-2/nuxt/sections/third';
 import V1NuxtFourthSection from '@/src/docs/v1-2/nuxt/sections/fourth';
 import V1NuxtFifthSection from '@/src/docs/v1-2/nuxt/sections/fifth';
 import V1NuxtSixthSection from '@/src/docs/v1-2/nuxt/sections/sixth';
-import V1NuxtSeventhSection from '@/src/docs/v1-2/nuxt/sections/seventh';
+import LintersSection from '@/src/docs/common/linters';
 
 // this doc is for the version 1 and 2 of dashboard
 export default function DocV1Nuxt() {
@@ -19,9 +19,9 @@ export default function DocV1Nuxt() {
       <V1NuxtSecondSection />
       <V1NuxtThirdSection />
       <V1NuxtFourthSection />
+      <LintersSection />
       <V1NuxtFifthSection />
       <V1NuxtSixthSection />
-      <V1NuxtSeventhSection />
     </div>
   );
 }
