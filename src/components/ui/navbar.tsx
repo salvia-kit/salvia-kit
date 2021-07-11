@@ -25,7 +25,8 @@ const style = {
     end: `pl-0 mb-0 ml-auto flex`,
   },
   collapse: `hidden lg:flex-grow lg:items-center lg:flex`,
-  link: `block cursor-pointer py-1.5 md:py-1 px-4 md:px-2 font-bold`,
+  link: `cursor-pointer`,
+  item: `py-1.5 md:py-1 px-4 font-bold`,
   toggler: `float-right block lg:hidden pt-1.5 text-3xl focus:outline-none focus:shadow`,
   brand: `inline-block pt-1.5 pb-1.5 mr-4 cursor-pointer text-2xl font-bold whitespace-nowrap`,
   navbar: `font-light lg:relative lg:flex lg:items-center py-2 lg:flex lg:flex-row lg:justify-start`,
@@ -68,7 +69,7 @@ export function NavbarNav({ children, orientation }: INavbarNavProps) {
 }
 
 export function NavbarItem({ children }: ChildrenType) {
-  return <li>{children}</li>;
+  return <li className={style.item}>{children}</li>;
 }
 
 export function NavbarLink({ children, href, ...rest }: INavbarLinkProps) {

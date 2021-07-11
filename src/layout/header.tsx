@@ -1,3 +1,5 @@
+import useScrollHeader from '@/src/utils/useScrollHeader';
+
 import {
   Navbar,
   NavbarBrand,
@@ -7,7 +9,13 @@ import {
   NavbarItem,
   NavbarLink,
 } from '@/src/components/ui/navbar';
-import useScrollHeader from '@/src/utils/useScrollHeader';
+
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownToggle,
+  DropdownMenu,
+} from '@/src/components/ui/dropdown';
 
 export default function Header() {
   const { headerRef } = useScrollHeader();
@@ -22,10 +30,26 @@ export default function Header() {
         <NavbarCollapse>
           <NavbarNav orientation="end">
             <NavbarItem>
-              <NavbarLink href="#">Documents</NavbarLink>
+              <Dropdown>
+                <DropdownToggle>Technologies</DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem href="/">
+                    <div className="flex">
+                      <span className="mt-4">React</span>
+                    </div>
+                  </DropdownItem>
+                  <DropdownItem href="/">
+                    <span>Next.js</span>
+                  </DropdownItem>
+                  <DropdownItem href="/">
+                    <span className="pl-1">Vue</span>
+                  </DropdownItem>
+                  <DropdownItem href="/">Nuxt</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </NavbarItem>
             <NavbarItem>
-              <NavbarLink href="#">React</NavbarLink>
+              <NavbarLink href="#">Contributions</NavbarLink>
             </NavbarItem>
           </NavbarNav>
         </NavbarCollapse>
