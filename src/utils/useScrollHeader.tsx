@@ -1,7 +1,7 @@
 import React from 'react';
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-// When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+/*==================== CHANGE HEADER BACKGROUND====================*/
+// When the scroll is greater than 100px of viewport height, add new classes to the header tag
 
 export default function useScrollHeader() {
   const headerRef = React.useRef<HTMLElement>(null);
