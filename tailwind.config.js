@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
+        body: 'hsl(200, 100%, 99%)',
         custom: 'hsl(200, 64%, 22%)',
         'custom-hover': 'hsl(200, 64%, 15%)',
       },

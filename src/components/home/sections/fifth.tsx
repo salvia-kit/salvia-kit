@@ -12,12 +12,14 @@ export default function HomeFifthSection() {
         Subscribe to our newsletter to be notified when a new dashboard is
         added.
       </p>
-      <div className="flex justify-center mt-8">
+      <div className="flex mt-8 px-2 space-x-4 md:justify-center">
         <input
-          className="placeholder-gray-600 mr-4 px-4 text-custom"
+          className="placeholder-gray-600 px-4 w-48 text-custom sm:w-auto"
           placeholder="Enter email"
         />
-        <Button color="white">Subscribe</Button>
+        <div className="w-12 md:w-auto">
+          <Button color="white">Subscribe</Button>
+        </div>
       </div>
     </section>
   );
