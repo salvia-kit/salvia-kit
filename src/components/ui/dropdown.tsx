@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { ChildrenType } from '@/src/utils/childrenType';
 
-interface DropdownItemProps {
-  children: React.ReactNode;
+interface DropdownItemProps extends ChildrenType {
   href?: string | any;
 }
 
@@ -14,21 +14,22 @@ interface IContextValues {
 }
 
 const style = {
-  menu: `block z-30 absolute top-0 left-0 bg-white float-left py-2 px-0 text-left rounded-sm mt-0.5 mb-0 mx-0 bg-clip-padding`,
-  item: `block w-full py-1 px-8 mb-2 text-gray-700 clear-both text-sm font-medium border-0 hover:bg-gray-200 cursor-pointer`,
+  menu: `block z-30 absolute top-0 left-0 bg-white float-left py-3 px-0 text-left rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
+  item: `flex w-full py-3 px-12 text-gray-700 clear-both text-sm font-medium border-0 hover:bg-gray-200 cursor-pointer`,
 };
 
 const Context = React.createContext<IContextValues>({});
 
-export function Dropdown({ children }: ChildrenType) {
+function Dropdown({ children }: ChildrenType) {
   const [show, setShow] = React.useState<boolean>(false);
   const ref = React.useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const toggle = React.useCallback(() => {
     setShow((prevState) => !prevState);
   }, []);
 
-  // close dropdown when you click outside
+  // close dropdown when click outside
   React.useEffect(() => {
     const handleOutsideClick = (event: any) => {
       if (!ref.current?.contains(event.target)) {
@@ -53,6 +54,16 @@ export function Dropdown({ children }: ChildrenType) {
     return () => document.removeEventListener('keyup', handleEscape);
   }, [show]);
 
+  // close dropdown when route changes
+  React.useEffect(() => {
+    const handleRouteChange = (event: any) => {
+      if (!show) return;
+      setShow(false);
+    };
+    document.addEventListener('keyup', handleRouteChange);
+    return () => document.removeEventListener('keyup', handleRouteChange);
+  }, [show]);
+
   const values = React.useMemo(() => ({ show, ref, toggle }), [show, toggle]);
 
   return <Context.Provider value={values}>{children}</Context.Provider>;
@@ -62,7 +73,7 @@ function useToggle() {
   return React.useContext(Context);
 }
 
-export function DropdownToggle({ children }: ChildrenType) {
+function DropdownToggle({ children }: ChildrenType) {
   const { toggle } = useToggle();
   return (
     <button
@@ -77,7 +88,7 @@ export function DropdownToggle({ children }: ChildrenType) {
   );
 }
 
-export function DropdownMenu({ children }: ChildrenType) {
+function DropdownMenu({ children }: ChildrenType) {
   const { show } = useToggle();
   return (
     <div className="relative">
@@ -94,7 +105,7 @@ export function DropdownMenu({ children }: ChildrenType) {
   );
 }
 
-export function DropdownItem({ children, href }: DropdownItemProps) {
+function DropdownItem({ children, href }: DropdownItemProps) {
   return (
     <Link href={href}>
       <a tabIndex={0} className={style.item} role="menuitem">
@@ -103,3 +114,5 @@ export function DropdownItem({ children, href }: DropdownItemProps) {
     </Link>
   );
 }
+
+export { Dropdown, DropdownToggle, DropdownMenu, DropdownItem };

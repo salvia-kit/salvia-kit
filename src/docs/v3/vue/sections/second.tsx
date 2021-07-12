@@ -1,4 +1,4 @@
-import { FolderIcon, VueIcon } from '@/src/docs/common/icons';
+import { FolderIcon, VueIcon } from '@/src/components/icons';
 import { VueSnippetShort } from '@/src/docs/common/snippets';
 
 const V3VueSecondSection = () => (

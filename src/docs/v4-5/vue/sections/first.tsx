@@ -1,4 +1,4 @@
-import { FolderIcon, JsIcon, VueIcon } from '@/src/docs/common/icons';
+import { FolderIcon, JsIcon, VueIcon } from '@/src/components/icons';
 
 const V4VueFirstSection = () => (
   <section className="mb-12 px-4 md:px-8">

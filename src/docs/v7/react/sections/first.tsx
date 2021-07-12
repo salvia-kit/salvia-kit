@@ -1,4 +1,4 @@
-import { FolderIcon, JsIcon } from '@/src/docs/common/icons';
+import { FolderIcon, JsIcon } from '@/src/components/icons';
 
 const V7ReactFirstSection = () => (
   <section className="mb-12 px-4 md:px-8">

@@ -6,7 +6,7 @@ import Button from '@/src/components/ui/button';
 const HomeFirstSection = () => (
   <section className="mt-32 text-white" id="firstSection">
     <img
-      src="/images/overlay.svg"
+      src="/svg/overlay.svg"
       alt="Overlay"
       className={`absolute left-0 top-0 w-full object-cover ${css.image}`}
     />

@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import useScrollHeader from '@/src/utils/useScrollHeader';
+import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
 
 import {
   Navbar,
@@ -34,17 +36,25 @@ export default function Header() {
                 <DropdownToggle>Technologies</DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem href="/">
-                    <div className="flex">
-                      <span className="mt-4">React</span>
-                    </div>
+                    <Image
+                      src="/svg/nextjs.svg"
+                      height={25}
+                      width={50}
+                      alt="Next.js logo"
+                    />
                   </DropdownItem>
                   <DropdownItem href="/">
-                    <span>Next.js</span>
+                    <ReactIcon />
+                    <span className="mt-0.5 pl-2">React</span>
                   </DropdownItem>
                   <DropdownItem href="/">
-                    <span className="pl-1">Vue</span>
+                    <VueIcon className="w-6 h-6" />
+                    <span className="mt-0.5 pl-2">Vue</span>
                   </DropdownItem>
-                  <DropdownItem href="/">Nuxt</DropdownItem>
+                  <DropdownItem href="/">
+                    <NuxtIcon className="w-6 h-6" />
+                    <span className="mt-0.5 pl-2">Nuxt</span>
+                  </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
             </NavbarItem>

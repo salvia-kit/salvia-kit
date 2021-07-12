@@ -1,5 +1,5 @@
 import { ReactSnippetShort } from '@/src/docs/common/snippets';
-import { FileIcon, FolderIcon, JsIcon } from '@/src/docs/common/icons';
+import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons';
 
 const V6NextSecondSection = () => (
   <section className="mb-12 px-4 md:px-8">
