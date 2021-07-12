@@ -16,6 +16,7 @@ module.exports = {
       },
       textColor: {
         react: '#61DBFB',
+        custom: 'hsl(200, 64%, 22%)',
       },
     },
   },

@@ -27,7 +27,7 @@ const style = {
   link: `cursor-pointer`,
   item: `py-1.5 md:py-1 px-4 font-bold`,
   collapse: `hidden lg:flex-grow lg:items-center lg:flex`,
-  toggler: `float-right block lg:hidden pt-1.5 text-3xl focus:outline-none focus:shadow`,
+  toggler: `float-right block lg:hidden -mt-2 text-5xl focus:outline-none focus:shadow`,
   brand: `inline-block pt-1.5 pb-1.5 mr-4 cursor-pointer text-2xl font-bold whitespace-nowrap`,
   navbar: `font-light lg:relative lg:flex lg:items-center py-2 lg:flex lg:flex-row lg:justify-start`,
 };

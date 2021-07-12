@@ -9,11 +9,11 @@ export default function useScrollHeader() {
   React.useEffect(() => {
     const scrollHeader = () => {
       if (window.scrollY >= 100) {
-        headerRef.current?.classList.add('bg-white', 'text-gray-700', 'shadow');
+        headerRef.current?.classList.add('bg-white', 'text-custom', 'shadow');
       } else {
         headerRef.current?.classList.remove(
           'bg-white',
-          'text-gray-700',
+          'text-custom',
           'shadow',
         );
       }

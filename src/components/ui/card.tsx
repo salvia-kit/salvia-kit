@@ -3,7 +3,7 @@ import { ChildrenType } from '@/src/utils/childrenType';
 const style = {
   cardText: `text-gray-500`,
   cardBody: `block flex-grow flex-shrink px-3 py-5`,
-  cardTitle: `font-semibold text-gray-700 mb-3`,
+  cardTitle: `font-semibold text-custom mb-3`,
   card: `relative flex flex-col  rounded-lg`,
 };
 

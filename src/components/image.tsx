@@ -1,12 +1,12 @@
-import style from './image.module.css';
 import NextImage from 'next/image';
+import style from './image.module.css';
 
 export interface ImageProps {
   className?: string;
   alt: any;
   src: string | any;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 const CustomImage = ({

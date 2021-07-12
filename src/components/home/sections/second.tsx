@@ -6,7 +6,7 @@ import { Card, CardBody, CardTitle } from '@/src/components/ui/card';
 import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
 
 const HomeSecondSection = () => (
-  <section className="mb-12 mt-44 text-gray-700">
+  <section className="mb-16 mt-44 text-custom text-gray-700 md:mb-32">
     <h2 className="text-center text-3xl font-bold">
       Discover Our Latest
       <br />
