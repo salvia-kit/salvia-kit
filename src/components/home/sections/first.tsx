@@ -37,7 +37,7 @@ const HomeFirstSection = () => (
               you're looking for!
             </span>
             <Image
-              src="/tailwindcss.svg"
+              src="/svg/tailwindcss.svg"
               height={30}
               width={30}
               alt="Tailwind CSS"
