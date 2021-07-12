@@ -1,9 +1,11 @@
 import * as Doc from './docs';
 import * as img from './images';
 
-const data = [
+const dashboardsData = [
   {
-    name: 'Salvia-kit Dashboard V1',
+    id: 1,
+    name: 'Salvia-kit Dashboard v1',
+    slug: 'salvia-kit-dashboard-v1',
     image: img.dashImgV1,
     techno: {
       react: {
@@ -25,7 +27,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V2',
+    id: 2,
+    name: 'Salvia-kit Dashboard v2',
+    slug: 'salvia-kit-dashboard-v2',
     image: img.dashImgV2,
     techno: {
       react: {
@@ -47,7 +51,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V3',
+    id: 3,
+    name: 'Salvia-kit Dashboard v3',
+    slug: 'salvia-kit-dashboard-v3',
     image: img.dashImgV3,
     techno: {
       react: {
@@ -69,7 +75,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V4',
+    id: 4,
+    name: 'Salvia-kit Dashboard v4',
+    slug: 'salvia-kit-dashboard-v4',
     image: img.dashImgV4,
     techno: {
       react: {
@@ -91,7 +99,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V5',
+    id: 5,
+    name: 'Salvia-kit Dashboard v5',
+    slug: 'salvia-kit-dashboard-v5',
     image: img.dashImgV5,
     techno: {
       react: {
@@ -113,7 +123,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V6',
+    id: 6,
+    name: 'Salvia-kit Dashboard v6',
+    slug: 'salvia-kit-dashboard-v6',
     image: img.dashImgV6,
     techno: {
       react: {
@@ -135,7 +147,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V7',
+    id: 7,
+    name: 'Salvia-kit Dashboard v7',
+    slug: 'salvia-kit-dashboard-v7',
     image: img.dashImgV7,
     techno: {
       react: {
@@ -157,7 +171,9 @@ const data = [
     },
   },
   {
-    name: 'Salvia-kit Dashboard V8',
+    id: 8,
+    name: 'Salvia-kit Dashboard v8',
+    slug: 'salvia-kit-dashboard-v8',
     image: img.dashImgV8,
     techno: {
       react: {
@@ -172,4 +188,4 @@ const data = [
   },
 ];
 
-export default data;
+export default dashboardsData;
