@@ -13,4 +13,7 @@
   h3 {
     @apply font-title;
   }
+  input {
+    @apply focus:outline-none;
+  }
 }

@@ -4,6 +4,7 @@ import HomeFirstSection from '@/src/components/home/sections/first';
 import HomeSecondSection from '@/src/components/home/sections/second';
 import HomeThirdSection from '@/src/components/home/sections/third';
 import HomeFourthSection from '@/src/components/home/sections/fourth';
+import HomeFifthSection from '@/src/components/home/sections/fifth';
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <HomeSecondSection />
         <HomeThirdSection />
         <HomeFourthSection />
+        <HomeFifthSection />
       </Container>
     </>
   );

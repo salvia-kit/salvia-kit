@@ -7,14 +7,14 @@ interface BtnProps
     BtnPropsWithChildren {
   children: React.ReactNode;
   className?: string;
-  color?: 'custom';
+  color?: 'custom' | 'white';
   size?: 'sm' | 'md' | 'lg';
 }
 
 type ButtonRef = React.ForwardedRef<HTMLButtonElement>;
 
 const style = {
-  default: `text-white focus:outline-none shadow font-medium transition-all ease-in duration-700`,
+  default: `focus:outline-none shadow font-medium transition-all ease-in duration-700`,
   disabled: `opacity-60 cursor-not-allowed`,
   sizes: {
     sm: 'px-6 py-1 text-sm',
@@ -22,7 +22,8 @@ const style = {
     lg: 'px-6 py-3',
   },
   colors: {
-    custom: 'bg-custom hover:bg-custom-hover',
+    custom: 'bg-custom hover:bg-custom-hover text-white',
+    white: 'bg-white text-custom',
   },
 };
 
