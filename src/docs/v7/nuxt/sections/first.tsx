@@ -1,4 +1,4 @@
-import { FolderIcon, VueIcon } from '@/src/components/icons';
+import { FolderIcon, VueIcon } from '@/src/components/icons/icons';
 
 const V7NuxtFirstSection = () => (
   <section className="mb-12">

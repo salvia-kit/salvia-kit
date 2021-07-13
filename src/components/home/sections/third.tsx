@@ -3,7 +3,7 @@ import teacherImg from '@/public/images/teacher.png';
 
 export default function HomeThirdSection() {
   return (
-    <section className="mb-16 text-custom md:mb-32">
+    <section className="mb-16 md:mb-32">
       <h2 className="text-center text-3xl font-bold">No Vendor Lock-in</h2>
       <div className="flex mt-6 md:mt-8">
         <div className="2xl:pt-16 w-full md:pr-2 md:w-6/12">

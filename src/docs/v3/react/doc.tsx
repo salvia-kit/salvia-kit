@@ -10,7 +10,7 @@ import FeaturesSection from '@/src/docs/common/features';
 
 export default function DocV3React() {
   return (
-    <div className="mt-12 max-w-full text-gray-700">
+    <div className="mt-12 max-w-full">
       <h2 className="flex mb-16 text-3xl font-medium">
         <Image src="/svg/react.svg" height={30} width={30} alt="React icon" />
         <span className="pl-2">Documentation</span>

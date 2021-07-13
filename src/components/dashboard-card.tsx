@@ -1,8 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import CustomImage from '@/src/components/image';
+import NextIcon from '@/src/components/icons/next';
+import NuxtIcon from '@/src/components/icons/nuxt';
+import ReactIcon from '@/src/components/icons/react';
+import { VueIcon } from '@/src/components/icons/icons';
 import { Card, CardBody, CardTitle } from '@/src/components/ui/card';
-import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
 
 interface IDashboardCardProps {
   data: any;
@@ -22,7 +24,7 @@ export default function DashboardCard({
 }: IDashboardCardProps) {
   return (
     <>
-      <div key={data.id} className={className}>
+      <div className={className}>
         <Card>
           <Link href={getLink(data)}>
             <a>
@@ -40,12 +42,7 @@ export default function DashboardCard({
             </div>
             <div className="flex justify-center">
               {(data?.techno?.next || data?.techno?.name === 'next') && (
-                <Image
-                  src="/images/next.png"
-                  width={20}
-                  height={15}
-                  alt="Next.js"
-                />
+                <NextIcon className="-mt-1 w-11 h-7" />
               )}
               {(data?.techno?.react || data?.techno?.name === 'react') && (
                 <ReactIcon className="ml-3 w-5 h-5" />

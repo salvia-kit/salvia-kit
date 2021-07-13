@@ -26,7 +26,7 @@ export default function TechnologiePage() {
             <title>Salvia-kit Dashboards with {name}</title>
           </Head>
           <Container>
-            <h1 className="mt-32 text-center text-custom text-3xl font-bold">
+            <h1 className="mt-32 text-center text-3xl font-bold">
               Dashboards with
               <span className="pl-1">{isTechno(name)}</span>
             </h1>

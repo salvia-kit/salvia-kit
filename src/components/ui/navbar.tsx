@@ -12,7 +12,7 @@ interface INavbarLinkProps extends ChildrenType {
 interface INavbarBrandProps extends INavbarLinkProps {}
 
 interface INavbarToggleProps {
-  toggle: () => void;
+  toggle: any;
 }
 
 interface INavbarNavProps extends ChildrenType {

@@ -3,8 +3,8 @@ import CustomImage from '@/src/components/image';
 
 export default function HomeFourthSection() {
   return (
-    <section className="mb-16 text-custom md:mb-32">
-      <h2 className="text-center text-custom text-3xl font-bold">
+    <section className="mb-16 md:mb-32">
+      <h2 className="text-center text-3xl font-bold">
         With our know-how
         <br />
         We will serve you

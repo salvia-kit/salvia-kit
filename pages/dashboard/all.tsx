@@ -10,10 +10,10 @@ export default function AllDashboardsPage() {
         <title>Dashboards</title>
       </Head>
       <Container>
-        <h1 className="mt-32 text-center text-custom text-3xl font-bold">
+        <h1 className="mt-32 text-center text-3xl font-bold">
           Our dashboard catalog
         </h1>
-        <p className="mt-4 text-center text-custom text-sm">
+        <p className="mt-4 text-center text-sm">
           Each dashboard may have two or four variants. <br />
           one variant for React, Next, Vue and Nuxt
         </p>

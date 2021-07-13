@@ -12,12 +12,20 @@ export default function useScrollHeader() {
     const scrollHeader = () => {
       if (asPath === '/') {
         if (window.scrollY >= 100) {
-          headerRef.current?.classList.add('bg-body', 'text-custom', 'shadow');
+          headerRef.current?.classList.add(
+            'bg-body',
+            'text-custom',
+            'shadow',
+            'dark:bg-body-dark',
+            'dark:text-white',
+          );
         } else {
           headerRef.current?.classList.remove(
             'bg-body',
             'text-custom',
             'shadow',
+            'dark:bg-body-dark',
+            'dark:text-white',
           );
         }
       }

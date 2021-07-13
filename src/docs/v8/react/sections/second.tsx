@@ -1,5 +1,5 @@
 import { ReactSnippet } from '@/src/docs/common/snippets';
-import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons';
+import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
 
 const V8ReactSecondSection = () => (
   <section className="mb-12">

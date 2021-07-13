@@ -1,5 +1,5 @@
 import { VueSnippet } from '@/src/docs/common/snippets';
-import { VueIcon, FolderIcon } from '@/src/components/icons';
+import { VueIcon, FolderIcon } from '@/src/components/icons/icons';
 
 const V7NuxtSecondSection = () => (
   <section className="mb-12">
@@ -88,7 +88,7 @@ const V7NuxtSecondSection = () => (
         </p>
       </div>
       <div className="flex flex-wrap mb-12 mt-8 pl-8">
-        <div className="md:w-6/12">
+        <div className="max-w-full overflow-x-auto md:w-6/12">
           <VueSnippet />
         </div>
         <ul className="pt-8 md:pl-4 md:pt-0 md:w-6/12">

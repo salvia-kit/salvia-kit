@@ -1,10 +1,9 @@
 import { ChildrenType } from '@/src/utils/childrenType';
 
 const style = {
-  cardText: `text-gray-500`,
-  cardBody: `block flex-grow flex-shrink px-3 py-5`,
-  cardTitle: `font-semibold text-custom mb-3`,
   card: `relative flex flex-col  rounded-lg`,
+  cardBody: `block flex-grow flex-shrink px-3 py-5`,
+  cardTitle: `font-semibold text-custom dark:text-white mb-3`,
 };
 
 const inlineStyle = {
@@ -27,8 +26,4 @@ function CardTitle({ children }: ChildrenType) {
   return <h3 className={style.cardTitle}>{children}</h3>;
 }
 
-function CardText({ children }: ChildrenType) {
-  return <div className={style.cardText}>{children}</div>;
-}
-
-export { Card, CardBody, CardText, CardTitle };
+export { Card, CardBody, CardTitle };

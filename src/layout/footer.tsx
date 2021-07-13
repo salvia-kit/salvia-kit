@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className="relative bottom-0">
       <Container>
-        <div className="flex flex-wrap mt-28 text-custom">
+        <div className="flex flex-wrap mt-28">
           <div className="mb-12 w-full md:mb-0 md:w-4/12">
-            <h4 className="text-custom text-2xl font-bold">Contact</h4>
+            <h4 className="text-2xl font-bold">Contact</h4>
             <ul className="mt-5">
               <li className="pb-3">
                 <a href="https://github.com/salvia-kit">Github</a>
@@ -19,7 +19,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="mb-12 w-full md:mb-0 md:w-4/12">
-            <h4 className="text-custom text-2xl font-bold">About</h4>
+            <h4 className="text-2xl font-bold">About</h4>
             <ul className="mt-5">
               <li className="pb-3">
                 <a href="https://github.com/salvia-kit/salvia-kit-website/issues/new/choose">
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="w-full md:w-4/12">
-            <h4 className="text-custom text-2xl font-bold">Acknowledgements</h4>
+            <h4 className="text-2xl font-bold">Acknowledgements</h4>
             <ul className="mt-5">
               <li className="pb-3">
                 <a href="https://tailwindcss.com">Tailwind CSS</a>
@@ -52,7 +52,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-16 pb-6 text-center text-custom text-sm">
+        <div className="mt-16 pb-6 text-center text-sm">
           © {new Date().getFullYear()} Salvia-kit All rights reserved. Made with
           love by{' '}
           <a className="font-semibold" href="https://www.enochndika.com">

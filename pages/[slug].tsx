@@ -35,8 +35,10 @@ export default function DashboardPage({
         <Fragment>
           <title>{data?.name}</title>
           <Container>
-            <div className="mt-32 text-custom lg:w-8/12">
-              <h1 className="mb-6 text-4xl font-bold">{data?.name}</h1>
+            <div className="mt-32 lg:w-8/12">
+              <h1 className="mb-6 text-center text-3xl font-bold md:text-left md:text-4xl">
+                {data?.name}
+              </h1>
               <Image src={data.image} alt={data?.name} />
               <p className="mt-6">
                 Material Dashboard PRO React is a Premium Material-UI@4.1.0

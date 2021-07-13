@@ -29,8 +29,8 @@ export default function TechnoDocPage() {
             </title>
           </Head>
           <Container>
-            <div className="mt-32 text-custom lg:w-8/12">
-              <h1 className="mb-6 text-4xl font-bold">
+            <div className="mt-32 lg:w-8/12">
+              <h1 className="mb-6 text-center text-3xl font-bold md:text-left md:text-4xl">
                 {data?.name} - {isTechno(name)}
               </h1>
               <Image src={data.image} alt={data?.name} />

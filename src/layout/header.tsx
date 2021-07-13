@@ -1,7 +1,11 @@
-import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useToggle } from '@/src/layout/context';
+import NuxtIcon from '@/src/components/icons/nuxt';
+import NextIcon from '@/src/components/icons/next';
+import ReactIcon from '@/src/components/icons/react';
+import { VueIcon } from '@/src/components/icons/icons';
 import useScrollHeader from '@/src/utils/useScrollHeader';
-import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
+import ThemeSwitcher from '@/src/components/themeSwitcher';
 
 import {
   Navbar,
@@ -23,16 +27,21 @@ import {
 export default function Header() {
   const { headerRef } = useScrollHeader();
   const { asPath } = useRouter();
+  const { toggle } = useToggle();
 
   return (
     <header
       ref={headerRef}
       className={`fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full md:px-4 lg:px-24 xl:px-28
-        ${asPath !== '/' ? 'bg-body text-custom shadow' : 'text-white'}`}
+        ${
+          asPath !== '/'
+            ? 'bg-body dark:bg-body-dark dark:text-white text-custom shadow'
+            : 'text-white'
+        }`}
     >
       <Navbar className="md:h-16">
         <NavbarBrand href="/">Salvia-Kit</NavbarBrand>
-        <NavbarToggler toggle={() => console.log('issou')} />
+        <NavbarToggler toggle={toggle} />
         <NavbarCollapse>
           <NavbarNav orientation="end">
             <NavbarItem>
@@ -40,12 +49,7 @@ export default function Header() {
                 <DropdownToggle>Technologies</DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem href="/dashboard/technologie?name=next">
-                    <Image
-                      src="/svg/nextjs.svg"
-                      height={25}
-                      width={50}
-                      alt="Next.js logo"
-                    />
+                    <NextIcon className="w-12 h-8" />
                   </DropdownItem>
                   <DropdownItem href="/dashboard/technologie?name=react">
                     <ReactIcon />
@@ -64,6 +68,9 @@ export default function Header() {
             </NavbarItem>
             <NavbarItem>
               <NavbarLink href="#">Contributions</NavbarLink>
+            </NavbarItem>
+            <NavbarItem>
+              <ThemeSwitcher />
             </NavbarItem>
           </NavbarNav>
         </NavbarCollapse>

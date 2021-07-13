@@ -1,11 +1,13 @@
-import Button from '@/src/components/ui/button';
 import Image from 'next/image';
-import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
+import Button from '@/src/components/ui/button';
+import NuxtIcon from '@/src/components/icons/nuxt';
+import ReactIcon from '@/src/components/icons/react';
+import { VueIcon } from '@/src/components/icons/icons';
 
 export default function HomeFifthSection() {
   return (
     <section className="mb-16 md:mb-32">
-      <div className="py-12 text-white bg-custom">
+      <div className="py-12 text-white bg-custom dark:bg-dropdown">
         <h2 className="text-center text-3xl font-bold">
           Subscribe to our
           <br />
@@ -17,7 +19,7 @@ export default function HomeFifthSection() {
         </p>
         <div className="flex mt-8 px-2 space-x-4 md:justify-center">
           <input
-            className="placeholder-gray-600 px-4 w-48 text-custom sm:w-auto"
+            className="placeholder-gray-600 px-4 w-48 text-custom bg-white sm:w-auto"
             placeholder="Enter email"
           />
           <div className="w-12 md:w-auto">

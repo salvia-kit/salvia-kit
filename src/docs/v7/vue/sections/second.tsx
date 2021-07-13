@@ -1,4 +1,4 @@
-import { FolderIcon, VueIcon } from '@/src/components/icons';
+import { FolderIcon, VueIcon } from '@/src/components/icons/icons';
 import { VueSnippet } from '@/src/docs/common/snippets';
 
 const V7VueSecondSection = () => (
@@ -90,7 +90,7 @@ const V7VueSecondSection = () => (
         </p>
       </div>
       <div className="flex flex-wrap mb-12 mt-8 pl-8">
-        <div className="md:w-6/12">
+        <div className="max-w-full overflow-x-auto md:w-6/12">
           <VueSnippet />
         </div>
         <ul className="pt-8 md:pl-4 md:pt-0 md:w-6/12">

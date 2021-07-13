@@ -1,5 +1,8 @@
+import React from 'react';
 import { ChildrenType } from '@/src/utils/childrenType';
 
-export default function Main({ children }: ChildrenType) {
+function Main({ children }: ChildrenType) {
   return <main>{children}</main>;
 }
+
+export default React.memo(Main);

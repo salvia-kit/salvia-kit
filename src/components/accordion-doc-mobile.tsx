@@ -5,7 +5,9 @@ import {
   AccordionPanel,
 } from '@/src/components/ui/accordion';
 import Button from '@/src/components/ui/button';
-import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
+import NuxtIcon from '@/src/components/icons/nuxt';
+import ReactIcon from '@/src/components/icons/react';
+import { VueIcon } from '@/src/components/icons/icons';
 
 interface IDOcAccordionProps {
   techno: any;
@@ -21,7 +23,7 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
           <div>
             <span className="grid place-items-center">
               <ReactIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 text-custom font-semibold">React</span>
+              <span className="mb-5 mt-2 font-semibold">React</span>
             </span>
             <div className="flex justify-center space-x-2">
               <Button color="blue-sky" size="sm">
@@ -49,7 +51,7 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
                 height={36}
                 alt="Next.js"
               />
-              <span className="mb-5 mt-2 text-custom font-semibold">Next</span>
+              <span className="mb-5 mt-2 font-semibold">Next</span>
             </span>
             <div className="flex justify-center space-x-2">
               <Button color="black" size="sm">
@@ -73,7 +75,7 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
             <div className="mt-12">
               <span className="grid place-items-center">
                 <VueIcon className="w-9 h-9" />
-                <span className="mb-5 mt-2 text-custom font-semibold">Vue</span>
+                <span className="mb-5 mt-2 font-semibold">Vue</span>
               </span>
               <div className="flex justify-center space-x-2">
                 <Button color="green" size="sm">
@@ -98,9 +100,7 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
             <div className="mt-12">
               <span className="grid place-items-center">
                 <NuxtIcon className="w-9 h-9" />
-                <span className="mb-5 mt-2 text-custom font-semibold">
-                  Nuxt
-                </span>
+                <span className="mb-5 mt-2 font-semibold">Nuxt</span>
               </span>
               <div className="flex justify-center space-x-2">
                 <Button color="green" size="sm">

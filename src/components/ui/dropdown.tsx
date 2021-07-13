@@ -14,8 +14,8 @@ interface IContextValues {
 }
 
 const style = {
-  menu: `block z-30 absolute top-0 left-0 bg-white float-left py-3 px-0 text-left shadow-md rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
-  item: `flex w-full py-3 px-12 text-custom clear-both text-sm font-medium border-0 hover:bg-gray-200 cursor-pointer`,
+  menu: `block z-30 absolute top-0 left-0 bg-white dark:bg-dropdown float-left py-3 px-0 text-left shadow-md rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
+  item: `flex w-full py-3 px-12 text-custom dark:text-white clear-both text-sm font-medium border-0 hover:bg-gray-200 dark:hover:bg-body-dark cursor-pointer`,
 };
 
 const Context = React.createContext<IContextValues>({});
