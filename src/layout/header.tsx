@@ -27,8 +27,8 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className={`fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full text-white md:px-4 lg:px-24 xl:px-28
-        ${asPath !== '/' && 'bg-body text-custom shadow'}`}
+      className={`fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full md:px-4 lg:px-24 xl:px-28
+        ${asPath !== '/' ? 'bg-body text-custom shadow' : 'text-white'}`}
     >
       <Navbar className="md:h-16">
         <NavbarBrand href="/">Salvia-Kit</NavbarBrand>
@@ -39,7 +39,7 @@ export default function Header() {
               <Dropdown>
                 <DropdownToggle>Technologies</DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/">
+                  <DropdownItem href="/dashboard/all">
                     <Image
                       src="/svg/nextjs.svg"
                       height={25}
@@ -47,15 +47,15 @@ export default function Header() {
                       alt="Next.js logo"
                     />
                   </DropdownItem>
-                  <DropdownItem href="/">
+                  <DropdownItem href="/dashboard/all">
                     <ReactIcon />
                     <span className="mt-0.5 pl-2">React</span>
                   </DropdownItem>
-                  <DropdownItem href="/">
+                  <DropdownItem href="/dashboard/all">
                     <VueIcon className="w-6 h-6" />
                     <span className="mt-0.5 pl-2">Vue</span>
                   </DropdownItem>
-                  <DropdownItem href="/">
+                  <DropdownItem href="/dashboard/all">
                     <NuxtIcon className="w-6 h-6" />
                     <span className="mt-0.5 pl-2">Nuxt</span>
                   </DropdownItem>

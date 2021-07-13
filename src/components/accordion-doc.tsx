@@ -7,14 +7,14 @@ import {
 import Button from '@/src/components/ui/button';
 import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
 
-interface IDOcAccordionProps {
+interface IAccordionDocProps {
   techno: any;
 }
 
-export default function DocAccordion({ techno }: IDOcAccordionProps) {
+export default function AccordionDoc({ techno }: IAccordionDocProps) {
   return (
-    <>
-      <Accordion>
+    <div className="hidden md:block">
+      <Accordion defaultPanel="react">
         <div className="flex flex-wrap mt-12 lg:flex-nowrap lg:space-x-2">
           <div className="md:w-6/12 lg:w-3/12">
             <span className="grid place-items-center">
@@ -69,62 +69,74 @@ export default function DocAccordion({ techno }: IDOcAccordionProps) {
             </div>
           </div>
 
-          <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
-            <span className="grid place-items-center">
-              <VueIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 text-custom font-semibold">Vue</span>
-            </span>
-            <div className="flex justify-center space-x-2">
-              <div>
-                <Button color="green" size="sm">
-                  Preview
-                </Button>
+          {techno?.vue && (
+            <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
+              <span className="grid place-items-center">
+                <VueIcon className="w-9 h-9" />
+                <span className="mb-5 mt-2 text-custom font-semibold">Vue</span>
+              </span>
+              <div className="flex justify-center space-x-2">
+                <div>
+                  <Button color="green" size="sm">
+                    Preview
+                  </Button>
+                </div>
+                <div>
+                  <Button color="green" size="sm">
+                    Source
+                  </Button>
+                </div>
               </div>
-              <div>
-                <Button color="green" size="sm">
-                  Source
-                </Button>
+              <div className="grid place-items-center mt-2">
+                <AccordionItem color="green" toggle={techno.vue.name}>
+                  Doc
+                </AccordionItem>
               </div>
             </div>
-            <div className="grid place-items-center mt-2">
-              <AccordionItem color="green" toggle={techno.vue.name}>
-                Doc
-              </AccordionItem>
-            </div>
-          </div>
+          )}
 
-          <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
-            <span className="grid place-items-center">
-              <NuxtIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 text-custom font-semibold">Nuxt</span>
-            </span>
-            <div className="flex justify-center space-x-2">
-              <div>
-                <Button color="green" size="sm">
-                  Preview
-                </Button>
+          {techno?.nuxt && (
+            <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
+              <span className="grid place-items-center">
+                <NuxtIcon className="w-9 h-9" />
+                <span className="mb-5 mt-2 text-custom font-semibold">
+                  Nuxt
+                </span>
+              </span>
+              <div className="flex justify-center space-x-2">
+                <div>
+                  <Button color="green" size="sm">
+                    Preview
+                  </Button>
+                </div>
+                <div>
+                  <Button color="green" size="sm">
+                    Source
+                  </Button>
+                </div>
               </div>
-              <div>
-                <Button color="green" size="sm">
-                  Source
-                </Button>
+              <div className="grid place-items-center mt-2">
+                <AccordionItem color="green" toggle={techno.nuxt.name}>
+                  Doc
+                </AccordionItem>
               </div>
             </div>
-            <div className="grid place-items-center mt-2">
-              <AccordionItem color="green" toggle={techno.nuxt.name}>
-                Doc
-              </AccordionItem>
-            </div>
-          </div>
+          )}
         </div>
 
         <AccordionPanel id={techno.react.name}>
           {techno.react.doc}
         </AccordionPanel>
         <AccordionPanel id={techno.next.name}>{techno.next.doc}</AccordionPanel>
-        <AccordionPanel id={techno.vue.name}>{techno.vue.doc}</AccordionPanel>
-        <AccordionPanel id={techno.nuxt.name}>{techno.nuxt.doc}</AccordionPanel>
+        {techno?.vue && (
+          <AccordionPanel id={techno.vue.name}>{techno.vue.doc}</AccordionPanel>
+        )}
+        {techno?.nuxt && (
+          <AccordionPanel id={techno.nuxt.name}>
+            {techno.nuxt.doc}
+          </AccordionPanel>
+        )}
       </Accordion>
-    </>
+    </div>
   );
 }

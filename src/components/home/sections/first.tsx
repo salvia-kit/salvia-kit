@@ -22,7 +22,7 @@ const HomeFirstSection = () => (
       </div>
       <div className="flex flex-col-reverse md:flex-col">
         <div className="mr-auto">
-          <Link href="/">
+          <Link href="/dashboard/all">
             <a>
               <Button color="custom" className="font-bold" size="lg">
                 Explore

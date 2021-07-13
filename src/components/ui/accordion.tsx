@@ -4,20 +4,24 @@ import { ChildrenType } from '@/src/utils/childrenType';
 import ArrowUpIcon from '@/src/components/icons/arrow-up';
 import ArrowDownIcon from '@/src/components/icons/arrow-down';
 
-interface AccordionContextProps {
+interface IAccordionProps extends ChildrenType {
+  defaultPanel?: string;
+}
+
+interface IAccordionContextProps {
   className?: string;
   selected?: string;
   toggleItem?: any;
 }
 
-interface AccordionItemProps extends React.HTMLAttributes<HTMLElement> {
+interface IAccordionItemProps extends React.HTMLAttributes<HTMLElement> {
   toggle: string;
   color?: 'custom' | 'white' | 'black' | 'green' | 'blue-sky';
   children?: React.ReactNode;
   size?: 'sm' | 'md' | 'lg';
 }
 
-interface AccordionPanelProps extends React.HTMLAttributes<HTMLElement> {
+interface IAccordionPanelProps extends React.HTMLAttributes<HTMLElement> {
   children: React.ReactNode;
   id: string;
 }
@@ -27,10 +31,10 @@ const style = {
   panel: `overflow-hidden transition-height ease duration-500`,
 };
 
-const Context = React.createContext<AccordionContextProps>({});
+const Context = React.createContext<IAccordionContextProps>({});
 
-function Accordion({ children }: ChildrenType) {
-  const [selected, setSelected] = React.useState('');
+function Accordion({ children, defaultPanel }: IAccordionProps) {
+  const [selected, setSelected] = React.useState(defaultPanel || '');
 
   const toggleItem = React.useCallback((id) => {
     setSelected((prevState) => (prevState !== id ? id : ''));
@@ -52,7 +56,7 @@ function AccordionItem({
   color,
   className,
   size,
-}: AccordionItemProps) {
+}: IAccordionItemProps) {
   const { selected, toggleItem } = useAccordion();
   return (
     <Button
@@ -69,7 +73,7 @@ function AccordionItem({
   );
 }
 
-function AccordionPanel({ children, id }: AccordionPanelProps) {
+function AccordionPanel({ children, id }: IAccordionPanelProps) {
   const { selected } = useAccordion();
   const ref = React.useRef<HTMLDivElement>(null);
 
