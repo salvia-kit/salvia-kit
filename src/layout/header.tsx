@@ -39,7 +39,7 @@ export default function Header() {
               <Dropdown>
                 <DropdownToggle>Technologies</DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/dashboard/all">
+                  <DropdownItem href="/dashboard/technologie?name=next">
                     <Image
                       src="/svg/nextjs.svg"
                       height={25}
@@ -47,15 +47,15 @@ export default function Header() {
                       alt="Next.js logo"
                     />
                   </DropdownItem>
-                  <DropdownItem href="/dashboard/all">
+                  <DropdownItem href="/dashboard/technologie?name=react">
                     <ReactIcon />
                     <span className="mt-0.5 pl-2">React</span>
                   </DropdownItem>
-                  <DropdownItem href="/dashboard/all">
+                  <DropdownItem href="/dashboard/technologie?name=vue">
                     <VueIcon className="w-6 h-6" />
                     <span className="mt-0.5 pl-2">Vue</span>
                   </DropdownItem>
-                  <DropdownItem href="/dashboard/all">
+                  <DropdownItem href="/dashboard/technologie?name=nuxt">
                     <NuxtIcon className="w-6 h-6" />
                     <span className="mt-0.5 pl-2">Nuxt</span>
                   </DropdownItem>
