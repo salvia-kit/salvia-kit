@@ -1,5 +1,5 @@
 const LintersSection = () => (
-  <section className="mb-12 px-4 md:px-8">
+  <section className="mb-12">
     <h2 className="text-2xl font-medium">Auto Format and Linting</h2>
     <div className="mt-4">
       The dashboard is provided with <strong>eslint</strong>,

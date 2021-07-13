@@ -1,39 +1,10 @@
 import Image from 'next/image';
 import Container from '@/src/components/container';
-import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
 
 export default function Footer() {
   return (
     <footer className="relative bottom-0">
       <Container>
-        <div className="flex flex-wrap justify-center space-x-4 md:space-x-24 lg:space-x-32">
-          <div>
-            <Image
-              src="/images/next.png"
-              height={50}
-              width={50}
-              alt="next.js"
-            />
-          </div>
-          <div className="-mt-1">
-            <Image
-              src="/svg/tailwindcss.svg"
-              height={60}
-              width={60}
-              alt="Tailwind CSS"
-            />
-          </div>
-          <div>
-            <ReactIcon className="w-12 h-12" />
-          </div>
-          <div>
-            <VueIcon className="w-12 h-12" />
-          </div>
-          <div>
-            <NuxtIcon className="w-12 h-12" />
-          </div>
-        </div>
-
         <div className="flex flex-wrap mt-32 text-custom">
           <div className="mb-12 w-full md:mb-0 md:w-4/12">
             <h4 className="text-custom text-2xl font-bold">Salvia-kit</h4>

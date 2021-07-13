@@ -1,5 +1,5 @@
 const V1VueFifthSection = () => (
-  <section className="px-4 md:px-8">
+  <section className="mb-12">
     <h2 className="text-2xl font-medium">Customization</h2>
     <p className="mt-5">
       You can customize everything according to your preferences if it doesn't

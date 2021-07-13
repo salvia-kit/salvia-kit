@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/images/favicon.ico" />
         </Head>
         <body className="bg-body">
           <Main />

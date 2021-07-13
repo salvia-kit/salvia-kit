@@ -1,17 +1,25 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 
 /*==================== CHANGE HEADER BACKGROUND====================*/
 // When the scroll is greater than 100px of viewport height, add new classes to the header tag
 
 export default function useScrollHeader() {
   const headerRef = React.useRef<HTMLElement>(null);
+  const { asPath } = useRouter();
 
   React.useEffect(() => {
     const scrollHeader = () => {
-      if (window.scrollY >= 100) {
-        headerRef.current?.classList.add('bg-body', 'text-custom', 'shadow');
-      } else {
-        headerRef.current?.classList.remove('bg-body', 'text-custom', 'shadow');
+      if (asPath === '/') {
+        if (window.scrollY >= 100) {
+          headerRef.current?.classList.add('bg-body', 'text-custom', 'shadow');
+        } else {
+          headerRef.current?.classList.remove(
+            'bg-body',
+            'text-custom',
+            'shadow',
+          );
+        }
       }
     };
     window.addEventListener('scroll', scrollHeader);
@@ -19,7 +27,7 @@ export default function useScrollHeader() {
     return () => {
       window.removeEventListener('scroll', scrollHeader);
     };
-  }, []);
+  }, [asPath, headerRef]);
 
   return { headerRef };
 }

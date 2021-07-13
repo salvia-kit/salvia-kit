@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import dashboardsData from '@/src/data/data';
+import dashboardsData from '@/src/data/dashboards';
 import CustomImage from '@/src/components/image';
 import { Card, CardBody, CardTitle } from '@/src/components/ui/card';
 import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
@@ -16,7 +16,7 @@ const HomeSecondSection = () => (
       {dashboardsData.slice(0, 3).map((dash) => (
         <div key={dash.id} className="pb-12 w-full md:p-3 md:pb-0 md:w-4/12">
           <Card>
-            <Link href="/">
+            <Link href={`/${dash.slug}`}>
               <a>
                 <CustomImage
                   src={dash.image}
@@ -31,13 +31,13 @@ const HomeSecondSection = () => (
               <div className="flex">
                 <Image
                   src="/images/next.png"
-                  width={26}
-                  height={19}
+                  width={20}
+                  height={15}
                   alt="Next.js"
                 />
-                <ReactIcon className="ml-3 w-7 h-7" />
-                <VueIcon className="ml-3 pt-1 w-6 h-6" />
-                <NuxtIcon className="ml-3 w-7 h-7" />
+                <ReactIcon className="ml-3 w-5 h-5" />
+                <VueIcon className="ml-3 mt-0.5 w-4 h-4" />
+                <NuxtIcon className="ml-3 w-5 h-5" />
               </div>
             </CardBody>
           </Card>

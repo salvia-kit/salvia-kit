@@ -1,5 +1,5 @@
 const ComponentsSection = () => (
-  <section className="px-4 md:px-8">
+  <section>
     <h2 className="text-2xl font-medium">Components</h2>
     <p className="mt-5">
       If you'll need some UI components for Tailwind CSS such as modal,

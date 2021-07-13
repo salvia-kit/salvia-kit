@@ -1,7 +1,7 @@
 import { FolderIcon, VueIcon } from '@/src/components/icons';
 
 const V4NuxtFirstSection = () => (
-  <section className="mb-12 px-4 md:px-8">
+  <section className="mb-12">
     <h2 className="text-2xl font-medium">File Structure</h2>
     <div className="pl-2">
       <div className="flex mb-3 mt-4">

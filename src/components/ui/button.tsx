@@ -7,14 +7,14 @@ interface BtnProps
     BtnPropsWithChildren {
   children: React.ReactNode;
   className?: string;
-  color?: 'custom' | 'white';
+  color?: 'custom' | 'white' | 'black' | 'green' | 'blue-sky';
   size?: 'sm' | 'md' | 'lg';
 }
 
 type ButtonRef = React.ForwardedRef<HTMLButtonElement>;
 
 const style = {
-  default: `focus:outline-none shadow font-medium transition-all ease-in duration-700`,
+  default: `focus:outline-none font-black shadow`,
   disabled: `opacity-60 cursor-not-allowed`,
   sizes: {
     sm: 'px-6 py-1 text-sm',
@@ -24,6 +24,9 @@ const style = {
   colors: {
     custom: 'bg-custom hover:bg-custom-hover text-white',
     white: 'bg-white text-custom',
+    black: 'bg-black text-white',
+    green: 'bg-green-700 text-white',
+    'blue-sky': 'bg-react text-white',
   },
 };
 
@@ -43,8 +46,8 @@ const Button = React.forwardRef(
       {...props}
       ref={ref}
       disabled={disabled}
-      className={`${className} ${style.sizes[size]} ${style.colors[color]} 
-          ${disabled ? style.disabled : ''}`}
+      className={`${className} ${style.default} ${style.sizes[size]} 
+          ${style.colors[color]} ${disabled ? style.disabled : ''} `}
     >
       {children}
     </button>

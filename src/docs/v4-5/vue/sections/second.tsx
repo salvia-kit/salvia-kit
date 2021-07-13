@@ -2,7 +2,7 @@ import { FolderIcon, VueIcon } from '@/src/components/icons';
 import { VueSnippetShort } from '@/src/docs/common/snippets';
 
 const V4VueSecondSection = () => (
-  <section className="mb-12 px-4 md:px-8">
+  <section className="mb-12">
     <h2 className="text-2xl font-medium">File Structure explained</h2>
     <p className="mt-5">
       We will focus on <span className="font-semibold">dashboard</span> folder

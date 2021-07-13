@@ -2,7 +2,7 @@ import { ReactSnippet } from '@/src/docs/common/snippets';
 import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons';
 
 const V8ReactSecondSection = () => (
-  <section className="mb-12 px-4 md:px-8">
+  <section className="mb-12">
     <h2 className="text-2xl font-medium">File Structure explained</h2>
     <p className="mt-5">
       We will focus on<span className="px-1 font-semibold">dashboard</span>

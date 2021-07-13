@@ -11,7 +11,6 @@ export default function HomePage() {
     <>
       <Head>
         <title>Salvia-kit</title>
-        <link rel="shortcut icon" href="/images/favicon.ico" />
       </Head>
       <Container>
         <HomeFirstSection />

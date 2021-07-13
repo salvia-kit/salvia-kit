@@ -1,5 +1,5 @@
 const ReactSnippet = () => (
-  <pre className="px-4 py-1 max-w-full text-blue-700 font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
+  <pre className="px-4 py-1 max-w-full text-custom font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
     {`[ 
   {
     section : 'Apps',
@@ -22,7 +22,7 @@ const ReactSnippet = () => (
 );
 
 const ReactSnippetShort = () => (
-  <pre className="px-4 py-1 max-w-full text-blue-700 font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
+  <pre className="px-4 py-1 max-w-full text-custom font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
     {`[ 
   {
     title: 'All Apps',
@@ -40,7 +40,7 @@ const ReactSnippetShort = () => (
 );
 
 const VueSnippet = () => (
-  <pre className="px-4 py-1 max-w-full text-blue-700 font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
+  <pre className="px-4 py-1 max-w-full text-custom font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
     {`<sidenav-items-section name="Apps">
   <sidenav-item title="All Apps" to="/">
     <all-apps-icon />
@@ -55,7 +55,7 @@ const VueSnippet = () => (
 );
 
 const VueSnippetShort = () => (
-  <pre className="px-4 py-1 max-w-full text-blue-700 font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
+  <pre className="px-4 py-1 max-w-full text-custom font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
     {`<sidenav-item title="All Apps" to="/">
     <all-apps-icon />
 </sidenav-item>

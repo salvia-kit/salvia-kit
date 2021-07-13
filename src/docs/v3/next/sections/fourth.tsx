@@ -1,5 +1,5 @@
 const V3NextFourthSection = () => (
-  <section className="mb-12 px-4 md:px-8">
+  <section className="mb-12">
     <h2 className="text-2xl font-medium">Export</h2>
     <p className="mt-4">
       As there is no vendor lock-in, if you already have a dashboard, you can

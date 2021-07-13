@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import useScrollHeader from '@/src/utils/useScrollHeader';
 import { NuxtIcon, ReactIcon, VueIcon } from '@/src/components/icons';
 
@@ -21,10 +22,13 @@ import {
 
 export default function Header() {
   const { headerRef } = useScrollHeader();
+  const { asPath } = useRouter();
+
   return (
     <header
       ref={headerRef}
-      className="fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full text-white md:px-4 lg:px-24 xl:px-28"
+      className={`fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full text-white md:px-4 lg:px-24 xl:px-28
+        ${asPath !== '/' && 'bg-body text-custom shadow'}`}
     >
       <Navbar className="md:h-16">
         <NavbarBrand href="/">Salvia-Kit</NavbarBrand>

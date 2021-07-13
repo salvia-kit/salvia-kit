@@ -11,18 +11,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV1React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV1Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV1Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV1Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -35,18 +39,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV1React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV1Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV1Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV1Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -59,18 +67,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV3React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV3Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV3Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV3Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -83,18 +95,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV4React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV4Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV4Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV4Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -107,18 +123,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV4React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV4Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV4Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV4Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -131,18 +151,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV6React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV6Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV6Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV6Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -155,18 +179,22 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV7React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV7Next />,
+        name: 'next',
       },
       vue: {
         demo: '',
         doc: <Doc.DocV7Vue />,
+        name: 'vue',
       },
       nuxt: {
         demo: '',
         doc: <Doc.DocV7Nuxt />,
+        name: 'nuxt',
       },
     },
   },
@@ -179,10 +207,12 @@ const dashboardsData = [
       react: {
         demo: '',
         doc: <Doc.DocV8React />,
+        name: 'react',
       },
       next: {
         demo: '',
         doc: <Doc.DocV8Next />,
+        name: 'next',
       },
     },
   },

@@ -9,7 +9,7 @@ import FeaturesSection from '@/src/docs/common/features';
 
 export default function DocV7Vue() {
   return (
-    <div className="py-8 max-w-full text-gray-700">
+    <div className="mt-12 max-w-full text-gray-700">
       <h2 className="flex mb-16 text-3xl font-medium">
         <Image src="/svg/vue.svg" height={30} width={30} alt="Vue icon" />
         <span className="pl-2">Documentation</span>
