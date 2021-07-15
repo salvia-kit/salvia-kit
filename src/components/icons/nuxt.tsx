@@ -1,4 +1,4 @@
-import { IIconProps } from '@/src/utils/childrenType';
+import { IIconProps } from '@/src/utils/globalTypes';
 
 const NuxtIcon = ({ className }: IIconProps) => (
   <svg

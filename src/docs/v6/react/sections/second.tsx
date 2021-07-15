@@ -58,10 +58,10 @@ const V6ReactSecondSection = () => (
         </p>
       </div>
       <div className="flex flex-wrap mt-8 pl-8">
-        <div className="md:w-72">
+        <div className="lg:w-72">
           <ReactSnippetShort />
         </div>
-        <ul className="pt-8 md:pl-4 md:pt-12">
+        <ul className="pt-8 lg:pl-4 lg:pt-12">
           <li className="mb-2">
             <span className="px-1">title :</span> text that indicate the route
           </li>

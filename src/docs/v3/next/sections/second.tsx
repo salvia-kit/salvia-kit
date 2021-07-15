@@ -60,10 +60,10 @@ const V3NextSecondSection = () => (
         </p>
       </div>
       <div className="flex flex-wrap mt-8 pl-8">
-        <div className="md:w-4/12">
+        <div className="lg:w-4/12">
           <ReactSnippetShort />
         </div>
-        <ul className="pt-8 md:pl-4 md:pt-16">
+        <ul className="pt-8 lg:pl-4 lg:pt-16">
           <li className="mb-2">
             <span className="px-1">title :</span> text that indicate the route
           </li>

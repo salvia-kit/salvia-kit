@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import Container from '@/src/components/container';
-import DashboardCard from '@/src/components/dashboard-card';
+import DashboardCard from '@/src/components/dashboardCard';
 import { getDashboardsByTechnologie, isTechno } from '@/src/data/parseData';
 
 export default function TechnologiePage() {
@@ -23,12 +23,12 @@ export default function TechnologiePage() {
       {name && (
         <>
           <Head>
-            <title>Salvia-kit Dashboards with {name}</title>
+            <title>Salvia-kit - {isTechno(name)} Dashboards</title>
           </Head>
           <Container>
             <h1 className="mt-32 text-center text-3xl font-bold">
-              Dashboards with
-              <span className="pl-1">{isTechno(name)}</span>
+              Salvia-kit{' '}
+              <span className="pl-1">{isTechno(name)} - Dashboards</span>
             </h1>
             <div className="flex flex-wrap mt-12">
               {dashboards.map((data) => (

@@ -1,10 +1,20 @@
 import Image from 'next/image';
+import useForm from '@/src/utils/useForm';
 import Button from '@/src/components/ui/button';
 import NuxtIcon from '@/src/components/icons/nuxt';
 import ReactIcon from '@/src/components/icons/react';
 import { VueIcon } from '@/src/components/icons/icons';
 
 export default function HomeFifthSection() {
+  const {
+    value,
+    error,
+    isSubmitting,
+    handleSubmit,
+    errorMessage,
+    handleChange,
+    handleClearError,
+  } = useForm();
   return (
     <section className="mb-16 md:mb-32">
       <div className="py-12 text-white bg-custom dark:bg-dropdown">
@@ -13,19 +23,34 @@ export default function HomeFifthSection() {
           <br />
           newsletter
         </h2>
-        <p className="mt-8 text-center">
+        <p className="mt-8 px-2 text-center">
           Subscribe to our newsletter to be notified when a new dashboard is
           added.
         </p>
-        <div className="flex mt-8 px-2 space-x-4 md:justify-center">
-          <input
-            className="placeholder-gray-600 px-4 w-48 text-custom bg-white sm:w-auto"
-            placeholder="Enter email"
-          />
-          <div className="w-12 md:w-auto">
-            <Button color="white">Subscribe</Button>
+        <form
+          className="grid place-items-center mt-8 px-2 space-x-4 md:flex md:justify-center"
+          onSubmit={handleSubmit}
+        >
+          {error && (
+            <div role="alert" className="text-green-500 text-sm font-bold">
+              {errorMessage}
+            </div>
+          )}
+          <div className="mb-4 md:mb-0 md:w-auto">
+            <input
+              placeholder="Enter email"
+              className="placeholder-gray-600 px-4 py-2 w-48 w-full text-custom bg-white"
+              value={value}
+              onChange={handleChange}
+              onKeyUpCapture={handleClearError}
+            />
           </div>
-        </div>
+          <div className="md:w-auto">
+            <Button color="white" type="submit" disabled={isSubmitting}>
+              Subscribe
+            </Button>
+          </div>
+        </form>
       </div>
 
       <div className="flex flex-wrap justify-center pt-32 space-x-4 md:space-x-24 lg:space-x-32">

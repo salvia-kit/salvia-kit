@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="mt-16 pb-6 text-center text-sm">
           © {new Date().getFullYear()} Salvia-kit All rights reserved. Made with
           love by{' '}
-          <a className="font-semibold" href="https://www.enochndika.com">
+          <a className="font-semibold" href="https://enochndika.com">
             Enoch Ndika
           </a>
         </div>

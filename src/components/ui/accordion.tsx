@@ -1,12 +1,8 @@
 import React from 'react';
-import Button from '@/src/components/ui/button';
-import { ChildrenType } from '@/src/utils/childrenType';
+import { ChildrenType } from '@/src/utils/globalTypes';
 import ArrowUpIcon from '@/src/components/icons/arrow-up';
 import ArrowDownIcon from '@/src/components/icons/arrow-down';
-
-interface IAccordionProps extends ChildrenType {
-  defaultPanel?: string;
-}
+import Button, { BtnProps } from '@/src/components/ui/button';
 
 interface IAccordionContextProps {
   className?: string;
@@ -14,11 +10,8 @@ interface IAccordionContextProps {
   toggleItem?: any;
 }
 
-interface IAccordionItemProps extends React.HTMLAttributes<HTMLElement> {
+interface IAccordionItemProps extends BtnProps {
   toggle: string;
-  color?: 'custom' | 'white' | 'black' | 'green' | 'blue-sky';
-  children?: React.ReactNode;
-  size?: 'sm' | 'md' | 'lg';
 }
 
 interface IAccordionPanelProps extends React.HTMLAttributes<HTMLElement> {
@@ -33,8 +26,8 @@ const style = {
 
 const Context = React.createContext<IAccordionContextProps>({});
 
-function Accordion({ children, defaultPanel }: IAccordionProps) {
-  const [selected, setSelected] = React.useState(defaultPanel || '');
+function Accordion({ children }: ChildrenType) {
+  const [selected, setSelected] = React.useState('');
 
   const toggleItem = React.useCallback((id) => {
     setSelected((prevState) => (prevState !== id ? id : ''));
@@ -48,14 +41,15 @@ function Accordion({ children, defaultPanel }: IAccordionProps) {
 }
 
 //custom hook to consume all accordion values
-const useAccordion = () => React.useContext(Context);
+function useAccordion() {
+  return React.useContext(Context);
+}
 
 function AccordionItem({
   toggle,
   children,
   color,
   className,
-  size,
 }: IAccordionItemProps) {
   const { selected, toggleItem } = useAccordion();
   return (

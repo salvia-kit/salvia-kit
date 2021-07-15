@@ -68,10 +68,10 @@ const V8NextSecondSection = () => (
         </p>
       </div>
       <div className="flex flex-wrap mt-8 pl-8">
-        <div className="md:w-5/12">
+        <div className="lg:w-5/12">
           <ReactSnippet />
         </div>
-        <ul className="pt-8 md:pl-4 md:pt-20">
+        <ul className="pt-8 lg:pl-4 lg:pt-20">
           <li className="mb-2">
             <span className="px-1">section :</span> Name of the section
           </li>

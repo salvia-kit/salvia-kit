@@ -3,7 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
-/*=============== SCROLL BAR ===============*/
+
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: hsl(200, 12%, 90%);
@@ -22,15 +22,14 @@ html {
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-body;
-  }
   h1,
   h2,
   h3 {
     @apply font-title;
   }
-  input {
+  input,
+  button,
+  a {
     @apply focus:outline-none;
   }
 }

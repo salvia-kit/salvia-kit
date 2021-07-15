@@ -10,7 +10,7 @@ export default function HomeFourthSection() {
         We will serve you
       </h2>
       <div className="flex items-center justify-center mt-12">
-        <div className="mx-4 md:mx-12">
+        <div className="mx-2 md:mx-12">
           <span className="flex justify-center text-2xl font-bold">4</span>
           <span className="block mt-4 text-sm">Technologies</span>
         </div>

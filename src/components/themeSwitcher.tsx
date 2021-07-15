@@ -3,41 +3,31 @@ import useMounted from '@/src/utils/useMounted';
 import SunIcon from '@/src/components/icons/sun';
 import MoonIcon from '@/src/components/icons/moon';
 
-interface IThemeSwitcherProps {
-  iconClass?: string;
-  text?: string;
-}
-
 interface UseThemeProps {
   theme?: string;
   setTheme?: (theme: string) => void;
 }
 
-export default function ThemeSwitcher({
-  iconClass,
-  text,
-}: IThemeSwitcherProps) {
+export default function ThemeSwitcher() {
   const { theme, setTheme }: UseThemeProps = useTheme();
   const isMounted = useMounted();
 
-  const setDarkTheme = () => {
-    setTheme('dark');
-  };
-
-  const setLightTheme = () => {
-    setTheme('light');
+  const toggleTheme = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light');
   };
 
   return (
     <>
       {isMounted && theme === 'light' && (
-        <button onClick={setDarkTheme} className="flex">
-          <MoonIcon /> <span className="pl-2">Dark</span>
+        <button onClick={toggleTheme} className="flex">
+          <MoonIcon className="w-5 h-5 md:w-6 md:h-6" />
+          <span className="pl-2">Dark</span>
         </button>
       )}
       {isMounted && theme === 'dark' && (
-        <button onClick={setLightTheme} className="flex">
-          <SunIcon /> <span className="pl-2">Light</span>
+        <button onClick={toggleTheme} className="flex">
+          <SunIcon className="w-5 h-5 md:w-6 md:h-6" />
+          <span className="pl-2">Light</span>
         </button>
       )}
     </>

@@ -30,17 +30,16 @@ export default function TechnoDocPage() {
           </Head>
           <Container>
             <div className="mt-32 lg:w-8/12">
-              <h1 className="mb-6 text-center text-3xl font-bold md:text-left md:text-4xl">
+              <h1 className="mb-6 text-center text-3xl font-bold md:text-left">
                 {data?.name} - {isTechno(name)}
               </h1>
               <Image src={data.image} alt={data?.name} />
               <p className="mt-6">
-                Material Dashboard PRO React is a Premium Material-UI@4.1.0
-                Admin with a fresh, new design inspired by Google's Material
-                Design. We are very excited to introduce our take on the
-                material concepts through an easy to use and beautiful set of
-                components. Material Dashboard PRO React was built over the
-                popular Material-UI framework.
+                Salvia-kit dashboard is a professional dashboard built with{' '}
+                <strong>Tailwind CSS</strong>. We took advantage of Tailwind's
+                flexibility to create a fully customizable premium dashboard,
+                with documentation designed by a developer for developers. Feel
+                free to customize everything to suit your needs.
               </p>
             </div>
             {data.techno.doc}

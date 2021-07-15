@@ -2,7 +2,7 @@ import React from 'react';
 
 interface BtnPropsWithChildren {}
 
-interface BtnProps
+export interface BtnProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     BtnPropsWithChildren {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ interface BtnProps
 type ButtonRef = React.ForwardedRef<HTMLButtonElement>;
 
 const style = {
-  default: `focus:outline-none font-black shadow`,
+  default: `font-black shadow`,
   disabled: `opacity-60 cursor-not-allowed`,
   sizes: {
     sm: 'px-6 py-1 text-sm',

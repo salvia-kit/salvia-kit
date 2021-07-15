@@ -1,7 +1,7 @@
 import NextImage from 'next/image';
 import style from './image.module.css';
 
-export interface ImageProps {
+interface ImageProps {
   className?: string;
   alt: any;
   src: string | any;

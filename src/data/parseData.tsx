@@ -1,24 +1,24 @@
-import React from 'react';
-import dashboardsData from './dashboards';
+import data from './data';
+import { ChildrenType } from '@/src/utils/globalTypes';
 
 type TechnoTypes = {
   react: {
-    doc: React.ReactNode;
+    doc: ChildrenType;
     demo: string;
     name: string;
   };
   next: {
-    doc: React.ReactNode;
+    doc: ChildrenType;
     demo: string;
     name: string;
   };
   vue: {
-    doc: React.ReactNode;
+    doc: ChildrenType;
     demo: string;
     name: string;
   };
   nuxt: {
-    doc: React.ReactNode;
+    doc: ChildrenType;
     demo: string;
     name: string;
   };
@@ -37,7 +37,7 @@ function parseData(data: any) {
 }
 
 function getDashboardsByTechnologie(name: keyof TechnoTypes) {
-  const dashboards: Array<IProps> = dashboardsData.map((data) => ({
+  const dashboards: Array<IProps> = data.map((data) => ({
     id: data.id,
     name: data.name,
     slug: data.slug,
@@ -48,9 +48,7 @@ function getDashboardsByTechnologie(name: keyof TechnoTypes) {
 }
 
 function getDashboardByTechnologie(name: keyof TechnoTypes, slug: any) {
-  const dashboards: Array<IProps> = dashboardsData.filter(
-    (dash) => dash.slug === slug,
-  );
+  const dashboards: Array<IProps> = data.filter((dash) => dash.slug === slug);
   return {
     name: dashboards[0]?.name,
     slug: dashboards[0]?.slug,
@@ -60,20 +58,16 @@ function getDashboardByTechnologie(name: keyof TechnoTypes, slug: any) {
 }
 
 async function getDashboard(slug: string) {
-  const dashboards: Array<IProps> = await dashboardsData.filter(
+  const dashboards: Array<IProps> = await data.filter(
     (dash) => dash.slug === slug,
   );
-  const data = dashboards[0];
-  return parseData(data);
+  const dashboard = dashboards[0];
+  return parseData(dashboard);
 }
 
-function getDoc(slug: string | string[] | undefined) {
-  const dashboards: Array<IProps> = dashboardsData.filter(
-    (dash) => dash.slug === slug,
-  );
-  const techno = dashboards[0]?.techno;
-
-  return { techno };
+function getTechno(slug: string | string[] | undefined) {
+  const dashboards: Array<IProps> = data.filter((dash) => dash.slug === slug);
+  return dashboards[0]?.techno;
 }
 
 function isTechno(name: string) {
@@ -92,9 +86,9 @@ function isTechno(name: string) {
 }
 
 export {
+  getTechno,
+  isTechno,
+  getDashboard,
   getDashboardByTechnologie,
   getDashboardsByTechnologie,
-  getDashboard,
-  getDoc,
-  isTechno,
 };

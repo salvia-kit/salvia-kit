@@ -1,7 +1,7 @@
 import Head from 'next/head';
+import data from '@/src/data/data';
 import Container from '@/src/components/container';
-import dashboardsData from '@/src/data/dashboards';
-import DashboardCard from '@/src/components/dashboard-card';
+import DashboardCard from '@/src/components/dashboardCard';
 
 export default function AllDashboardsPage() {
   return (
@@ -18,10 +18,10 @@ export default function AllDashboardsPage() {
           one variant for React, Next, Vue and Nuxt
         </p>
         <div className="flex flex-wrap mt-12">
-          {dashboardsData.map((data) => (
+          {data.map((dashboard) => (
             <DashboardCard
-              key={data.id}
-              data={data}
+              key={dashboard.id}
+              data={dashboard}
               className="pb-12 w-full md:mb-8 md:p-4 md:w-4/12"
             />
           ))}

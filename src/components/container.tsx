@@ -1,4 +1,4 @@
-import { ChildrenType } from '@/src/utils/childrenType';
+import { ChildrenType } from '@/src/utils/globalTypes';
 
 export default function Container({ children }: ChildrenType) {
   return (

@@ -13,7 +13,7 @@ interface IDashboardCardProps {
 
 const getLink = (data: any) => {
   if (data && data.techno?.name) {
-    return `/dashboard/technologie/doc?name=${data.techno.name}&slug=${data.slug}`;
+    return `/dashboard/technology/doc?name=${data.techno.name}&slug=${data.slug}`;
   }
   return `/${data.slug}`;
 };

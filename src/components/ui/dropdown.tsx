@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { ChildrenType } from '@/src/utils/childrenType';
+import { ChildrenType } from '@/src/utils/globalTypes';
 
 interface DropdownItemProps extends ChildrenType {
   href?: string | any;
+  className?: string;
 }
 
 interface IContextValues {
@@ -15,7 +16,7 @@ interface IContextValues {
 
 const style = {
   menu: `block z-30 absolute top-0 left-0 bg-white dark:bg-dropdown float-left py-3 px-0 text-left shadow-md rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
-  item: `flex w-full py-3 px-12 text-custom dark:text-white clear-both text-sm font-medium border-0 hover:bg-gray-200 dark:hover:bg-body-dark cursor-pointer`,
+  item: `flex w-full py-3 px-12 text-custom clear-both text-sm font-medium border-0 hover:bg-gray-200 dark:hover:bg-body-dark dark:text-white`,
 };
 
 const Context = React.createContext<IContextValues>({});
@@ -69,12 +70,12 @@ function Dropdown({ children }: ChildrenType) {
   return <Context.Provider value={values}>{children}</Context.Provider>;
 }
 
-function useToggle() {
+function useDropdown() {
   return React.useContext(Context);
 }
 
 function DropdownToggle({ children }: ChildrenType) {
-  const { toggle } = useToggle();
+  const { toggle } = useDropdown();
   return (
     <button
       onClick={toggle}
@@ -89,7 +90,7 @@ function DropdownToggle({ children }: ChildrenType) {
 }
 
 function DropdownMenu({ children }: ChildrenType) {
-  const { show } = useToggle();
+  const { show } = useDropdown();
   return (
     <div className="relative">
       <div
@@ -105,10 +106,10 @@ function DropdownMenu({ children }: ChildrenType) {
   );
 }
 
-function DropdownItem({ children, href }: DropdownItemProps) {
+function DropdownItem({ children, className, href }: DropdownItemProps) {
   return (
     <Link href={href}>
-      <a tabIndex={0} className={style.item} role="menuitem">
+      <a tabIndex={0} className={`${style.item} ${className}`} role="menuitem">
         {children}
       </a>
     </Link>

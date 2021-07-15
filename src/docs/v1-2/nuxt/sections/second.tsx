@@ -88,10 +88,10 @@ const V1NuxtSecondSection = () => (
         </p>
       </div>
       <div className="flex flex-wrap mb-12 mt-8 pl-8">
-        <div className="max-w-full overflow-x-auto md:w-6/12">
+        <div className="max-w-full overflow-x-auto lg:w-6/12">
           <VueSnippet />
         </div>
-        <ul className="pt-8 md:pl-4 md:pt-0 md:w-6/12">
+        <ul className="pt-8 lg:pl-4 lg:pt-0 lg:w-6/12">
           <li className="mb-2">
             <span className="px-1 font-bold">Props</span>
           </li>
