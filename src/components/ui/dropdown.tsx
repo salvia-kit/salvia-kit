@@ -3,20 +3,21 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ChildrenType } from '@/src/utils/globalTypes';
 
-interface DropdownItemProps extends ChildrenType {
-  href?: string | any;
-  className?: string;
-}
-
 interface IContextValues {
-  show?: boolean;
   ref?: any;
+  show?: boolean;
   toggle?: () => void;
 }
 
+interface DropdownItemProps extends ChildrenType {
+  className?: string;
+  href?: string | any;
+}
+
 const style = {
-  menu: `block z-30 absolute top-0 left-0 bg-white dark:bg-dropdown float-left py-3 px-0 text-left shadow-md rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
+  itemActive: 'bg-gray-200 dark:bg-custom',
   item: `flex w-full py-3 px-12 text-custom clear-both text-sm font-medium border-0 hover:bg-gray-200 dark:hover:bg-body-dark dark:text-white`,
+  menu: `block z-30 absolute top-0 left-0 bg-white dark:bg-dropdown float-left py-3 px-0 text-left shadow-md rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
 };
 
 const Context = React.createContext<IContextValues>({});
@@ -94,11 +95,11 @@ function DropdownMenu({ children }: ChildrenType) {
   return (
     <div className="relative">
       <div
-        style={{ transform: 'translate3d(0px, 3px, 0px)' }}
-        className={style.menu}
         role="menu"
+        className={style.menu}
         aria-orientation="vertical"
         aria-labelledby="options-menu"
+        style={{ transform: 'translate3d(0px, 3px, 0px)' }}
       >
         {show && children}
       </div>
@@ -107,9 +108,15 @@ function DropdownMenu({ children }: ChildrenType) {
 }
 
 function DropdownItem({ children, className, href }: DropdownItemProps) {
+  const { asPath } = useRouter();
   return (
     <Link href={href}>
-      <a tabIndex={0} className={`${style.item} ${className}`} role="menuitem">
+      <a
+        tabIndex={0}
+        role="menuitem"
+        className={`${style.item} ${className} 
+           ${href === asPath ? style.itemActive : ''} `}
+      >
         {children}
       </a>
     </Link>

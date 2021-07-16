@@ -58,7 +58,7 @@ const ReactCommonSecondSection = ({ snippet }: { snippet?: any }) => (
         </p>
       </div>
       <div className="flex flex-wrap mt-8 pl-8">
-        <div className="lg:w-72">{snippet || <ReactSnippetShort />}</div>
+        <div className="lg:w-4/12">{snippet || <ReactSnippetShort />}</div>
         <ul className="pt-8 lg:pl-4 lg:pt-12">
           <li className="mb-2">
             <span className="px-1">title :</span> text that indicate the route

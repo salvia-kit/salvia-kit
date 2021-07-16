@@ -15,7 +15,7 @@ const data = [
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV1AndV2React />,
+        doc: <Doc.DocV1AndV2Next />,
         source: 'https://github.com/salvia-kit/dashboard-v1-nextjs',
       },
       vue: {

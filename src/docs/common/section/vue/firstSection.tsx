@@ -110,7 +110,7 @@ const VueCommonFirstSectionV3AndV4AndV6 = () => (
       </div>
       <div className="flex mb-3 pl-16">
         <VueIcon />
-        <span className="pl-2">items.vue</span>
+        <span className="pl-2">Items.vue</span>
       </div>
       <div className="flex mb-3 pl-11">
         <FolderIcon />
