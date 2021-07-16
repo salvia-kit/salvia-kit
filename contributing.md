@@ -1,6 +1,6 @@
 # Contributing to Salvia-kit
 
-##Fix Bugs and Grammar
+## Fix Bugs and Grammar
 
 As there is a documentation for each dashboard and English is not my native language, I can make grammatical mistakes. You can fix that by contributing.
 
