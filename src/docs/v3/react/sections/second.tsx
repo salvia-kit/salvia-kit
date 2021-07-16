@@ -99,7 +99,7 @@ const V3ReactSecondSection = () => (
       </div>
       <div className="flex flex-wrap mt-6 pl-6 md:flex-nowrap">
         <FileIcon />
-        <span className="px-2 font-medium">index.module.css</span> :
+        <span className="px-2 font-medium">style.module.css</span> :
         <p className="pl-1">
           This style sheet is used to make the scrollbar invisible for the
           sidenav.

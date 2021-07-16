@@ -38,7 +38,7 @@ const V3ReactFirstSection = () => (
       </div>
       <div className="flex mb-3 pl-16">
         <FileIcon />
-        <span className="pl-2">index.module.css</span>
+        <span className="pl-3">style.module.css</span>
       </div>
       <div className="flex mb-3 pl-16">
         <JsIcon />

@@ -10,7 +10,7 @@ const V3ReactFifthSection = () => (
       The sidenav scrollbar is hidden by default but you can still scroll with
       the keyboards if you have several sidenav-items. If you are not a fan of
       this approach, you can always change its style in the
-      <strong className="px-1">index.module.css</strong>file
+      <strong className="px-1">style.module.css</strong>file
     </p>
     <p className="mt-5">
       In the <strong> dashboard/layout.js</strong> file, the

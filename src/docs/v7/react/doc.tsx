@@ -1,12 +1,13 @@
 import Image from 'next/image';
-import V7ReactFirstSection from '@/src/docs/v7/react/sections/first';
-import V7ReactSecondSection from '@/src/docs/v7/react/sections/second';
-import V7ReactThirdSection from '@/src/docs/v7/react/sections/third';
-import V7ReactFourthSection from '@/src/docs/v7/react/sections/fourth';
-import V7ReactFifthSection from '@/src/docs/v7/react/sections/fifth';
-import ComponentsSection from '@/src/docs/common/components';
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import { ReactSnippet } from '@/src/docs/common/snippets';
+import ComponentsSection from '@/src/docs/common/components';
+import V7ReactThirdSection from '@/src/docs/v7/react/sections/third';
+import V7ReactFourthSection from '@/src/docs/v7/react/sections/fourth';
+import ReactCommonFirstSection from '@/src/docs/common/section/react/firstSection';
+import ReactCommonSecondSection from '@/src/docs/common/section/react/secondSection';
+import ReactNextFifthSection from '@/src/docs/common/section/react-next/fifthSection';
 
 export default function DocV7React() {
   return (
@@ -16,12 +17,12 @@ export default function DocV7React() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V7ReactFirstSection />
-      <V7ReactSecondSection />
+      <ReactCommonFirstSection />
+      <ReactCommonSecondSection snippet={<ReactSnippet />} />
       <V7ReactThirdSection />
       <LintersSection />
       <V7ReactFourthSection />
-      <V7ReactFifthSection />
+      <ReactNextFifthSection />
       <ComponentsSection />
     </div>
   );

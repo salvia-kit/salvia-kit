@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import V8ReactFirstSection from '@/src/docs/v8/react/sections/first';
-import V8ReactSecondSection from '@/src/docs/v8/react/sections/second';
 import V8ReactThirdSection from '@/src/docs/v8/react/sections/third';
 import V8ReactFourthSection from '@/src/docs/v8/react/sections/fourth';
-import V8ReactFifthSection from '@/src/docs/v8/react/sections/fifth';
-import ComponentsSection from '@/src/docs/common/components';
+
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import ComponentsSection from '@/src/docs/common/components';
+import ReactNextFifthSection from '@/src/docs/common/section/react-next/fifthSection';
+import ReactNextSecondSection from '@/src/docs/common/section/react-next/secondSection';
 
 export default function DocV8React() {
   return (
@@ -17,11 +18,11 @@ export default function DocV8React() {
       </h2>
       <FeaturesSection />
       <V8ReactFirstSection />
-      <V8ReactSecondSection />
+      <ReactNextSecondSection />
       <V8ReactThirdSection />
       <LintersSection />
       <V8ReactFourthSection />
-      <V8ReactFifthSection />
+      <ReactNextFifthSection />
       <ComponentsSection />
     </div>
   );

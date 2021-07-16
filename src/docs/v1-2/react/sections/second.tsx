@@ -1,7 +1,7 @@
 import { ReactSnippet } from '@/src/docs/common/snippets';
 import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
 
-const V1ReactSecondSection = () => (
+const V1AndV2ReactSecondSection = () => (
   <section className="mb-12 px-4 md:px-8">
     <h2 className="text-2xl font-medium">File Structure explained</h2>
     <p className="mt-5">
@@ -136,4 +136,4 @@ const V1ReactSecondSection = () => (
   </section>
 );
 
-export default V1ReactSecondSection;
+export default V1AndV2ReactSecondSection;

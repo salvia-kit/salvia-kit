@@ -1,4 +1,4 @@
-const V1NuxtThirdSection = () => (
+const V1AndV2NuxtThirdSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">How it works ?</h2>
     <ul className="mt-4 pl-6 list-disc">
@@ -22,4 +22,4 @@ const V1NuxtThirdSection = () => (
   </section>
 );
 
-export default V1NuxtThirdSection;
+export default V1AndV2NuxtThirdSection;

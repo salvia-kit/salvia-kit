@@ -10,22 +10,22 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV1React />,
+        doc: <Doc.DocV1AndV2React />,
         source: 'https://github.com/salvia-kit/dashboard-v1-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV1Next />,
+        doc: <Doc.DocV1AndV2React />,
         source: 'https://github.com/salvia-kit/dashboard-v1-nextjs',
       },
       vue: {
         name: 'vue',
-        doc: <Doc.DocV1Vue />,
+        doc: <Doc.DocV1AndV2Vue />,
         source: 'https://github.com/salvia-kit/dashboard-v1-vue',
       },
       nuxt: {
         name: 'nuxt',
-        doc: <Doc.DocV1Nuxt />,
+        doc: <Doc.DocV1AndV2Nuxt />,
         source: 'https://github.com/salvia-kit/dashboard-v1-nuxt',
       },
     },
@@ -38,22 +38,22 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV1React />,
+        doc: <Doc.DocV1AndV2React />,
         source: 'https://github.com/salvia-kit/dashboard-v2-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV1Next />,
+        doc: <Doc.DocV1AndV2Next />,
         source: 'https://github.com/salvia-kit/dashboard-v2-nextjs',
       },
       vue: {
         name: 'vue',
-        doc: <Doc.DocV1Vue />,
+        doc: <Doc.DocV1AndV2Vue />,
         source: 'https://github.com/salvia-kit/dashboard-v2-vue',
       },
       nuxt: {
         name: 'nuxt',
-        doc: <Doc.DocV1Nuxt />,
+        doc: <Doc.DocV1AndV2Nuxt />,
         source: 'https://github.com/salvia-kit/dashboard-v2-nuxt',
       },
     },
@@ -94,22 +94,22 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV4React />,
+        doc: <Doc.DocV4AndV5React />,
         source: 'https://github.com/salvia-kit/dashboard-v4-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV4Next />,
+        doc: <Doc.DocV4AndV5Next />,
         source: 'https://github.com/salvia-kit/dashboard-v4-nextjs',
       },
       vue: {
         name: 'vue',
-        doc: <Doc.DocV4Vue />,
+        doc: <Doc.DocV4AndV5Vue />,
         source: 'https://github.com/salvia-kit/dashboard-v4-vue',
       },
       nuxt: {
         name: 'nuxt',
-        doc: <Doc.DocV4Nuxt />,
+        doc: <Doc.DocV4AndV5Nuxt />,
         source: 'https://github.com/salvia-kit/dashboard-v4-nuxt',
       },
     },
@@ -122,22 +122,22 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV4React />,
+        doc: <Doc.DocV4AndV5React />,
         source: 'https://github.com/salvia-kit/dashboard-v5-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV4Next />,
+        doc: <Doc.DocV4AndV5Next />,
         source: 'https://github.com/salvia-kit/dashboard-v5-nextjs',
       },
       vue: {
         name: 'vue',
-        doc: <Doc.DocV4Vue />,
+        doc: <Doc.DocV4AndV5Vue />,
         source: 'https://github.com/salvia-kit/dashboard-v5-vue',
       },
       nuxt: {
         name: 'nuxt',
-        doc: <Doc.DocV4Nuxt />,
+        doc: <Doc.DocV4AndV5Nuxt />,
         source: 'https://github.com/salvia-kit/dashboard-v5-nuxt',
       },
     },
@@ -213,6 +213,16 @@ const data = [
         name: 'next',
         doc: <Doc.DocV8Next />,
         source: 'https://github.com/salvia-kit/dashboard-v8-nextjs',
+      },
+      vue: {
+        name: 'vue',
+        doc: <Doc.DocV8Vue />,
+        source: 'https://github.com/salvia-kit/dashboard-v8-vue',
+      },
+      nuxt: {
+        name: 'nuxt',
+        doc: <Doc.DocV8Nuxt />,
+        source: 'https://github.com/salvia-kit/dashboard-v8-nuxt',
       },
     },
   },

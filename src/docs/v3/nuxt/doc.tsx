@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import V3NuxtFirstSection from '@/src/docs/v3/nuxt/sections/first';
-import V3NuxtSecondSection from '@/src/docs/v3/nuxt/sections/second';
 import V3NuxtThirdSection from '@/src/docs/v3/nuxt/sections/third';
 import V3NuxtFourthSection from '@/src/docs/v3/nuxt/sections/fourth';
-import V3NuxtFifthSection from '@/src/docs/v3/nuxt/sections/fifth';
+
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
+import { NuxtCommonFirstSectionV3AndV4AndV6 } from '@/src/docs/common/section/nuxt/firstSection';
+import { NuxtCommonSecondSectionV3AndV4AndV6 } from '@/src/docs/common/section/nuxt/secondSection';
 
 export default function DocV3Nuxt() {
   return (
@@ -15,12 +16,12 @@ export default function DocV3Nuxt() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V3NuxtFirstSection />
-      <V3NuxtSecondSection />
+      <NuxtCommonFirstSectionV3AndV4AndV6 />
+      <NuxtCommonSecondSectionV3AndV4AndV6 />
       <V3NuxtThirdSection />
       <V3NuxtFourthSection />
       <LintersSection />
-      <V3NuxtFifthSection />
+      <VueNuxtFifthSection />
     </div>
   );
 }

@@ -7,12 +7,16 @@ export default function useForm() {
   const [errorMessage, setErrorMessage] = React.useState<string>('');
   const [isSubmitting, setIsSubmitting] = React.useState<boolean>(false);
 
-  const handleChange = React.useCallback(
+  const handleInputChange = React.useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setValue(e.target.value);
     },
     [],
   );
+
+  const handleClearError = React.useCallback(() => {
+    setError(false);
+  }, []);
 
   const handleSubmit = React.useCallback(
     async (e: React.FormEvent) => {
@@ -43,14 +47,12 @@ export default function useForm() {
         return cogoToast.info('You are already subscribed');
       }
       setIsSubmitting(false);
-      return cogoToast.success('Thank you for your subscription');
+      setValue('');
+      cogoToast.success('Thank you for your subscription');
+      return;
     },
     [value],
   );
-
-  const handleClearError = React.useCallback(() => {
-    setError(false);
-  }, []);
 
   return {
     value,
@@ -58,7 +60,7 @@ export default function useForm() {
     isSubmitting,
     errorMessage,
     handleSubmit,
-    handleChange,
     handleClearError,
+    handleInputChange,
   };
 }

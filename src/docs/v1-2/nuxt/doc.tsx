@@ -1,14 +1,13 @@
 import Image from 'next/image';
-import V1NuxtFirstSection from '@/src/docs/v1-2/nuxt/sections/first';
-import V1NuxtSecondSection from '@/src/docs/v1-2/nuxt/sections/second';
-import V1NuxtThirdSection from '@/src/docs/v1-2/nuxt/sections/third';
-import V1NuxtFourthSection from '@/src/docs/v1-2/nuxt/sections/fourth';
-import V1NuxtFifthSection from '@/src/docs/v1-2/nuxt/sections/fifth';
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import V1AndV2NuxtThirdSection from '@/src/docs/v1-2/nuxt/sections/third';
+import V1AndV2NuxtFourthSection from '@/src/docs/v1-2/nuxt/sections/fourth';
+import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
+import { NuxtCommonFirstSectionV1AndV7 } from '@/src/docs/common/section/nuxt/firstSection';
 
 // this doc is for the version 1 and 2 of dashboard
-export default function DocV1Nuxt() {
+export default function DocV1AndV2Nuxt() {
   return (
     <div className="mt-16 max-w-full">
       <h2 className="flex mb-16 text-3xl font-medium">
@@ -16,12 +15,12 @@ export default function DocV1Nuxt() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V1NuxtFirstSection />
-      <V1NuxtSecondSection />
-      <V1NuxtThirdSection />
-      <V1NuxtFourthSection />
+      <NuxtCommonFirstSectionV1AndV7 />
+      <NuxtCommonFirstSectionV1AndV7 />
+      <V1AndV2NuxtThirdSection />
+      <V1AndV2NuxtFourthSection />
       <LintersSection />
-      <V1NuxtFifthSection />
+      <VueNuxtFifthSection />
     </div>
   );
 }

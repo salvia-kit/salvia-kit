@@ -1,4 +1,4 @@
-const V4NextThirdSection = () => (
+const V4AndV5NextThirdSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">How it works ?</h2>
     <ul className="mt-4 pl-6 list-disc">
@@ -22,4 +22,4 @@ const V4NextThirdSection = () => (
   </section>
 );
 
-export default V4NextThirdSection;
+export default V4AndV5NextThirdSection;

@@ -1,4 +1,4 @@
-const V1NuxtFourthSection = () => (
+const V1AndV2NuxtFourthSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">Export</h2>
     <p className="mt-4">
@@ -27,4 +27,4 @@ const V1NuxtFourthSection = () => (
   </section>
 );
 
-export default V1NuxtFourthSection;
+export default V1AndV2NuxtFourthSection;

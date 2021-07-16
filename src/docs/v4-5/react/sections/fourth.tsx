@@ -1,4 +1,4 @@
-const V4ReactFourthSection = () => (
+const V4AndV5ReactFourthSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">Export</h2>
     <p className="mt-4">
@@ -22,4 +22,4 @@ const V4ReactFourthSection = () => (
   </section>
 );
 
-export default V4ReactFourthSection;
+export default V4AndV5ReactFourthSection;

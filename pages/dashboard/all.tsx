@@ -14,8 +14,8 @@ export default function AllDashboardsPage() {
           Our dashboard catalog
         </h1>
         <p className="mt-4 text-center text-sm">
-          Each dashboard may have two or four variants. <br />
-          one variant for React, Next, Vue and Nuxt
+          Each dashboard have four variants. <br />
+          one variant for React, Next, Vue and Nuxt. it's all free
         </p>
         <div className="flex flex-wrap mt-12">
           {data.map((dashboard) => (

@@ -18,7 +18,8 @@ const V3VueThirdSection = () => (
       </li>
       <li className="mb-3">
         Wrap the <span className="font-semibold">App.vue</span> by the
-        <span className="pl-1 font-semibold">dashboard-layout</span> component
+        <span className="pl-1 font-semibold">dashboard-provider</span> and{' '}
+        <span className="font-semibold">dashboard-layout</span> components.
       </li>
     </ul>
   </section>

@@ -1,6 +1,6 @@
 import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
 
-const V1NextFirstSection = () => (
+const V1AndV2NextFirstSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">File Structure</h2>
     <div className="pl-2">
@@ -68,4 +68,4 @@ const V1NextFirstSection = () => (
   </section>
 );
 
-export default V1NextFirstSection;
+export default V1AndV2NextFirstSection;

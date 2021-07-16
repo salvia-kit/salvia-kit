@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import V4NuxtFirstSection from '@/src/docs/v4-5/nuxt/sections/first';
-import V4NuxtSecondSection from '@/src/docs/v4-5/nuxt/sections/second';
-import V4NuxtThirdSection from '@/src/docs/v4-5/nuxt/sections/third';
-import V4NuxtFourthSection from '@/src/docs/v4-5/nuxt/sections/fourth';
-import V4NuxtFifthSection from '@/src/docs/v4-5/nuxt/sections/fifth';
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import V4AndV5NuxtThirdSection from '@/src/docs/v4-5/nuxt/sections/third';
+import V4AndV5NuxtFourthSection from '@/src/docs/v4-5/nuxt/sections/fourth';
+import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
+import { NuxtCommonFirstSectionV3AndV4AndV6 } from '@/src/docs/common/section/nuxt/firstSection';
+import { NuxtCommonSecondSectionV3AndV4AndV6 } from '@/src/docs/common/section/nuxt/secondSection';
 
 // this doc is for the version 4 and 5 of dashboard
-export default function DocV4Nuxt() {
+export default function DocV4AndV5Nuxt() {
   return (
     <div className="mt-12 max-w-full">
       <h2 className="flex mb-16 text-3xl font-medium">
@@ -16,12 +16,12 @@ export default function DocV4Nuxt() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V4NuxtFirstSection />
-      <V4NuxtSecondSection />
-      <V4NuxtThirdSection />
-      <V4NuxtFourthSection />
+      <NuxtCommonFirstSectionV3AndV4AndV6 />
+      <NuxtCommonSecondSectionV3AndV4AndV6 />
+      <V4AndV5NuxtThirdSection />
+      <V4AndV5NuxtFourthSection />
       <LintersSection />
-      <V4NuxtFifthSection />
+      <VueNuxtFifthSection />
     </div>
   );
 }

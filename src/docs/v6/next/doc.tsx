@@ -1,12 +1,12 @@
-import V6NextFirstSection from '@/src/docs/v6/next/sections/first';
-import V6NextSecondSection from '@/src/docs/v6/next/sections/second';
+import NextIcon from '@/src/components/icons/next';
+import LintersSection from '@/src/docs/common/linters';
+import FeaturesSection from '@/src/docs/common/features';
+import ComponentsSection from '@/src/docs/common/components';
 import V6NextThirdSection from '@/src/docs/v6/next/sections/third';
 import V6NextFourthSection from '@/src/docs/v6/next/sections/fourth';
-import V6NextFifthSection from '@/src/docs/v6/next/sections/fifth';
-import LintersSection from '@/src/docs/common/linters';
-import ComponentsSection from '@/src/docs/common/components';
-import FeaturesSection from '@/src/docs/common/features';
-import NextIcon from '@/src/components/icons/next';
+import NextCommonFirstSection from '@/src/docs/common/section/next/firstSection';
+import NextCommonSecondSection from '@/src/docs/common/section/next/secondSection';
+import ReactNextFifthSection from '@/src/docs/common/section/react-next/fifthSection';
 
 export default function DocV6Next() {
   return (
@@ -16,12 +16,12 @@ export default function DocV6Next() {
         <span className="pl-2 pt-4">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V6NextFirstSection />
-      <V6NextSecondSection />
+      <NextCommonFirstSection />
+      <NextCommonSecondSection />
       <V6NextThirdSection />
       <LintersSection />
       <V6NextFourthSection />
-      <V6NextFifthSection />
+      <ReactNextFifthSection />
       <ComponentsSection />
     </div>
   );

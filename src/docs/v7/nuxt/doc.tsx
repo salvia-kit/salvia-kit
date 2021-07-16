@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import V7NuxtFirstSection from '@/src/docs/v7/nuxt/sections/first';
 import V7NuxtSecondSection from '@/src/docs/v7/nuxt/sections/second';
 import V7NuxtThirdSection from '@/src/docs/v7/nuxt/sections/third';
 import V7NuxtFourthSection from '@/src/docs/v7/nuxt/sections/fourth';
-import V7NuxtFifthSection from '@/src/docs/v7/nuxt/sections/fifth';
+
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
+import { NuxtCommonFirstSectionV1AndV7 } from '@/src/docs/common/section/nuxt/firstSection';
 
 export default function DocV7Nuxt() {
   return (
@@ -15,12 +16,12 @@ export default function DocV7Nuxt() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V7NuxtFirstSection />
+      <NuxtCommonFirstSectionV1AndV7 />
       <V7NuxtSecondSection />
       <V7NuxtThirdSection />
       <V7NuxtFourthSection />
       <LintersSection />
-      <V7NuxtFifthSection />
+      <VueNuxtFifthSection />
     </div>
   );
 }

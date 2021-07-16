@@ -7,23 +7,23 @@ export default function HomeThirdSection() {
       <h2 className="text-center text-3xl font-bold">No Vendor Lock-in</h2>
       <div className="flex mt-4 md:mt-8">
         <div className="2xl:pt-16 w-full md:pr-2 md:w-6/12">
-          <p className="mt-6 md:text-center">
+          <p className="mt-6">
             Salvia-kit was created to solve a problem I often encountered when
             using dashboards owned by third party developers or companies. that
             is <strong>vendor lock-in</strong>.
           </p>
-          <p className="mt-6 md:text-center">
+          <p className="mt-6">
             These dashboards often contained many configurations with several
             scripts, which still did not allow to export them and integrate them
             easily into an existing project. Therefore, it was always necessary
             to use the repository provided by the owner of the dashboard.
           </p>
-          <p className="mt-6 md:text-center">
+          <p className="mt-6">
             This is what motivated me to create dashboards that can be easily
             integrated into existing projects with simple, readable code and
             documentation designed for developers.
           </p>
-          <p className="mt-6 md:text-center">
+          <p className="mt-6">
             Built with <strong>Tailwind CSS</strong>, they are fully
             customizable and without external dependencies. Each dashboard has 4
             variants. one for <strong>create-react-app</strong>,{' '}

@@ -1,15 +1,15 @@
 import Image from 'next/image';
-import V4ReactFirstSection from '@/src/docs/v4-5/react/sections/first';
-import V4ReactSecondSection from '@/src/docs/v4-5/react/sections/second';
-import V4ReactThirdSection from '@/src/docs/v4-5/react/sections/third';
-import V4ReactFourthSection from '@/src/docs/v4-5/react/sections/fourth';
-import V4ReactFifthSection from '@/src/docs/v4-5/react/sections/fifth';
-import ComponentsSection from '@/src/docs/common/components';
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import ComponentsSection from '@/src/docs/common/components';
+import V4AndV5ReactThirdSection from '@/src/docs/v4-5/react/sections/third';
+import V4AndV5ReactFourthSection from '@/src/docs/v4-5/react/sections/fourth';
+import ReactCommonFirstSection from '@/src/docs/common/section/react/firstSection';
+import ReactCommonSecondSection from '@/src/docs/common/section/react/secondSection';
+import ReactNextFifthSection from '@/src/docs/common/section/react-next/fifthSection';
 
 // this doc is for the version 4 and 5 of dashboard
-export default function DocV4React() {
+export default function DocV4AndV5React() {
   return (
     <div className="mt-12 max-w-full">
       <h2 className="flex mb-16 text-3xl font-medium">
@@ -17,12 +17,12 @@ export default function DocV4React() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V4ReactFirstSection />
-      <V4ReactSecondSection />
-      <V4ReactThirdSection />
+      <ReactCommonFirstSection />
+      <ReactCommonSecondSection />
+      <V4AndV5ReactThirdSection />
       <LintersSection />
-      <V4ReactFourthSection />
-      <V4ReactFifthSection />
+      <V4AndV5ReactFourthSection />
+      <ReactNextFifthSection />
       <ComponentsSection />
     </div>
   );

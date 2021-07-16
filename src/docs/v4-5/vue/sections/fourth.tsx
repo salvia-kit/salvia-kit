@@ -1,4 +1,4 @@
-const V4VueFourthSection = () => (
+const V4AndV5VueFourthSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">Export</h2>
     <p className="mt-4">
@@ -24,4 +24,4 @@ const V4VueFourthSection = () => (
   </section>
 );
 
-export default V4VueFourthSection;
+export default V4AndV5VueFourthSection;

@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import V7VueFirstSection from '@/src/docs/v7/vue/sections/first';
-import V7VueSecondSection from '@/src/docs/v7/vue/sections/second';
-import V7VueThirdSection from '@/src/docs/v7/vue/sections/third';
-import V7VueFourthSection from '@/src/docs/v7/vue/sections/fourth';
-import V7VueFifthSection from '@/src/docs/v7/vue/sections/fifth';
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import V7VueThirdSection from '@/src/docs/v7/vue/sections/third';
+import V7VueFourthSection from '@/src/docs/v7/vue/sections/fourth';
+import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
+import { VueCommonFirstSectionV1AndV7 } from '@/src/docs/common/section/vue/firstSection';
+import { VueCommonSecondSectionV1AndV7 } from '@/src/docs/common/section/vue/secondSection';
 
 export default function DocV7Vue() {
   return (
@@ -15,12 +15,12 @@ export default function DocV7Vue() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V7VueFirstSection />
-      <V7VueSecondSection />
+      <VueCommonFirstSectionV1AndV7 />
+      <VueCommonSecondSectionV1AndV7 />
       <V7VueThirdSection />
       <LintersSection />
       <V7VueFourthSection />
-      <V7VueFifthSection />
+      <VueNuxtFifthSection />
     </div>
   );
 }

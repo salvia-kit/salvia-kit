@@ -67,4 +67,26 @@ const VueSnippetShort = () => (
   </pre>
 );
 
-export { ReactSnippet, ReactSnippetShort, VueSnippet, VueSnippetShort };
+const VueSnippetAccordion = () => (
+  <pre className="px-4 py-4 max-w-full text-green-600 dark:text-white font-mono text-sm dark:bg-dropdown bg-gray-100 border rounded overflow-x-auto">
+    {`    <Accordion>
+      <template #item>
+        <document-icon /> <span class="pl-3">Documents</span>
+      </template>
+      <template #panel>
+        <sidenav-item title="Taxes" to="/documents/taxes" />
+        <sidenav-item title="Travel" to="/documents/travel" />
+        <sidenav-item title="Insurance" to="/documents/insurance" />
+      </template>
+    </Accordion>
+`}
+  </pre>
+);
+
+export {
+  ReactSnippet,
+  ReactSnippetShort,
+  VueSnippet,
+  VueSnippetShort,
+  VueSnippetAccordion,
+};

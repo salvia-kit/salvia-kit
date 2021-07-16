@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-const mailchimp = require('@mailchimp/mailchimp_marketing');
+const client = require('@mailchimp/mailchimp_marketing');
 
-mailchimp.setConfig({
+client.setConfig({
   apiKey: process.env.API_KEY,
   server: process.env.API_SERVER,
 });
@@ -14,13 +14,10 @@ export default async function handler(
   switch (req.method) {
     case 'POST':
       try {
-        const response = await mailchimp.lists.addListMember(
-          process.env.API_ID,
-          {
-            email_address: req.body.email,
-            status: 'subscribed',
-          },
-        );
+        const response = await client.lists.addListMember(process.env.API_ID, {
+          email_address: req.body.email,
+          status: 'subscribed',
+        });
         res.json(response);
       } catch (e) {
         res.status(500).json(e);

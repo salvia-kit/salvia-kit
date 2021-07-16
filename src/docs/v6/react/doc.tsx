@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import V6ReactFirstSection from '@/src/docs/v6/react/sections/first';
-import V6ReactSecondSection from '@/src/docs/v6/react/sections/second';
-import V6ReactThirdSection from '@/src/docs/v6/react/sections/third';
-import V6ReactFourthSection from '@/src/docs/v6/react/sections/fourth';
-import V6ReactFifthSection from '@/src/docs/v6/react/sections/fifth';
-import ComponentsSection from '@/src/docs/common/components';
 import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
+import ComponentsSection from '@/src/docs/common/components';
+import V6ReactThirdSection from '@/src/docs/v6/react/sections/third';
+import V6ReactFourthSection from '@/src/docs/v6/react/sections/fourth';
+import ReactCommonFirstSection from '@/src/docs/common/section/react/firstSection';
+import ReactNextFifthSection from '@/src/docs/common/section/react-next/fifthSection';
+import ReactCommonSecondSection from '@/src/docs/common/section/react/secondSection';
 
 export default function DocV6React() {
   return (
@@ -16,12 +16,12 @@ export default function DocV6React() {
         <span className="pl-2">Documentation</span>
       </h2>
       <FeaturesSection />
-      <V6ReactFirstSection />
-      <V6ReactSecondSection />
+      <ReactCommonFirstSection />
+      <ReactCommonSecondSection />
       <V6ReactThirdSection />
       <LintersSection />
       <V6ReactFourthSection />
-      <V6ReactFifthSection />
+      <ReactNextFifthSection />
       <ComponentsSection />
     </div>
   );

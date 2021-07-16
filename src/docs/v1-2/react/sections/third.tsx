@@ -1,4 +1,4 @@
-const V1ReactThirdSection = () => (
+const V1AndV2ReactThirdSection = () => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">How it works ?</h2>
     <ul className="mt-4 pl-6 list-disc">
@@ -19,4 +19,4 @@ const V1ReactThirdSection = () => (
   </section>
 );
 
-export default V1ReactThirdSection;
+export default V1AndV2ReactThirdSection;
