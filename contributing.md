@@ -2,11 +2,9 @@
 
 ## Fix Bugs and Grammar
 
-Each dashboard has 4 variants (one for React, Next.js, Vue and Nuxt.js). 
-We have 8 dashboards with make the total to 32 repositories + this website.
+Each dashboard has 4 variants (one for React, Next.js, Vue and Nuxt.js). We have 8 dashboards, which makes a total of 32 repositories + this website.
 
 As English is not my native language, I can make some grammatical mistakes while writing all the 33 repositories. You can fix that by contributing to improve content.
- 
 
 You can also fix bugs.
 
