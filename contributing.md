@@ -2,7 +2,11 @@
 
 ## Fix Bugs and Grammar
 
-As there is a documentation for each dashboard and English is not my native language, I can make grammatical mistakes. You can fix that by contributing.
+Each dashboard has 4 variants (one for React, Next.js, Vue and Nuxt.js). 
+We have 8 dashboards with make the total to 32 repositories + this website.
+
+As English is not my native language, I can make some grammatical mistakes while writing all the 33 repositories. You can fix that by contributing to improve content.
+ 
 
 You can also fix bugs.
 
@@ -16,20 +20,20 @@ You can also fix bugs.
 8. Click on `Compare and pull request` to view changes
 9. Then click on `create pull request`
 
-## To Add a new dashboard
+## Add a new dashboard
 
-You can add a dashboard, but it involves several steps to follow.
+Adding a new dashboard, involves several steps to follow.
 
 - Please respect the versioning. (if the last dashboard has the name dashboard-v8, yours will have the next number).
 
 
-- Please respect file structure by referring to the documentation of the other dashboards to facilitate the writing of the documentation.
+- Please respect file structure by referring to the documentation of the other dashboards to facilitate the writing of the new dashboard's documentation.
 
 
-- You must do it for these four technologies.<p style="padding-left: 10px; font-weight: bold">React (create-react-app)</p><p style="padding-left: 10px; font-weight: bold">Next.js (create-next-app)</p><p style="padding-left: 10px; font-weight: bold">Vue (vite.js)</p><p style="padding-left: 10px; font-weight: bold">Nuxt.js (create-nuxt-app)</p>
+- You have to do it for these four variants.<p style="padding-left: 10px; font-weight: bold">React (create-react-app)</p><p style="padding-left: 10px; font-weight: bold">Next.js (create-next-app)</p><p style="padding-left: 10px; font-weight: bold">Vue (vite.js)</p><p style="padding-left: 10px; font-weight: bold">Nuxt.js (create-nuxt-app)</p>
 
-If you can't do this for these 4 techno's, you can only do it for one techno and the rest will be developed by me or by other voluntary contributors.
+If you can't do it for these 4 variants, you can only do it for one, two or three variants and the rest will be developed by voluntary contributors.
 
 This way you will be added as a member of the organization, so you will have the right to create these repositories.
 
-At the end of this, the dashboard will finally be added in the website.
+When it's all over, the dashboard will finally be added in the website.
