@@ -14,7 +14,7 @@ export interface BtnProps
 type ButtonRef = React.ForwardedRef<HTMLButtonElement>;
 
 const style = {
-  default: `font-black shadow`,
+  default: `font-black shadow active:opacity-70`,
   disabled: `opacity-60 cursor-not-allowed`,
   sizes: {
     sm: 'px-6 py-1 text-sm',
@@ -22,7 +22,7 @@ const style = {
     lg: 'px-6 py-3',
   },
   colors: {
-    custom: 'bg-[#14445c] hover:bg-[#0E2E3F] text-white',
+    custom: 'bg-[#14445c] text-white',
     white: 'bg-white text-[#14445c]',
     black: 'bg-black text-white',
     green: 'bg-green-700 text-white',
