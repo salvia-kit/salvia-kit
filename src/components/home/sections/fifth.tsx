@@ -30,9 +30,13 @@ export default function HomeFifthSection() {
           )}
           <div className="mb-4 md:mb-0 md:w-auto">
             <input
+              name="email"
+              value={form.value}
+              aria-label="Email"
+              aria-required={true}
+              aria-invalid={form.error}
               placeholder="Enter email"
               className="placeholder-gray-600 text-[#14445c] px-4 py-2 w-48 w-full bg-white"
-              value={form.value}
               onChange={form.handleInputChange}
               onKeyUpCapture={form.handleClearError}
             />

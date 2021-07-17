@@ -19,7 +19,7 @@ function CardBody({ children }: ChildrenType) {
 }
 
 function CardTitle({ children }: ChildrenType) {
-  return <h3 className={style.cardTitle}>{children}</h3>;
+  return <h2 className={style.cardTitle}>{children}</h2>;
 }
 
 export { Card, CardBody, CardTitle };

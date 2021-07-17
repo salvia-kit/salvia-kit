@@ -81,6 +81,7 @@ function DropdownToggle({ children }: ChildrenType) {
     <button
       onClick={toggle}
       type="button"
+      id="options-menu"
       className="font-bold focus:outline-none"
       aria-expanded="true"
       aria-haspopup="true"

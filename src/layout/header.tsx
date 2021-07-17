@@ -27,7 +27,7 @@ import {
 
 const style = {
   home: `text-white`,
-  notHome: `bg-light dark:bg-dark dark:text-white text-[#14445c] shadow`,
+  notHome: `bg-light dark:bg-dark dark:text-white text-custom shadow`,
   header: `fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full md:px-4 lg:px-24 xl:px-28`,
 };
 
@@ -52,18 +52,18 @@ export default function Header() {
               <Dropdown>
                 <DropdownToggle>Technologies</DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem href="/dashboard/technology?name=next">
+                  <DropdownItem href="/techno/next">
                     <NextIcon className="w-12 h-8" />
                   </DropdownItem>
-                  <DropdownItem href="/dashboard/technology?name=react">
+                  <DropdownItem href="/techno/react">
                     <ReactIcon />
                     <span className="mt-0.5 pl-2">React</span>
                   </DropdownItem>
-                  <DropdownItem href="/dashboard/technology?name=vue">
+                  <DropdownItem href="/techno/vue">
                     <VueIcon className="w-6 h-6" />
                     <span className="mt-0.5 pl-2">Vue</span>
                   </DropdownItem>
-                  <DropdownItem href="/dashboard/technology?name=nuxt">
+                  <DropdownItem href="/techno/nuxt">
                     <NuxtIcon className="w-6 h-6" />
                     <span className="mt-0.5 pl-2">Nuxt</span>
                   </DropdownItem>

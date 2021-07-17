@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { ChildrenType } from '@/src/utils/globalTypes';
 import { AnchorHTMLAttributes } from 'react';
+import { ChildrenType } from '@/src/utils/globalTypes';
 
 interface INavbarProps extends ChildrenType {
   className?: string;
@@ -30,8 +30,8 @@ const style = {
   item: `py-1.5 md:py-1 px-4 font-bold`,
   collapse: `hidden lg:flex-grow lg:items-center lg:flex`,
   toggler: `float-right block lg:hidden -mt-0.5 text-4xl focus:outline-none focus:shadow`,
-  brand: `inline-block pt-1.5 pb-1.5 mr-4 cursor-pointer text-3xl font-bold whitespace-nowrap`,
   navbar: `font-light lg:relative lg:flex lg:items-center py-2 lg:flex lg:flex-row lg:justify-start`,
+  brand: `inline-block pt-1.5 pb-1.5 mr-4 cursor-pointer text-2xl md:text-3xl font-bold whitespace-nowrap`,
 };
 
 function Navbar({ className, children }: INavbarProps) {
@@ -74,21 +74,6 @@ function NavbarItem({ children }: ChildrenType) {
   return <li className={style.item}>{children}</li>;
 }
 
-function NavbarLink({ children, href, external, ...rest }: INavbarLinkProps) {
-  if (external) {
-    return (
-      <a href={href} className={style.link} {...rest}>
-        {children}
-      </a>
-    );
-  }
-  return (
-    <Link href={href} {...rest}>
-      <a className={style.link}>{children}</a>
-    </Link>
-  );
-}
-
 export {
   Navbar,
   NavbarBrand,
@@ -96,5 +81,4 @@ export {
   NavbarCollapse,
   NavbarNav,
   NavbarItem,
-  NavbarLink,
 };

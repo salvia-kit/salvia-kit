@@ -10,7 +10,20 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Salvia-kit</title>
+        <title>
+          Salvia-kit - The Most Beautiful Dashboards built with TailwindCSS
+        </title>
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_BASE_URL} />
+        <meta
+          name="description"
+          content="Salvia-kit — Explore The Most Beautiful Dashboards built with Tailwind CSS"
+        />
+        <meta
+          name="description"
+          content="Salvia-kit provides the most beautiful dashboards built with Tailwind CSS for React, Next.js, Vue and Nuxt. Explore and enjoy the experience."
+          key="description"
+        />
+        <meta name="color-scheme" content="dark light" />
       </Head>
       <Container>
         <HomeFirstSection />

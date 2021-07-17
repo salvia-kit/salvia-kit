@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 const classNames = [
   'shadow',
   'bg-light',
-  'text-[#14445c]',
+  'text-custom',
   'dark:bg-dark',
   'dark:text-white',
 ];
@@ -18,12 +18,11 @@ export default function useScrollHeader() {
 
   React.useEffect(() => {
     const scrollHeader = () => {
-      if (asPath === '/') {
-        if (window.scrollY >= 100) {
-          return headerRef.current?.classList.add(...classNames);
-        }
-        return headerRef.current?.classList.remove(...classNames);
+      if (asPath !== '/') return;
+      if (window.scrollY >= 100) {
+        return headerRef.current?.classList.add(...classNames);
       }
+      return headerRef.current?.classList.remove(...classNames);
     };
 
     window.addEventListener('scroll', scrollHeader);

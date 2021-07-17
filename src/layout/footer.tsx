@@ -7,7 +7,7 @@ export default function Footer() {
       <Container>
         <div className="flex flex-wrap mt-28">
           <div className="mb-12 w-full md:mb-0 md:w-4/12">
-            <h4 className="text-2xl font-bold">Contact</h4>
+            <h3 className="text-2xl font-bold">Contact</h3>
             <ul className="mt-5">
               <li className="pb-3">
                 <a href="https://github.com/salvia-kit">Github</a>
@@ -19,7 +19,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="mb-12 w-full md:mb-0 md:w-4/12">
-            <h4 className="text-2xl font-bold">About</h4>
+            <h3 className="text-2xl font-bold">About</h3>
             <ul className="mt-5">
               <li className="pb-3">
                 <a href="https://github.com/salvia-kit/salvia-kit-website/issues/new/choose">
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="w-full md:w-4/12">
-            <h4 className="text-2xl font-bold">Acknowledgements</h4>
+            <h3 className="text-2xl font-bold">Acknowledgements</h3>
             <ul className="mt-5">
               <li className="pb-3">
                 <a href="https://tailwindcss.com">Tailwind CSS</a>

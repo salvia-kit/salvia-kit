@@ -15,6 +15,9 @@ module.exports = {
         body: ['Open Sans'],
         title: ['Raleway'],
       },
+      textColor: {
+        custom: '#14445c',
+      },
     },
   },
   variants: {

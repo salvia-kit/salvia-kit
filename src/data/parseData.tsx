@@ -86,8 +86,9 @@ function isTechno(name: string) {
 }
 
 export {
-  getTechno,
   isTechno,
+  getTechno,
+  parseData,
   getDashboard,
   getDashboardByTechnologie,
   getDashboardsByTechnologie,
