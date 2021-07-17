@@ -22,11 +22,11 @@ const style = {
     lg: 'px-6 py-3',
   },
   colors: {
-    custom: 'bg-custom hover:bg-custom-hover text-white',
-    white: 'bg-white text-custom',
+    custom: 'bg-[#14445c] hover:bg-[#0E2E3F] text-white',
+    white: 'bg-white text-[#14445c]',
     black: 'bg-black text-white',
     green: 'bg-green-700 text-white',
-    'blue-sky': 'bg-react text-white',
+    'blue-sky': 'bg-[#26a69a] text-white',
   },
 };
 

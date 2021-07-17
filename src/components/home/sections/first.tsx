@@ -30,7 +30,7 @@ const HomeFirstSection = () => (
             </a>
           </Link>
         </div>
-        <div className="flex items-center mb-8 px-4 py-6 w-full bg-custom md:-mt-16 md:mb-0 md:ml-auto md:w-80">
+        <div className="bg-[#14445c] flex items-center mb-8 px-4 py-6 w-full md:-mt-16 md:mb-0 md:ml-auto md:w-80">
           <div>
             <span className="block mb-2 text-sm font-bold">
               We got what <br />

@@ -9,7 +9,7 @@ export default function HomeFifthSection() {
   const form = useForm();
   return (
     <section className="mb-16 md:mb-32">
-      <div className="py-12 text-white bg-custom dark:bg-dropdown">
+      <div className="dark:bg-[#1B2A31] bg-[#14445c] py-12 text-white">
         <h2 className="text-center text-3xl font-bold">
           Subscribe to our
           <br />
@@ -31,7 +31,7 @@ export default function HomeFifthSection() {
           <div className="mb-4 md:mb-0 md:w-auto">
             <input
               placeholder="Enter email"
-              className="placeholder-gray-600 px-4 py-2 w-48 w-full text-custom bg-white"
+              className="placeholder-gray-600 text-[#14445c] px-4 py-2 w-48 w-full bg-white"
               value={form.value}
               onChange={form.handleInputChange}
               onKeyUpCapture={form.handleClearError}

@@ -27,7 +27,7 @@ import {
 
 const style = {
   home: `text-white`,
-  notHome: `bg-body dark:bg-body-dark dark:text-white text-custom shadow`,
+  notHome: `bg-light dark:bg-dark dark:text-white text-[#14445c] shadow`,
   header: `fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full md:px-4 lg:px-24 xl:px-28`,
 };
 

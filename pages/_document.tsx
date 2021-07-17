@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           />
           <link rel="shortcut icon" href="/images/favicon.ico" />
         </Head>
-        <body className="text-custom dark:text-white bg-body dark:bg-body-dark">
+        <body className="text-[#14445c] dark:text-white dark:bg-dark bg-light">
           <Main />
           <NextScript />
         </body>

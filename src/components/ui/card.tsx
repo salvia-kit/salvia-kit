@@ -1,7 +1,7 @@
 import { ChildrenType } from '@/src/utils/globalTypes';
 
 const style = {
-  card: `relative flex flex-col  rounded-lg`,
+  card: `relative flex flex-col rounded-lg shadow-custom`,
   cardBody: `block flex-grow flex-shrink px-3 py-5`,
   cardTitle: `font-semibold text-custom dark:text-white mb-3`,
 };
@@ -11,11 +11,7 @@ const inlineStyle = {
 };
 
 function Card({ children }: ChildrenType) {
-  return (
-    <div className={style.card} style={inlineStyle}>
-      {children}
-    </div>
-  );
+  return <div className={style.card}>{children}</div>;
 }
 
 function CardBody({ children }: ChildrenType) {

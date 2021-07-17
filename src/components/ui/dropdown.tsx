@@ -15,9 +15,9 @@ interface DropdownItemProps extends ChildrenType {
 }
 
 const style = {
-  itemActive: 'bg-gray-200 dark:bg-custom',
-  item: `flex w-full py-3 px-12 text-custom clear-both text-sm font-medium border-0 hover:bg-gray-200 dark:hover:bg-body-dark dark:text-white`,
-  menu: `block z-30 absolute top-0 left-0 bg-white dark:bg-dropdown float-left py-3 px-0 text-left shadow-md rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
+  itemActive: 'bg-gray-200 dark:bg-dark',
+  item: `flex w-full py-3 px-12 text-[#14445c] clear-both text-sm font-medium border-0 hover:bg-gray-200 dark:hover:bg-dark dark:text-white`,
+  menu: `block shadow-md dark:shadow-custom z-30 absolute top-0 left-0 bg-white dark:bg-[#1B2A31] float-left py-3 px-0 text-left rounded-lg mt-0.5 mb-0 mx-0 bg-clip-padding`,
 };
 
 const Context = React.createContext<IContextValues>({});

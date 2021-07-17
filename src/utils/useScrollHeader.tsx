@@ -5,10 +5,10 @@ import { useRouter } from 'next/router';
 // When the scroll is greater than 100px of viewport height, add new classes to the header tag
 
 const classNames = [
-  'bg-body',
   'shadow',
-  'text-custom',
-  'dark:bg-body-dark',
+  'bg-light',
+  'text-[#14445c]',
+  'dark:bg-dark',
   'dark:text-white',
 ];
 
