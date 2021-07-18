@@ -5,7 +5,7 @@ import { ChildrenType } from '@/src/utils/globalTypes';
 interface IContextProps {
   open?: boolean;
   toggle?: () => void;
-  ref?: any;
+  ref?: React.Ref<HTMLElement>;
 }
 
 const Context = React.createContext<IContextProps>({});

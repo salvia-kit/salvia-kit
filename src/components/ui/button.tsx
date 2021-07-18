@@ -47,7 +47,7 @@ const Button = React.forwardRef(
       ref={ref}
       disabled={disabled}
       className={`${className} ${style.default} ${style.sizes[size]} 
-          ${style.colors[color]} ${disabled ? style.disabled : ''} `}
+          ${style.colors[color]} ${disabled ? style.disabled : ''}`}
     >
       {children}
     </button>

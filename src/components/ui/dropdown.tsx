@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { ChildrenType } from '@/src/utils/globalTypes';
 
 interface IContextValues {
-  ref?: any;
+  ref?: React.Ref<HTMLDivElement>;
   show?: boolean;
   toggle?: () => void;
 }

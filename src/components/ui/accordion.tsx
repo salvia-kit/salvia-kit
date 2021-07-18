@@ -7,7 +7,7 @@ import Button, { BtnProps } from '@/src/components/ui/button';
 interface IAccordionContextProps {
   className?: string;
   selected?: string;
-  toggleItem?: any;
+  toggleItem?: (id: string) => void;
 }
 
 interface IAccordionItemProps extends BtnProps {
@@ -29,7 +29,7 @@ const Context = React.createContext<IAccordionContextProps>({});
 function Accordion({ children }: ChildrenType) {
   const [selected, setSelected] = React.useState('');
 
-  const toggleItem = React.useCallback((id) => {
+  const toggleItem = React.useCallback((id: string) => {
     setSelected((prevState) => (prevState !== id ? id : ''));
   }, []);
 
@@ -54,7 +54,7 @@ function AccordionItem({
   const { selected, toggleItem } = useAccordion();
   return (
     <Button
-      onClick={() => toggleItem(toggle)}
+      onClick={() => (toggleItem ? toggleItem(toggle) : null)}
       color={color}
       className={className}
       size="sm"

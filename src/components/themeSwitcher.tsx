@@ -1,3 +1,4 @@
+import React from 'react';
 import { useTheme } from 'next-themes';
 import useMounted from '@/src/utils/useMounted';
 import SunIcon from '@/src/components/icons/sun';
@@ -12,9 +13,9 @@ export default function ThemeSwitcher() {
   const { theme, setTheme }: UseThemeProps = useTheme();
   const isMounted = useMounted();
 
-  const toggleTheme = () => {
+  const toggleTheme = React.useCallback(() => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
-  };
+  }, [setTheme, theme]);
 
   return (
     <>
