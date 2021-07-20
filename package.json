@@ -28,12 +28,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.54",
     "cogo-toast": "^4.2.3",
     "next": "11.0.1",
+    "next-sitemap": "^1.6.140",
     "next-themes": "^0.0.15",
     "react": "17.0.2",
     "react-dom": "17.0.2"

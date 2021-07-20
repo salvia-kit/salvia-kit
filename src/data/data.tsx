@@ -5,7 +5,7 @@ const data = [
   {
     id: 1,
     name: 'Salvia-kit Dashboard v1',
-    slug: 'salvia-kit-dashboard-v1',
+    slug: 'dashboard-v1',
     image: img.imgV1,
     techno: {
       react: {
@@ -33,7 +33,7 @@ const data = [
   {
     id: 2,
     name: 'Salvia-kit Dashboard v2',
-    slug: 'salvia-kit-dashboard-v2',
+    slug: 'dashboard-v2',
     image: img.imgV2,
     techno: {
       react: {
@@ -61,7 +61,7 @@ const data = [
   {
     id: 3,
     name: 'Salvia-kit Dashboard v3',
-    slug: 'salvia-kit-dashboard-v3',
+    slug: 'dashboard-v3',
     image: img.imgV3,
     techno: {
       react: {
@@ -89,7 +89,7 @@ const data = [
   {
     id: 4,
     name: 'Salvia-kit Dashboard v4',
-    slug: 'salvia-kit-dashboard-v4',
+    slug: 'dashboard-v4',
     image: img.imgV4,
     techno: {
       react: {
@@ -117,7 +117,7 @@ const data = [
   {
     id: 5,
     name: 'Salvia-kit Dashboard v5',
-    slug: 'salvia-kit-dashboard-v5',
+    slug: 'dashboard-v5',
     image: img.imgV5,
     techno: {
       react: {
@@ -145,7 +145,7 @@ const data = [
   {
     id: 6,
     name: 'Salvia-kit Dashboard v6',
-    slug: 'salvia-kit-dashboard-v6',
+    slug: 'dashboard-v6',
     image: img.imgV6,
     techno: {
       react: {
@@ -173,7 +173,7 @@ const data = [
   {
     id: 7,
     name: 'Salvia-kit Dashboard v7',
-    slug: 'salvia-kit-dashboard-v7',
+    slug: 'dashboard-v7',
     image: img.imgV7,
     techno: {
       react: {
@@ -201,7 +201,7 @@ const data = [
   {
     id: 8,
     name: 'Salvia-kit Dashboard v8',
-    slug: 'salvia-kit-dashboard-v8',
+    slug: 'dashboard-v8',
     image: img.imgV8,
     techno: {
       react: {
