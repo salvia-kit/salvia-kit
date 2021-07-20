@@ -57,7 +57,12 @@ export default function DashboardPage({
                 with documentation designed by a developer for developers. Feel
                 free to customize everything to suit your needs.
               </p>
-              <a className="block mt-8">
+              <a
+                href={dashboard.demo}
+                className="block mt-8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button color="custom">Demo</Button>
               </a>
             </div>

@@ -31,7 +31,7 @@ export default function DashboardCard({
               <CustomImage
                 src={data.image}
                 alt={data.name}
-                width={1024}
+                width={1080}
                 height={600}
               />
             </a>

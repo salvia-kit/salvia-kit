@@ -4,22 +4,18 @@ import { ChildrenType } from '@/src/utils/globalTypes';
 type TechnoTypes = {
   react: {
     doc: ChildrenType;
-    demo: string;
     name: string;
   };
   next: {
     doc: ChildrenType;
-    demo: string;
     name: string;
   };
   vue: {
     doc: ChildrenType;
-    demo: string;
     name: string;
   };
   nuxt: {
     doc: ChildrenType;
-    demo: string;
     name: string;
   };
 };
@@ -30,6 +26,7 @@ interface IProps {
   slug: string;
   image: StaticImageData;
   techno: any;
+  demo: string;
 }
 
 function parseData(data: any) {
@@ -42,6 +39,7 @@ function getDashboardsByTechnologie(name: keyof TechnoTypes) {
     name: data.name,
     slug: data.slug,
     image: data.image,
+    demo: data.demo,
     techno: data.techno[name],
   }));
   return dashboards;
@@ -53,6 +51,7 @@ function getDashboardByTechnologie(name: keyof TechnoTypes, slug: any) {
     name: dashboards[0]?.name,
     slug: dashboards[0]?.slug,
     image: dashboards[0]?.image,
+    demo: dashboards[0]?.demo,
     techno: dashboards[0]?.techno[name],
   };
 }

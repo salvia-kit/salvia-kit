@@ -1,6 +1,6 @@
 /* importing images that way so Next.js would auto-detect images size */
 
-import imgV1 from '@/public/images/dashboards/dashv1.jpg';
+import imgV1 from '@/public/images/dashboards/dashv1.png';
 import imgV2 from '@/public/images/dashboards/dashv2.jpg';
 import imgV3 from '@/public/images/dashboards/dashv3.png';
 import imgV4 from '@/public/images/dashboards/dashv4.jpg';

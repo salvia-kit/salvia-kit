@@ -7,6 +7,7 @@ const data = [
     name: 'Salvia-kit Dashboard v1',
     slug: 'dashboard-v1',
     image: img.imgV1,
+    demo: 'https://salvia-kit-dashboard-v1-demo.vercel.app',
     techno: {
       react: {
         name: 'react',
@@ -35,6 +36,7 @@ const data = [
     name: 'Salvia-kit Dashboard v2',
     slug: 'dashboard-v2',
     image: img.imgV2,
+    demo: 'https://salvia-kit-dashboard-v2-demo.vercel.app',
     techno: {
       react: {
         name: 'react',
@@ -63,6 +65,7 @@ const data = [
     name: 'Salvia-kit Dashboard v3',
     slug: 'dashboard-v3',
     image: img.imgV3,
+    demo: 'https://salvia-kit-dashboard-v3-demo.vercel.app',
     techno: {
       react: {
         name: 'react',
@@ -91,6 +94,7 @@ const data = [
     name: 'Salvia-kit Dashboard v4',
     slug: 'dashboard-v4',
     image: img.imgV4,
+    demo: 'https://salvia-kit-dashboard-v4-demo.vercel.app',
     techno: {
       react: {
         name: 'react',
@@ -117,6 +121,7 @@ const data = [
   {
     id: 5,
     name: 'Salvia-kit Dashboard v5',
+    demo: 'https://salvia-kit-dashboard-v5-demo.vercel.app',
     slug: 'dashboard-v5',
     image: img.imgV5,
     techno: {
@@ -145,6 +150,7 @@ const data = [
   {
     id: 6,
     name: 'Salvia-kit Dashboard v6',
+    demo: 'https://salvia-kit-dashboard-v6-demo.vercel.app',
     slug: 'dashboard-v6',
     image: img.imgV6,
     techno: {
@@ -175,6 +181,7 @@ const data = [
     name: 'Salvia-kit Dashboard v7',
     slug: 'dashboard-v7',
     image: img.imgV7,
+    demo: 'https://salvia-kit-dashboard-v7-demo.vercel.app',
     techno: {
       react: {
         name: 'react',
@@ -203,6 +210,7 @@ const data = [
     name: 'Salvia-kit Dashboard v8',
     slug: 'dashboard-v8',
     image: img.imgV8,
+    demo: 'https://salvia-kit-dashboard-v8-demo.vercel.app',
     techno: {
       react: {
         name: 'react',

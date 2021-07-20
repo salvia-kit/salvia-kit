@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "property": "og:type",
+    "content": "website"
+  },
+  {
+    "id": "2",
+    "property": "og:url",
+    "content": "https://salvia-kit.com"
+  },
+  {
+    "id": "3",
+    "property": "og:title",
+    "content": "Salvia-kit - Beautiful Dashboards built with Tailwind CSS"
+  },
+  {
+    "id": "4",
+    "property": "og:description",
+    "content": "Salvia-kit provides the most beautiful dashboards built with Tailwind CSS for React, Next.js, Vue and Nuxt. Explore and enjoy the experience."
+  },
+  {
+    "id": "5",
+    "property": "og:image",
+    "content": "https://salvia-kit.com/images/others/salvia-facebok.png"
+  },
+  {
+    "id": "6",
+    "property": "og:image:alt",
+    "content": "Salvia-kit"
+  },
+  {
+    "id": "7",
+    "property": "twitter:card",
+    "content": "summary_large_image"
+  },
+  {
+    "id": "8",
+    "property": "twitter:url",
+    "content": "https://salvia-kit.com"
+  },
+  {
+    "id": "9",
+    "property": "twitter:title",
+    "content": "Salvia-kit - Beautiful Dashboards built with Tailwind CSS"
+  },
+  {
+    "id": "10",
+    "property": "twitter:description",
+    "content": "Salvia-kit provides the most beautiful dashboards built with Tailwind CSS for React, Next.js, Vue and Nuxt. Explore and enjoy the experience."
+  },
+  {
+    "id": "11",
+    "property": "twitter:image",
+    "content": "https://salvia-kit.com/images/others/salvia-twitter.png"
+  }
+]

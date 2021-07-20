@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Container from '@/src/components/container';
 import { getDashboardByTechnologie, isTechno } from '@/src/data/parseData';
+import Button from '@/src/components/ui/button';
 
 export default function TechnoDocPage() {
   const router = useRouter();
@@ -45,6 +46,14 @@ export default function TechnoDocPage() {
                 with documentation designed by a developer for developers. Feel
                 free to customize everything to suit your needs.
               </p>
+              <a
+                href={data?.demo}
+                className="block mt-8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="custom">Demo</Button>
+              </a>
             </div>
             {data.techno.doc}
           </Container>
