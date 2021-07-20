@@ -14,7 +14,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
             rel="stylesheet"
           />
-          <link rel="manifest" href="/favicon/manifest.json" />
           {favicons.map((item) => (
             <link
               key={item.sizes}
