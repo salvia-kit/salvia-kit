@@ -9,7 +9,7 @@ const HomeSecondSection = () => (
       Dashboards
     </h2>
     <div className="flex flex-wrap mt-12">
-      {data.slice(0, 3).map((dash) => (
+      {data.slice(3, 6).map((dash) => (
         <DashboardCard
           key={dash.id}
           data={dash}

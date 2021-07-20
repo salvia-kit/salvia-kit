@@ -22,7 +22,7 @@
   {
     "id": "5",
     "property": "og:image",
-    "content": "https://salvia-kit.com/images/others/salvia-facebok.png"
+    "content": "https://salvia-kit.com/images/dashboards/dashv4.png"
   },
   {
     "id": "6",
@@ -52,6 +52,6 @@
   {
     "id": "11",
     "property": "twitter:image",
-    "content": "https://salvia-kit.com/images/others/salvia-twitter.png"
+    "content": "https://salvia-kit.com/images/dashboards/dashv4.png"
   }
 ]
