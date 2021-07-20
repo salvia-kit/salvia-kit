@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_BASE_URL,
+  siteUrl: 'https://www.salvia-kit.com',
   generateRobotsTxt: true,
 };
