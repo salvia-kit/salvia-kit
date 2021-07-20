@@ -20,19 +20,19 @@ export default function Sidenavigation() {
         <ThemeSwitcher />
       </SidenavItem>
       <SidenavSection className="mb-4 mt-16">Techno</SidenavSection>
-      <SidenavItem href="/dashboard/technology?name=react">
+      <SidenavItem href="/techno/react">
         <ReactIcon className="mt-1 w-4 h-4" />
         <span className="mt-0.5 pl-2">React</span>
       </SidenavItem>
-      <SidenavItem href="/dashboard/technology?name=vue">
+      <SidenavItem href="/techno/vue">
         <VueIcon className="mt-0.5 w-4 h-4" />
         <span className="pl-2">Vue</span>
       </SidenavItem>
-      <SidenavItem href="/dashboard/technology?name=next">
+      <SidenavItem href="/techno/next">
         <Image src="/images/next.png" width={20} height={20} alt="Next.js" />
         <span className="pl-2">Next.js</span>
       </SidenavItem>
-      <SidenavItem href="/dashboard/technology?name=nuxt">
+      <SidenavItem href="/techno/nuxt">
         <NuxtIcon className="mt-0.5 w-4 h-4" />
         <span className="pl-2">Nuxt</span>
       </SidenavItem>

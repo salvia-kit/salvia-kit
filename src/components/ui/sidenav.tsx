@@ -16,11 +16,11 @@ interface ISidenavItemProps extends ChildrenType {
 const style = {
   section: 'pl-5 text-2xl font-medium',
   itemActive: 'bg-gray-100 dark:bg-[#1B2A31]',
-  item: `flex justify-start text-sm cursor-pointer font-light pl-8 mb-5 py-2`,
+  item: `flex justify-start whitespace-pre text-sm cursor-pointer font-light pl-8 mb-5 py-2`,
   sidenav: {
     default: `flex flex-col h-screen fixed z-40 top-0 pb-32 right-0 lg:hidden`,
-    close: `w-0 bg-gray-800 text-white overflow-x-hidden transition-all ease-in duration-200`,
-    open: `w-7/12 bg-light dark:bg-dark overflow-x-hidden transition-all ease-out duration-200`,
+    close: `w-0 bg-gray-800 text-white overflow-x-hidden transition-all ease-in duration-100`,
+    open: `w-7/12 bg-light dark:bg-dark overflow-x-hidden transition-all ease-out duration-100`,
   },
 };
 
