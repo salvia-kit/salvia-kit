@@ -45,7 +45,7 @@ const HomeFirstSection = () => (
           </div>
           <div>
             <Image
-              src="/images/hero.png"
+              src="/images/others/pc.png"
               height={90}
               width={145}
               alt="Salvia-kit have what you're looking for"

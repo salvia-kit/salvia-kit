@@ -51,7 +51,12 @@ export default function HomeFifthSection() {
 
       <div className="flex flex-wrap justify-center pt-32 space-x-4 md:space-x-24 lg:space-x-32">
         <div>
-          <Image src="/images/next.png" height={50} width={50} alt="next.js" />
+          <Image
+            src="/images/others/next.png"
+            height={50}
+            width={50}
+            alt="next.js"
+          />
         </div>
         <div className="-mt-1">
           <Image

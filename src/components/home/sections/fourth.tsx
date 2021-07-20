@@ -1,5 +1,5 @@
-import oceanImg from '@/public/images/ocean.jpg';
 import CustomImage from '@/src/components/image';
+import oceanImg from '@/public/images/others/ocean.jpg';
 
 export default function HomeFourthSection() {
   return (

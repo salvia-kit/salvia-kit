@@ -38,7 +38,7 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
           <div className="md:w-6/12 lg:w-3/12">
             <span className="grid place-items-center">
               <Image
-                src="/images/next.png"
+                src="/images/others/next.png"
                 width={36}
                 height={36}
                 alt="Next.js"

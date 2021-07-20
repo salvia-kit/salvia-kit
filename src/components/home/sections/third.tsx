@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import teacherImg from '@/public/images/teacher.png';
+import teacherImg from '@/public/images/others/teacher.png';
 
 export default function HomeThirdSection() {
   return (

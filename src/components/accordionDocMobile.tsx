@@ -43,7 +43,7 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
           <div className="mt-12 w-56">
             <span className="grid place-items-center">
               <Image
-                src="/images/next.png"
+                src="/images/others/next.png"
                 width={36}
                 height={36}
                 alt="Next.js"

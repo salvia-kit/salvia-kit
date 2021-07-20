@@ -33,7 +33,12 @@ export default function Sidenavigation() {
         <span className="pl-2">Nuxt</span>
       </SidenavItem>
       <SidenavItem href="/techno/next">
-        <Image src="/images/next.png" width={20} height={20} alt="Next.js" />
+        <Image
+          src="/images/others/next.png"
+          width={20}
+          height={20}
+          alt="Next.js"
+        />
         <span className="pl-2">Next.js</span>
       </SidenavItem>
       <SidenavSection className="mb-4 mt-16">Versions</SidenavSection>
