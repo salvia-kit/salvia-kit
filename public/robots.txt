@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.salvia-kit.com
+Host: https://salvia-kit.com
 
 # Sitemaps
-Sitemap: https://www.salvia-kit.com/sitemap.xml
+Sitemap: https://salvia-kit.com/sitemap.xml

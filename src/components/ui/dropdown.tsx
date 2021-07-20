@@ -81,7 +81,6 @@ function DropdownToggle({ children }: ChildrenType) {
     <button
       onClick={toggle}
       type="button"
-      id="options-menu"
       className="font-bold focus:outline-none"
       aria-expanded="true"
       aria-haspopup="true"
@@ -96,10 +95,8 @@ function DropdownMenu({ children }: ChildrenType) {
   return (
     <div className="relative">
       <div
-        role="menu"
         className={style.menu}
         aria-orientation="vertical"
-        aria-labelledby="options-menu"
         style={{ transform: 'translate3d(0px, 3px, 0px)' }}
       >
         {show && children}
@@ -113,8 +110,6 @@ function DropdownItem({ children, className, href }: DropdownItemProps) {
   return (
     <Link href={href}>
       <a
-        tabIndex={0}
-        role="menuitem"
         className={`${style.item} ${className} 
            ${href === asPath ? style.itemActive : ''} `}
       >
