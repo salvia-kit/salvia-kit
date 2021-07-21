@@ -10,7 +10,7 @@ const HomeFirstSection = () => (
       alt="Overlay"
       className={`absolute left-0 top-0 w-full object-cover ${css.image}`}
     />
-    <div className={css.homeContainer}>
+    <div className="relative h-auto">
       <div>
         <span className="font-bold">Discover your future workspace</span>
         <h1 className="mb-12 mt-4 text-4xl lg:text-7xl">
