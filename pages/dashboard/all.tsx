@@ -8,10 +8,7 @@ export default function AllDashboardsPage() {
     <>
       <Head>
         <title>Salvia-kit - Dashboards Catalog</title>
-        <link
-          rel="canonical"
-          href={`${process.env.NEXT_PUBLIC_BASE_URL}/all`}
-        />
+        <link rel="canonical" href="https://www.salvia-kit.com/dashboard/all" />
         <meta
           name="description"
           content="We have what your are looking for. Our dashboards catalog contains the variants for React, Next.js, Vue and Nuxt."

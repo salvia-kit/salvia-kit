@@ -37,7 +37,7 @@ export default function DashboardPage({
             <title>{dashboard.name}</title>
             <link
               rel="canonical"
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}/${dashboard.slug}`}
+              href={`https://www.salvia-kit.com/${dashboard.slug}`}
             />
             <meta
               name="description"

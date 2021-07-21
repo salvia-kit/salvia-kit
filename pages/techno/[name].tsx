@@ -27,7 +27,7 @@ export default function TechnologiePage({
             <title>Salvia-kit - {isTechno(name)} Dashboards</title>
             <link
               rel="canonical"
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}/techno/${name}`}
+              href={`https://www.salvia-kit.com/techno/${name}`}
             />
             <meta
               name="description"

@@ -30,7 +30,7 @@ export default function TechnoDocPage() {
             </title>
             <link
               rel="canonical"
-              href={`${process.env.NEXT_PUBLIC_BASE_URL}/dashboard?techno=${techno}&name=${data.slug}`}
+              href={`https://www.salvia-kit.com/dashboard?techno=${techno}&name=${data.slug}`}
             />
           </Head>
           <Container>
