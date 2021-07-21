@@ -21,7 +21,8 @@
     "layout",
     "nuxt",
     "react dashboard",
-    "vue dashboard"
+    "vue dashboard",
+    "admin dashboard"
   ],
   "scripts": {
     "dev": "next dev",
