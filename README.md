@@ -1,7 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [Salvia-kit - Beautiful Dashboards built with Tailwind CSS](https://www.salvia-kit.com)
+![Salvia-kit](https://res.cloudinary.com/beloved/image/upload/v1626830930/dashboards/salvia-kit_nqfzj5.png)
+
+Salvia-kit dashboard is a dashboards' website built with Tailwind CSS. We took advantage of Tailwind's flexibility to create a fully customizable premium and professional dashboards, with documentation designed by a developer for developers.
+
+All the dashboards are free to use. We provide dashboards for :
+- [React](https://www.salvia-kit.com/techno/react)
+- [Next.js](https://www.salvia-kit.com/techno/next)
+- [Vue](https://www.salvia-kit.com/techno/vue)
+- [Nuxt.js](https://www.salvia-kit.com/techno/nuxt)
+
+Each dashboard is made for those 4 technos and each variant has a dedicated documentation.
+
+## 📦 Dashboard Features
+
+- Support of the active route (styled by default).
+- Fully customizable and without external dependencies
+- No vendor lock-in, you can export it and integrate it in your project.
+- Sidenav aligned left or right according to your preferences (on mobile).
+
+## Acknowledgements
+Salvia-kit is made possible by [Tailwind CSS](https://tailwindcss.com).
+
+<a href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
+<img width="170px" src="https://res.cloudinary.com/beloved/image/upload/v1626832853/dashboards/vercel_a5chgh.svg" alt="Powered By Vercel" />
+</a>
+<br/>
+Thanks to Vercel for sponsoring this project by allowing it to be deployed for free for the entire Salvia-kit Team.
+
+
+## Contributing
+We're open to all contributions! If you'd like to contribute in any way, please first read our [Contribution Guide](https://github.com/salvia-kit/salvia-kit-website/blob/main/contributing.md).
+
+##Licence
+MIT
 
 ## Getting Started
-
 First, run the development server:
 
 ```bash
@@ -9,14 +42,6 @@ npm run dev
 # or
 yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/icons.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
