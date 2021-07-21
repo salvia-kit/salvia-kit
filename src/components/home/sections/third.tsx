@@ -8,7 +8,7 @@ export default function HomeThirdSection() {
       <div className="flex mt-4 md:mt-8">
         <div className="2xl:pt-16 w-full md:pr-2 md:w-6/12">
           <p className="mt-6">
-            Salvia-kit was created to solve a problem I often encountered when
+            Salvia-kit is created to solve a problem I often encountered when
             using dashboards owned by third party developers or companies. that
             is <strong>vendor lock-in</strong>.
           </p>
