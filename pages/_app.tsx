@@ -1,11 +1,28 @@
+import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
+
 import '@/src/styles/globals.css';
-import metaTags from '@/src/data/metaTags.json';
 import Layout from '@/src/layout/layout';
+import * as gtag from '@/src/utils/gtag';
+import metaTags from '@/src/data/metaTags.json';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { events } = useRouter();
+
+  React.useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      gtag.pageView(url);
+    };
+    events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [events]);
+
   return (
     <>
       <Head>
