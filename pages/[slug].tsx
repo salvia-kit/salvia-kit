@@ -49,7 +49,11 @@ export default function DashboardPage({
               <h1 className="mb-6 text-center text-3xl font-bold md:text-left">
                 {dashboard.name}
               </h1>
-              <Image src={dashboard.image} alt={dashboard.name} />
+              <Image
+                src={dashboard.image}
+                alt={dashboard.name}
+                placeholder="blur"
+              />
               <p className="mt-6">
                 Salvia-kit dashboard is a professional dashboard built with{' '}
                 <strong>Tailwind CSS</strong>. We took advantage of Tailwind's

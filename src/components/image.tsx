@@ -24,6 +24,7 @@ const CustomImage = ({
       src={src}
       alt={alt}
       {...props}
+      placeholder="blur"
       className={`${className} ${style.img}`}
     />
   </div>
