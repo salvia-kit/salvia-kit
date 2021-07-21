@@ -39,7 +39,22 @@ export default function Footer() {
             <h3 className="text-2xl font-bold">Acknowledgements</h3>
             <ul className="mt-5">
               <li className="pb-3">
-                <a href="https://tailwindcss.com">Tailwind CSS</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://tailwindcss.com"
+                >
+                  Tailwind CSS
+                </a>
+              </li>
+              <li className="pb-3">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.tailwind-kit.com"
+                >
+                  Tail-Kit
+                </a>
               </li>
               <li>
                 <a href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
