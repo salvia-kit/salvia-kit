@@ -10,7 +10,9 @@ export default function Footer() {
             <h3 className="text-2xl font-bold">Contact</h3>
             <ul className="mt-5">
               <li className="pb-3">
-                <a href="https://github.com/salvia-kit">Github</a>
+                <a href="https://github.com/salvia-kit/salvia-kit-website">
+                  Github
+                </a>
               </li>
               <li className="pb-3">Twitter</li>
               <li className="pb-3">
