@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 /*==== CHANGE HEADER BACKGROUND ====*/
 // When the scroll is greater than 100px of viewport height, add new classes to the header tag
 
-const classNames = [
+const homePageClassNames = [
   'shadow',
   'bg-light',
   'text-custom',
@@ -12,17 +12,26 @@ const classNames = [
   'dark:text-white',
 ];
 
+const notHomePageClassNames = ['shadow', 'bg-light', 'dark:bg-dark'];
+
 export default function useScrollHeader() {
   const headerRef = React.useRef<HTMLElement>(null);
   const { asPath } = useRouter();
 
   React.useEffect(() => {
     const scrollHeader = () => {
-      if (asPath !== '/') return;
-      if (window.scrollY >= 100) {
-        return headerRef.current?.classList.add(...classNames);
+      if (asPath === '/') {
+        if (window.scrollY >= 100) {
+          return headerRef.current?.classList.add(...homePageClassNames);
+        }
+        return headerRef.current?.classList.remove(...homePageClassNames);
       }
-      return headerRef.current?.classList.remove(...classNames);
+      if (asPath !== '/') {
+        if (window.scrollY >= 0) {
+          return headerRef.current?.classList.add(...notHomePageClassNames);
+        }
+        return headerRef.current?.classList.remove(...notHomePageClassNames);
+      }
     };
 
     window.addEventListener('scroll', scrollHeader);
