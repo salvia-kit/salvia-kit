@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import V7NuxtSecondSection from '@/src/docs/v7/nuxt/sections/second';
 import V7NuxtThirdSection from '@/src/docs/v7/nuxt/sections/third';
 import V7NuxtFourthSection from '@/src/docs/v7/nuxt/sections/fourth';
 
@@ -7,6 +6,7 @@ import LintersSection from '@/src/docs/common/linters';
 import FeaturesSection from '@/src/docs/common/features';
 import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
 import { NuxtCommonFirstSectionV1AndV7 } from '@/src/docs/common/section/nuxt/firstSection';
+import { NuxtCommonSecondSectionV1AndV7 } from '@/src/docs/common/section/nuxt/secondSection';
 
 export default function DocV7Nuxt() {
   return (
@@ -17,7 +17,7 @@ export default function DocV7Nuxt() {
       </h2>
       <FeaturesSection />
       <NuxtCommonFirstSectionV1AndV7 />
-      <V7NuxtSecondSection />
+      <NuxtCommonSecondSectionV1AndV7 />
       <V7NuxtThirdSection />
       <V7NuxtFourthSection />
       <LintersSection />

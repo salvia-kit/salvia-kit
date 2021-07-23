@@ -17,7 +17,7 @@ const VueCommonSecondSectionV1AndV7 = () => (
       </div>
       <div className="flex flex-wrap mt-4 pl-6 md:flex-nowrap">
         <VueIcon className="w-7 h-7" />
-        <span className="px-2 font-semibold">Context.vue</span> :
+        <span className="px-2 font-semibold">Provider.vue</span> :
         <p className="pl-2">
           contains the
           <strong className="pl-1 font-semibold">
@@ -169,7 +169,7 @@ const VueCommonSecondSectionV3AndV4AndV6 = () => (
       </div>
       <div className="flex flex-wrap mt-4 pl-6 md:flex-nowrap">
         <VueIcon className="w-7 h-7" />
-        <span className="px-2 font-semibold">Context.vue</span> :
+        <span className="px-2 font-semibold">Provider.vue</span> :
         <p className="pl-2">
           contains the
           <strong className="pl-1 font-semibold">

@@ -26,6 +26,18 @@ const NextCommonFirstSection = () => (
       </div>
       <div className="flex mb-3 pl-11">
         <FolderIcon />
+        <span className="pl-2">provider</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <JsIcon />
+        <span className="pl-2">context.js</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <JsIcon />
+        <span className="pl-2">overlay.js</span>
+      </div>
+      <div className="flex mb-3 pl-11">
+        <FolderIcon />
         <span className="pl-2">sidenavigation</span>
       </div>
       <div className="flex mb-3 pl-16">
