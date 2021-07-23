@@ -14,6 +14,18 @@ const V8NuxtFirstSection = () => (
       </div>
       <div className="flex mb-3 pl-11">
         <FolderIcon />
+        <span className="pl-2">provider</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <VueIcon />
+        <span className="pl-2">Provider.vue</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <VueIcon />
+        <span className="pl-2">Overlay.vue</span>
+      </div>
+      <div className="flex mb-3 pl-11">
+        <FolderIcon />
         <span className="pl-2">sidenavigation</span>
       </div>
       <div className="flex mb-3 pl-16">

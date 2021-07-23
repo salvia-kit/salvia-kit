@@ -16,7 +16,7 @@ const V8NuxtSecondSection = () => (
       </div>
       <div className="flex flex-wrap mt-4 pl-6 md:flex-nowrap">
         <VueIcon className="w-7 h-7" />
-        <span className="px-2 font-medium">Context.vue</span> :
+        <span className="px-2 font-medium">Provider.vue</span> :
         <p className="pl-2">
           contains the <strong>dashboard-provider</strong> component where all
           the dashboard logic is placed. this will then be reused in other

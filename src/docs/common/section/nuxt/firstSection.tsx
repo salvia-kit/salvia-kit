@@ -14,6 +14,18 @@ const NuxtCommonFirstSectionV1AndV7 = () => (
       </div>
       <div className="flex mb-3 pl-11">
         <FolderIcon />
+        <span className="pl-2">provider</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <VueIcon />
+        <span className="pl-2">Provider.vue</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <VueIcon />
+        <span className="pl-2">Overlay.vue</span>
+      </div>
+      <div className="flex mb-3 pl-11">
+        <FolderIcon />
         <span className="pl-2">sidenavigation</span>
       </div>
       <div className="flex mb-3 pl-16">
@@ -79,6 +91,18 @@ const NuxtCommonFirstSectionV3AndV4AndV6 = () => (
       <div className="flex mb-3 pl-5">
         <FolderIcon />
         <span className="pl-2">dashboard</span>
+      </div>
+      <div className="flex mb-3 pl-11">
+        <FolderIcon />
+        <span className="pl-2">provider</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <VueIcon />
+        <span className="pl-2">Provider.vue</span>
+      </div>
+      <div className="flex mb-3 pl-16">
+        <VueIcon />
+        <span className="pl-2">Overlay.vue</span>
       </div>
       <div className="flex mb-3 pl-11">
         <FolderIcon />

@@ -5,6 +5,7 @@ import V1AndV2NuxtThirdSection from '@/src/docs/v1-2/nuxt/sections/third';
 import V1AndV2NuxtFourthSection from '@/src/docs/v1-2/nuxt/sections/fourth';
 import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
 import { NuxtCommonFirstSectionV1AndV7 } from '@/src/docs/common/section/nuxt/firstSection';
+import { NuxtCommonSecondSectionV1AndV7 } from '@/src/docs/common/section/nuxt/secondSection';
 
 // this doc is for the version 1 and 2 of dashboard
 export default function DocV1AndV2Nuxt() {
@@ -16,7 +17,7 @@ export default function DocV1AndV2Nuxt() {
       </h2>
       <FeaturesSection />
       <NuxtCommonFirstSectionV1AndV7 />
-      <NuxtCommonFirstSectionV1AndV7 />
+      <NuxtCommonSecondSectionV1AndV7 />
       <V1AndV2NuxtThirdSection />
       <V1AndV2NuxtFourthSection />
       <LintersSection />
