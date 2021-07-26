@@ -46,14 +46,24 @@ export default function TechnoDocPage() {
                 with documentation designed by a developer for developers. Feel
                 free to customize everything to suit your needs.
               </p>
-              <a
-                href={data?.demo}
-                className="block mt-8"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button color="custom">Demo</Button>
-              </a>
+              <div className="flex space-x-2">
+                <a
+                  href={data?.demo}
+                  className="block mt-8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button color="custom">Demo</Button>
+                </a>
+                <a
+                  href={data?.techno.source}
+                  className="block mt-8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button color="custom">Source</Button>
+                </a>
+              </div>
             </div>
             {data.techno.doc}
           </Container>
