@@ -26,13 +26,18 @@ export default function HomeThirdSection() {
           <p className="mt-6">
             Built with <strong>Tailwind CSS</strong>, they are fully
             customizable and without external dependencies. Each dashboard has 4
-            variants. one for <strong>create-react-app</strong>,{' '}
+            templates. one for <strong>create-react-app</strong>,{' '}
             <strong>Next.js</strong>, <strong>Vue with vite</strong> and{' '}
             <strong>Nuxt</strong>.
           </p>
         </div>
         <div className="hidden md:flex md:w-6/12">
-          <Image src={teacherImg} alt="Salvia-kit guide" />
+          <Image
+            src={teacherImg}
+            alt="Salvia-kit guide"
+            placeholder="blur"
+            objectFit="contain"
+          />
         </div>
       </div>
     </section>

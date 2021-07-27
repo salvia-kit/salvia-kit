@@ -19,8 +19,8 @@ export default function HomeFourthSection() {
           <span className="block mt-4 text-sm">Dashboards</span>
         </div>
         <div className="mx-4 md:mx-12">
-          <span className="flex justify-center text-2xl font-bold">28+</span>
-          <span className="block mt-4 text-sm">Variants</span>
+          <span className="flex justify-center text-2xl font-bold">30+</span>
+          <span className="block mt-4 text-sm">Templates</span>
         </div>
       </div>
       <div className="grid mt-8 md:place-items-center">
