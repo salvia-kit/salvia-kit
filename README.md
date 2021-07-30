@@ -1,5 +1,5 @@
 # [Salvia-kit - Beautiful Dashboards built with Tailwind CSS](https://www.salvia-kit.com)
-![Salvia-kit](https://res.cloudinary.com/beloved/image/upload/v1626830930/dashboards/salvia-kit_nqfzj5.png)
+![Salvia-kit](https://www.salvia-kit.com/images/others/salvia-kit.png)
 
 Salvia-kit dashboard is a dashboards' website built with Tailwind CSS. We took advantage of Tailwind's flexibility to create a fully customizable premium and professional dashboards, with documentation designed by a developer for developers.
 
