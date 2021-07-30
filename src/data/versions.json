@@ -38,5 +38,10 @@
     "id": 8,
     "name": "Dashboard v8",
     "link": "/dashboard-v8"
+  },
+  {
+    "id": 9,
+    "name": "Dashboard v9",
+    "link": "/dashboard-v9"
   }
 ]
