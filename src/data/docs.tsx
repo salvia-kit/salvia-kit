@@ -28,6 +28,9 @@ import DocV8Next from '@/src/docs/v8/next/doc';
 import DocV8Vue from '@/src/docs/v8/vue/doc';
 import DocV8Nuxt from '@/src/docs/v8/nuxt/doc';
 
+import DocV9React from '@/src/docs/v9/react/doc';
+import DocV9Next from '@/src/docs/v9/next/doc';
+
 export {
   DocV1AndV2React,
   DocV1AndV2Next,
@@ -53,4 +56,6 @@ export {
   DocV8Next,
   DocV8Vue,
   DocV8Nuxt,
+  DocV9React,
+  DocV9Next,
 };

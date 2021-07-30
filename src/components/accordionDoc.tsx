@@ -57,47 +57,56 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
             </div>
           </div>
 
-          <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
-            <span className="grid place-items-center">
-              <VueIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 font-semibold">Vue</span>
-            </span>
-            <div className="flex justify-center space-x-2">
-              <AccordionItem color="green" toggle={techno.vue.name}>
-                Doc
-              </AccordionItem>
-              <a href={techno.vue.source}>
-                <Button color="green" size="sm">
-                  Source
-                </Button>
-              </a>
+          {techno?.vue && (
+            <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
+              <span className="grid place-items-center">
+                <VueIcon className="w-9 h-9" />
+                <span className="mb-5 mt-2 font-semibold">Vue</span>
+              </span>
+              <div className="flex justify-center space-x-2">
+                <AccordionItem color="green" toggle={techno.vue.name}>
+                  Doc
+                </AccordionItem>
+                <a href={techno.vue.source}>
+                  <Button color="green" size="sm">
+                    Source
+                  </Button>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
-            <span className="grid place-items-center">
-              <NuxtIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 font-semibold">Nuxt</span>
-            </span>
-            <div className="flex justify-center space-x-2">
-              <AccordionItem color="green" toggle={techno.nuxt.name}>
-                Doc
-              </AccordionItem>
-              <a href={techno.nuxt.source}>
-                <Button color="green" size="sm">
-                  Source
-                </Button>
-              </a>
+          )}
+          {techno?.nuxt && (
+            <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
+              <span className="grid place-items-center">
+                <NuxtIcon className="w-9 h-9" />
+                <span className="mb-5 mt-2 font-semibold">Nuxt</span>
+              </span>
+              <div className="flex justify-center space-x-2">
+                <AccordionItem color="green" toggle={techno.nuxt.name}>
+                  Doc
+                </AccordionItem>
+                <a href={techno.nuxt.source}>
+                  <Button color="green" size="sm">
+                    Source
+                  </Button>
+                </a>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <AccordionPanel id={techno.react.name}>
           {techno.react.doc}
         </AccordionPanel>
         <AccordionPanel id={techno.next.name}>{techno.next.doc}</AccordionPanel>
-        <AccordionPanel id={techno.vue.name}>{techno.vue.doc}</AccordionPanel>
-        <AccordionPanel id={techno.nuxt.name}>{techno.nuxt.doc}</AccordionPanel>
+        {techno?.vue && (
+          <AccordionPanel id={techno.vue.name}>{techno.vue.doc}</AccordionPanel>
+        )}
+        {techno?.nuxt && (
+          <AccordionPanel id={techno.nuxt.name}>
+            {techno.nuxt.doc}
+          </AccordionPanel>
+        )}
       </Accordion>
     </div>
   );

@@ -8,5 +8,6 @@ import imgV5 from '@/public/images/dashboards/dashv5.jpg';
 import imgV6 from '@/public/images/dashboards/dashv6.jpg';
 import imgV7 from '@/public/images/dashboards/dashv7.jpg';
 import imgV8 from '@/public/images/dashboards/dashv8.jpg';
+import imgV9 from '@/public/images/dashboards/dashv9.png';
 
-export { imgV1, imgV2, imgV3, imgV4, imgV5, imgV6, imgV7, imgV8 };
+export { imgV1, imgV2, imgV3, imgV4, imgV5, imgV6, imgV7, imgV8, imgV9 };

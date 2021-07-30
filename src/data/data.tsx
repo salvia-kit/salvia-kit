@@ -234,6 +234,25 @@ const data = [
       },
     },
   },
+  {
+    id: 9,
+    name: 'Salvia-kit Dashboard v9',
+    slug: 'dashboard-v9',
+    image: img.imgV9,
+    demo: 'https://salvia-kit-dashboard-v9-demo.vercel.app',
+    techno: {
+      react: {
+        name: 'react',
+        doc: <Doc.DocV9React />,
+        source: 'https://github.com/salvia-kit/dashboard-v9-cra',
+      },
+      next: {
+        name: 'next',
+        doc: <Doc.DocV9Next />,
+        source: 'https://github.com/salvia-kit/dashboard-v9-nextjs',
+      },
+    },
+  },
 ];
 
 export default data;

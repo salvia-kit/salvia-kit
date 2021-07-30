@@ -5,6 +5,7 @@ import HomeSecondSection from '@/src/components/home/sections/second';
 import HomeThirdSection from '@/src/components/home/sections/third';
 import HomeFourthSection from '@/src/components/home/sections/fourth';
 import HomeFifthSection from '@/src/components/home/sections/fifth';
+import HomeArrivalSection from '@/src/components/home/sections/arrival';
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
       </Head>
       <Container>
         <HomeFirstSection />
+        <HomeArrivalSection />
         <HomeSecondSection />
         <HomeThirdSection />
         <HomeFourthSection />

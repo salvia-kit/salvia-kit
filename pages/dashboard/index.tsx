@@ -2,9 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+
+import Button from '@/src/components/ui/button';
 import Container from '@/src/components/container';
 import { getDashboardByTechnologie, isTechno } from '@/src/data/parseData';
-import Button from '@/src/components/ui/button';
 
 export default function TechnoDocPage() {
   const router = useRouter();
@@ -15,6 +16,25 @@ export default function TechnoDocPage() {
   React.useEffect(() => {
     if (router.isReady) {
       if (!router.query?.name || !router.query?.techno) {
+        router.push('/dashboard/all');
+      }
+    }
+  }, [router]);
+
+  // Because dashboard v9 for Vue and Nuxt are unavailable now
+  // we redirect to dashboard catalog
+  React.useEffect(() => {
+    if (router.isReady) {
+      if (
+        router.query?.name === 'dashboard-v9' &&
+        router.query.techno === 'nuxt'
+      ) {
+        router.push('/dashboard/all');
+      }
+      if (
+        router.query?.name === 'dashboard-v9' &&
+        router.query.techno === 'vue'
+      ) {
         router.push('/dashboard/all');
       }
     }
@@ -56,7 +76,7 @@ export default function TechnoDocPage() {
                   <Button color="custom">Demo</Button>
                 </a>
                 <a
-                  href={data?.techno.source}
+                  href={data?.techno?.source}
                   className="block mt-8"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +85,7 @@ export default function TechnoDocPage() {
                 </a>
               </div>
             </div>
-            {data.techno.doc}
+            {data?.techno?.doc}
           </Container>
         </>
       )}

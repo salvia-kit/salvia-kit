@@ -65,43 +65,53 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
             {techno.next.doc}
           </AccordionPanel>
 
-          <div className="mt-12 w-56">
-            <span className="grid place-items-center">
-              <VueIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 font-semibold">Vue</span>
-            </span>
-            <div className="flex justify-center space-x-2">
-              <AccordionItem color="green" toggle={techno.vue.name}>
-                Doc
-              </AccordionItem>
-              <a href={techno.vue.source}>
-                <Button color="green" size="sm">
-                  Source
-                </Button>
-              </a>
-            </div>
-          </div>
-          <AccordionPanel id={techno.vue.name}>{techno.vue.doc}</AccordionPanel>
+          {techno?.vue && (
+            <>
+              <div className="mt-12 w-56">
+                <span className="grid place-items-center">
+                  <VueIcon className="w-9 h-9" />
+                  <span className="mb-5 mt-2 font-semibold">Vue</span>
+                </span>
+                <div className="flex justify-center space-x-2">
+                  <AccordionItem color="green" toggle={techno.vue.name}>
+                    Doc
+                  </AccordionItem>
+                  <a href={techno.vue.source}>
+                    <Button color="green" size="sm">
+                      Source
+                    </Button>
+                  </a>
+                </div>
+              </div>
+              <AccordionPanel id={techno.vue.name}>
+                {techno.vue.doc}
+              </AccordionPanel>
+            </>
+          )}
 
-          <div className="mt-12 w-56">
-            <span className="grid place-items-center">
-              <NuxtIcon className="w-9 h-9" />
-              <span className="mb-5 mt-2 font-semibold">Nuxt</span>
-            </span>
-            <div className="flex justify-center space-x-2">
-              <AccordionItem color="green" toggle={techno.nuxt.name}>
-                Doc
-              </AccordionItem>
-              <a href={techno.nuxt.source}>
-                <Button color="green" size="sm">
-                  Source
-                </Button>
-              </a>
-            </div>
-          </div>
-          <AccordionPanel id={techno.nuxt.name}>
-            {techno.nuxt.doc}
-          </AccordionPanel>
+          {techno?.nuxt && (
+            <>
+              <div className="mt-12 w-56">
+                <span className="grid place-items-center">
+                  <NuxtIcon className="w-9 h-9" />
+                  <span className="mb-5 mt-2 font-semibold">Nuxt</span>
+                </span>
+                <div className="flex justify-center space-x-2">
+                  <AccordionItem color="green" toggle={techno.nuxt.name}>
+                    Doc
+                  </AccordionItem>
+                  <a href={techno.nuxt.source}>
+                    <Button color="green" size="sm">
+                      Source
+                    </Button>
+                  </a>
+                </div>
+              </div>
+              <AccordionPanel id={techno.nuxt.name}>
+                {techno.nuxt.doc}
+              </AccordionPanel>
+            </>
+          )}
         </div>
       </Accordion>
     </>

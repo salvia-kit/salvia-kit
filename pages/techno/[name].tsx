@@ -42,13 +42,23 @@ export default function TechnologiePage({
               <span className="pl-1">{isTechno(name)} - Dashboards</span>
             </h1>
             <div className="flex flex-wrap mt-12">
-              {dashboards.map((data: any) => (
-                <DashboardCard
-                  key={data.id}
-                  data={data}
-                  className="pb-12 w-full md:mb-8 md:p-4 md:w-4/12"
-                />
-              ))}
+              {name === 'vue' || name === 'nuxt'
+                ? dashboards
+                    .filter((dash: any) => dash.slug !== 'dashboard-v9')
+                    .map((dashboard: any) => (
+                      <DashboardCard
+                        key={dashboard.id}
+                        data={dashboard}
+                        className="pb-12 w-full md:mb-8 md:p-4 md:w-4/12"
+                      />
+                    ))
+                : dashboards.map((dat: any) => (
+                    <DashboardCard
+                      key={dat.id}
+                      data={dat}
+                      className="pb-12 w-full md:mb-8 md:p-4 md:w-4/12"
+                    />
+                  ))}
             </div>
           </Container>
         </>
