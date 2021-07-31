@@ -18,7 +18,7 @@ export default function HomePage() {
         />
         <meta
           name="description"
-          content="Salvia-kit provides the most beautiful dashboards built with Tailwind CSS for React, Next.js, Vue and Nuxt. Explore and enjoy the experience."
+          content="Salvia-kit provides the most beautiful dashboard templates built with Tailwind CSS for React, Next.js, Vue and Nuxt. It's free. Explore and enjoy the experience."
         />
         <link rel="canonical" href="https://www.salvia-kit.com" />
       </Head>
