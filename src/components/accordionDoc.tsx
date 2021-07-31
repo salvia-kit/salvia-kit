@@ -8,6 +8,7 @@ import Button from '@/src/components/ui/button';
 import NuxtIcon from '@/src/components/icons/nuxt';
 import ReactIcon from '@/src/components/icons/react';
 import { VueIcon } from '@/src/components/icons/icons';
+import ExternalLink from '@/src/components/externalLink';
 
 interface IAccordionDocProps {
   techno: any;
@@ -27,11 +28,11 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
               <AccordionItem color="blue-sky" toggle={techno.react.name}>
                 Doc
               </AccordionItem>
-              <a href={techno.react.source}>
+              <ExternalLink href={techno.react.source}>
                 <Button color="blue-sky" size="sm">
                   Source
                 </Button>
-              </a>
+              </ExternalLink>
             </div>
           </div>
 
@@ -49,11 +50,11 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
               <AccordionItem color="black" toggle={techno.next.name}>
                 Doc
               </AccordionItem>
-              <a href={techno.next.source}>
+              <ExternalLink href={techno.next.source}>
                 <Button color="black" size="sm">
                   Source
                 </Button>
-              </a>
+              </ExternalLink>
             </div>
           </div>
 
@@ -67,11 +68,11 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
                 <AccordionItem color="green" toggle={techno.vue.name}>
                   Doc
                 </AccordionItem>
-                <a href={techno.vue.source}>
+                <ExternalLink href={techno.vue.source}>
                   <Button color="green" size="sm">
                     Source
                   </Button>
-                </a>
+                </ExternalLink>
               </div>
             </div>
           )}
@@ -85,11 +86,11 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
                 <AccordionItem color="green" toggle={techno.nuxt.name}>
                   Doc
                 </AccordionItem>
-                <a href={techno.nuxt.source}>
+                <ExternalLink href={techno.nuxt.source}>
                   <Button color="green" size="sm">
                     Source
                   </Button>
-                </a>
+                </ExternalLink>
               </div>
             </div>
           )}

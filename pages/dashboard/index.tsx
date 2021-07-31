@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 import Button from '@/src/components/ui/button';
 import Container from '@/src/components/container';
+import ExternalLink from '@/src/components/externalLink';
 import { getDashboardByTechnologie, isTechno } from '@/src/data/parseData';
 
 export default function TechnoDocPage() {
@@ -67,22 +68,15 @@ export default function TechnoDocPage() {
                 free to customize everything to suit your needs.
               </p>
               <div className="flex space-x-2">
-                <a
-                  href={data?.demo}
-                  className="block mt-8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <ExternalLink href={data?.demo} className="block mt-8">
                   <Button color="custom">Demo</Button>
-                </a>
-                <a
+                </ExternalLink>
+                <ExternalLink
                   href={data?.techno?.source}
                   className="block mt-8"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <Button color="custom">Source</Button>
-                </a>
+                </ExternalLink>
               </div>
             </div>
             {data?.techno?.doc}

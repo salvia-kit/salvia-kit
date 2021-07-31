@@ -15,11 +15,11 @@ export default function HomeFourthSection() {
           <span className="block mt-4 text-sm">Technologies</span>
         </div>
         <div className="mx-4 md:mx-12">
-          <span className="flex justify-center text-2xl font-bold">8</span>
+          <span className="flex justify-center text-2xl font-bold">9</span>
           <span className="block mt-4 text-sm">Dashboards</span>
         </div>
         <div className="mx-4 md:mx-12">
-          <span className="flex justify-center text-2xl font-bold">30+</span>
+          <span className="flex justify-center text-2xl font-bold">33+</span>
           <span className="block mt-4 text-sm">Templates</span>
         </div>
       </div>

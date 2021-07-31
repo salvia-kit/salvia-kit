@@ -7,6 +7,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import data from '@/src/data/data';
 import Button from '@/src/components/ui/button';
 import Container from '@/src/components/container';
+import ExternalLink from '@/src/components/externalLink';
 import { getDashboard, getTechno } from '@/src/data/parseData';
 
 const AccordionDoc = dynamic(() => import('@/src/components/accordionDoc'), {
@@ -61,14 +62,9 @@ export default function DashboardPage({
                 with documentation designed by a developer for developers. Feel
                 free to customize everything to suit your needs.
               </p>
-              <a
-                href={dashboard.demo}
-                className="block mt-8"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink href={dashboard.demo} className="block mt-8">
                 <Button color="custom">Demo</Button>
-              </a>
+              </ExternalLink>
             </div>
             <AccordionDoc techno={techno} />
             <AccordionDocMobile techno={techno} />

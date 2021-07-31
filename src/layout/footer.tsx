@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Container from '@/src/components/container';
+import ExternalLink from '@/src/components/externalLink';
 
 export default function Footer() {
   return (
@@ -10,13 +11,15 @@ export default function Footer() {
             <h3 className="text-2xl font-bold">Contact</h3>
             <ul className="mt-5">
               <li className="pb-3">
-                <a href="https://github.com/salvia-kit/salvia-kit-website">
+                <ExternalLink href="https://github.com/salvia-kit/salvia-kit-website">
                   Github
-                </a>
+                </ExternalLink>
               </li>
               <li className="pb-3">Twitter</li>
               <li className="pb-3">
-                <a href="mailto:support@salvia-kit.com">Email</a>
+                <ExternalLink href="mailto:support@salvia-kit.com">
+                  Email
+                </ExternalLink>
               </li>
             </ul>
           </div>
@@ -24,14 +27,14 @@ export default function Footer() {
             <h3 className="text-2xl font-bold">About</h3>
             <ul className="mt-5">
               <li className="pb-3">
-                <a href="https://github.com/salvia-kit/salvia-kit-website/issues/new/choose">
+                <ExternalLink href="https://github.com/salvia-kit/salvia-kit-website/issues/new/choose">
                   Issues
-                </a>
+                </ExternalLink>
               </li>
               <li className="pb-3">
-                <a href="https://github.com/salvia-kit/salvia-kit-website/blob/main/contributing.md">
+                <ExternalLink href="https://github.com/salvia-kit/salvia-kit-website/blob/main/contributing.md">
                   Contributions
-                </a>
+                </ExternalLink>
               </li>
             </ul>
           </div>
@@ -39,32 +42,24 @@ export default function Footer() {
             <h3 className="text-2xl font-bold">Acknowledgements</h3>
             <ul className="mt-5">
               <li className="pb-3">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://tailwindcss.com"
-                >
+                <ExternalLink href="https://tailwindcss.com">
                   Tailwind CSS
-                </a>
+                </ExternalLink>
               </li>
               <li className="pb-3">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.tailwind-kit.com"
-                >
+                <ExternalLink href="https://www.tailwind-kit.com">
                   Tail-Kit
-                </a>
+                </ExternalLink>
               </li>
               <li>
-                <a href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
+                <ExternalLink href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
                   <Image
                     width={170}
                     height={50}
                     src="/svg/vercel.svg"
                     alt="Powered By Vercel"
                   />
-                </a>
+                </ExternalLink>
               </li>
             </ul>
           </div>
@@ -72,9 +67,9 @@ export default function Footer() {
         <div className="mt-16 pb-6 text-center text-sm">
           © {new Date().getFullYear()} Salvia-kit All rights reserved. Made with
           love by{' '}
-          <a className="font-semibold" href="https://enochndika.com">
+          <ExternalLink className="font-semibold" href="https://enochndika.com">
             Enoch Ndika
-          </a>
+          </ExternalLink>
         </div>
       </Container>
     </footer>
