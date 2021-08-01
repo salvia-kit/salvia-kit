@@ -21,6 +21,28 @@ const ReactSnippet = () => (
   </pre>
 );
 
+const ReactSnippetV9 = () => (
+  <pre className="dark:bg-[#1B2A31] px-4 py-1 max-w-full font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
+    {`[ 
+  {
+    section : 'Messages',
+    icon: <MessagesIcon />,
+    content: [
+      {
+        title: 'Archived',
+        link: '/messages/archived'
+      },
+      {
+        title: 'Unread',
+        link: '/messages/unread'
+      },
+    ]
+  },
+]
+`}
+  </pre>
+);
+
 const ReactSnippetShort = () => (
   <pre className="dark:bg-[#1B2A31] px-4 py-1 max-w-full font-mono text-sm bg-gray-100 border rounded overflow-x-auto">
     {`[ 
@@ -89,4 +111,5 @@ export {
   VueSnippet,
   VueSnippetShort,
   VueSnippetAccordion,
+  ReactSnippetV9,
 };

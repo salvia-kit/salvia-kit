@@ -1,3 +1,4 @@
+import NextIcon from '@/src/components/icons/next';
 import LintersSection from '@/src/docs/common/linters';
 import ComponentsSection from '@/src/docs/common/components';
 import V9NextFirstSection from '@/src/docs/v9/next/sections/first';
@@ -5,7 +6,6 @@ import V9NextThirdSection from '@/src/docs/v9/next/sections/third';
 import V9ReactNextFeaturesSection from '@/src/docs/common/section/react-next/features';
 import { V9ReactNextFifthSection } from '@/src/docs/common/section/react-next/fifthSection';
 import { ReactNextV9SecondSection } from '@/src/docs/common/section/react-next/secondSection';
-import NextIcon from '@/src/components/icons/next';
 
 export default function DocV9Next() {
   return (

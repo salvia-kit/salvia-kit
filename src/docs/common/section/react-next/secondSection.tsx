@@ -1,4 +1,4 @@
-import { ReactSnippet } from '@/src/docs/common/snippets';
+import { ReactSnippet, ReactSnippetV9 } from '@/src/docs/common/snippets';
 import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
 
 const ReactNextSecondSection = () => (
@@ -201,7 +201,7 @@ const ReactNextV9SecondSection = () => (
       </div>
       <div className="flex flex-wrap mt-8 pl-8">
         <div className="overflow-hidden md:w-5/12">
-          <ReactSnippet />
+          <ReactSnippetV9 />
         </div>
         <ul className="pt-8 md:pl-4 md:pt-20">
           <li className="mb-2">
