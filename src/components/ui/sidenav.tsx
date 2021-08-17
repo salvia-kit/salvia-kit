@@ -20,7 +20,7 @@ const style = {
   sidenav: {
     default: `flex flex-col h-screen fixed z-40 top-0 pb-32 right-0 lg:hidden overflow-x-hidden`,
     close: `bg-gray-800 text-white hidden`,
-    open: `w-7/12 bg-light dark:bg-dark`,
+    open: `w-8/12 bg-light dark:bg-dark`,
   },
 };
 
