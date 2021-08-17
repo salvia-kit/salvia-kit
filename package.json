@@ -35,11 +35,11 @@
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.54",
     "cogo-toast": "^4.2.3",
-    "next": "11.0.1",
-    "next-sitemap": "^1.6.140",
+    "next": "^11.1.0",
+    "next-sitemap": "^1.6.157",
     "next-themes": "^0.0.15",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "17.0.14",
@@ -59,9 +59,9 @@
     "typescript": "4.3.5"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint '*/**/*.{js,jsx,ts,tsx}' --fix",
-      "prettier '*/**/*.{js,jsx}' --write"
+    "*.{ts,tsx}": [
+      "eslint '*/**/*.{ts,tsx}' --fix",
+      "prettier '*/**/*.{ts,tsx}' --write"
     ]
   }
 }

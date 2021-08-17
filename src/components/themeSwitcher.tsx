@@ -19,13 +19,12 @@ export default function ThemeSwitcher() {
 
   return (
     <>
-      {isMounted && theme === 'light' && (
+      {isMounted && theme === 'light' ? (
         <button onClick={toggleTheme} className="flex">
           <MoonIcon className="w-5 h-5 md:w-6 md:h-6" />
           <span className="pl-2">Dark</span>
         </button>
-      )}
-      {isMounted && theme === 'dark' && (
+      ) : (
         <button onClick={toggleTheme} className="flex">
           <SunIcon className="w-5 h-5 md:w-6 md:h-6" />
           <span className="pl-2">Light</span>
