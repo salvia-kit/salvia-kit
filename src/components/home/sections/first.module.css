@@ -25,6 +25,12 @@
 
 @media (min-width: 1280px) {
   .image {
-    height: 680px;
+    height: 700px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .image {
+    height: 850px;
   }
 }

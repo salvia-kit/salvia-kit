@@ -10,18 +10,18 @@ import * as gtag from '@/src/utils/gtag';
 import metaTags from '@/src/data/metaTags.json';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const { events } = useRouter();
+  const router = useRouter();
 
   React.useEffect(() => {
     const handleRouteChange = (url: string) => {
       gtag.pageView(url);
     };
-    events.on('routeChangeComplete', handleRouteChange);
+    router.events.on('routeChangeComplete', handleRouteChange);
 
     return () => {
-      events.off('routeChangeComplete', handleRouteChange);
+      router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, [events]);
+  }, [router.events]);
 
   return (
     <>

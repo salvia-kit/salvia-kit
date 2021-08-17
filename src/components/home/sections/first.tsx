@@ -4,7 +4,7 @@ import css from './first.module.css';
 import Button from '@/src/components/ui/button';
 
 const HomeFirstSection = () => (
-  <section className="mt-32 text-white">
+  <section className="mt-32 2xl:mt-48 2xl:pb-20 text-white">
     <img
       src="/svg/overlay.svg"
       alt="Overlay"
