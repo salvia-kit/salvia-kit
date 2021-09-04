@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import useForm from '@/src/utils/useForm';
+import useForm from '@/src/hooks/useForm';
 import Button from '@/src/components/ui/button';
 import NuxtIcon from '@/src/components/icons/nuxt';
 import ReactIcon from '@/src/components/icons/react';

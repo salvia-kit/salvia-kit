@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
-import useMounted from '@/src/utils/useMounted';
+import useMounted from '@/src/hooks/useMounted';
 import SunIcon from '@/src/components/icons/sun';
 import MoonIcon from '@/src/components/icons/moon';
 
