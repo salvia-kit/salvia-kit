@@ -35,7 +35,7 @@
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.54",
     "cogo-toast": "^4.2.3",
-    "next": "^11.1.0",
+    "next": "^11.1.2",
     "next-sitemap": "^1.6.157",
     "next-themes": "^0.0.15",
     "react": "^17.0.2",
