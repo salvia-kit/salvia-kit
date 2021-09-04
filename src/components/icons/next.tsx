@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes';
-import useMounted from '@/src/utils/useMounted';
+import useMounted from '@/src/hooks/useMounted';
 import { IIconProps } from '@/src/utils/globalTypes';
 
 const NextIcon = ({ className }: IIconProps) => {

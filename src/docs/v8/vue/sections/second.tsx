@@ -83,8 +83,8 @@ const V8VueSecondSection = () => (
           <strong> sidenav-item</strong> components
         </p>
       </div>
-      <div className="flex flex-wrap mb-12 mt-8 pl-8">
-        <div className="lg:w-8/12">
+      <div className="flex flex-wrap mb-12 mt-8 pl-8 max-w-full">
+        <div className="overflow-x-auto lg:w-8/12">
           <VueSnippetAccordion />
         </div>
         <ul className="pt-8 md:pl-4 md:pt-4 md:w-6/12">

@@ -5,7 +5,7 @@ import NextIcon from '@/src/components/icons/next';
 import ReactIcon from '@/src/components/icons/react';
 import { VueIcon } from '@/src/components/icons/icons';
 import dashboardVersions from '@/src/data/versions.json';
-import useScrollHeader from '@/src/utils/useScrollHeader';
+import useScrollHeader from '@/src/hooks/useScrollHeader';
 import TailwindIcon from '@/src/components/icons/tailwind';
 import ThemeSwitcher from '@/src/components/themeSwitcher';
 
