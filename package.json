@@ -30,7 +30,10 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "test:e2e": "start-server-and-test dev http://localhost:3000 cypress"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.54",
@@ -45,9 +48,11 @@
     "@types/react": "17.0.14",
     "@typescript-eslint/parser": "^4.28.2",
     "autoprefixer": "^10.2.6",
+    "cypress": "^8.3.1",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-unused-imports": "^1.1.2",
     "husky": "^7.0.0",
