@@ -14,7 +14,7 @@ Each dashboard is made for those 4 technos and each variant has a dedicated docu
 ## 📦 Dashboard Features
 
 - Support of the active route (styled by default).
-- Fully customizable and without external dependencies
+- Fully customizable and without external dependencies.
 - No vendor lock-in, you can export it and integrate it in your project.
 - Sidenav aligned left or right according to your preferences (on mobile).
 
