@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 const homePageClassNames = [
   'shadow',
   'bg-light',
-  'text-gray-700',
+  'c-text-color',
   'dark:bg-dark',
   'dark:text-white',
 ];

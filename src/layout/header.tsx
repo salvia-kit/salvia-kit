@@ -24,9 +24,10 @@ import {
   DropdownToggle,
   DropdownMenu,
 } from '@/src/components/ui/dropdown';
+import useMounted from '@/src/hooks/useMounted';
 
 const style = {
-  home: `text-white`,
+  home: `c-white`,
   notHome: `bg-light dark:bg-dark dark:text-white text-custom shadow`,
   header: `fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full md:px-4 lg:px-24 xl:px-28`,
 };
@@ -35,12 +36,13 @@ export default function Header() {
   const { asPath } = useRouter();
   const { toggle } = useToggle();
   const { headerRef } = useScrollHeader();
+  const isMounted = useMounted();
 
   return (
     <header
       ref={headerRef}
       className={`${style.header} ${
-        asPath === '/' ? style.home : style.notHome
+        isMounted && asPath === '/' ? style.home : style.notHome
       }`}
     >
       <Navbar className="md:h-16">
