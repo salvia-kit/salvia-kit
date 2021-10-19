@@ -1,36 +1,32 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 
 /*==== CHANGE HEADER BACKGROUND ====*/
 // When the scroll is greater than 100px of viewport height, add new classes to the header tag
 
-const homePageClassNames = [
+const classNames = [
   'shadow',
   'bg-light',
-  'c-text-color',
+  'text-custom',
   'dark:bg-dark',
   'dark:text-white',
 ];
 
-const notHomePageClassNames = ['shadow', 'bg-light', 'dark:bg-dark'];
+const classText = ['text-white'];
 
 export default function useScrollHeader() {
   const headerRef = React.useRef<HTMLElement>(null);
-  const { asPath } = useRouter();
 
   React.useEffect(() => {
     const scrollHeader = () => {
-      if (asPath === '/') {
-        if (window.scrollY >= 100) {
-          return headerRef.current?.classList.add(...homePageClassNames);
-        }
-        return headerRef.current?.classList.remove(...homePageClassNames);
+      if (window.scrollY < 100) {
+        headerRef.current?.classList.add(...classText);
+        headerRef.current?.classList.remove(...classNames);
+        return;
       }
-      if (asPath !== '/') {
-        if (window.scrollY >= 0) {
-          return headerRef.current?.classList.add(...notHomePageClassNames);
-        }
-        return headerRef.current?.classList.remove(...notHomePageClassNames);
+
+      if (window.scrollY > 100) {
+        headerRef.current?.classList.add(...classNames);
+        headerRef.current?.classList.remove(...classText);
       }
     };
 
@@ -38,7 +34,7 @@ export default function useScrollHeader() {
     return () => {
       window.removeEventListener('scroll', scrollHeader);
     };
-  }, [asPath, headerRef]);
+  }, [headerRef]);
 
   return { headerRef };
 }

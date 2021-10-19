@@ -4,14 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.c-white {
-  color: white;
-}
-
-.c-text-color {
-  color: #14445c;
-}
-
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: hsl(200, 12%, 90%);
