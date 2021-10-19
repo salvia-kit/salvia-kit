@@ -27,7 +27,7 @@ import {
 import useMounted from '@/src/hooks/useMounted';
 
 const style = {
-  home: `c-white`,
+  home: `text-white`,
   notHome: `bg-light dark:bg-dark dark:text-white text-custom shadow`,
   header: `fixed z-20 left-0 top-0 px-3 2xl:px-40 w-full md:px-4 lg:px-24 xl:px-28`,
 };
@@ -40,7 +40,7 @@ export default function Header() {
 
   return (
     <header
-      ref={headerRef}
+      ref={asPath === '/' ? headerRef : null}
       className={`${style.header} ${
         isMounted && asPath === '/' ? style.home : style.notHome
       }`}

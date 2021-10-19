@@ -1,9 +1,9 @@
 {
+  "root": true,
   "extends": [
     "plugin:prettier/recommended",
     "plugin:cypress/recommended",
-    "next",
-    "next/core-web-vitals"
+    "next"
   ],
   "plugins": ["unused-imports", "cypress"],
   "rules": {
