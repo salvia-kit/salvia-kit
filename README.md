@@ -19,14 +19,30 @@ Each dashboard is made for those 4 technos and each variant has a dedicated docu
 - Sidenav aligned left or right according to your preferences (on mobile).
 
 ## Acknowledgements
-Salvia-kit is made possible by [Tailwind CSS](https://tailwindcss.com).
+- [Tailwind CSS](https://tailwindcss.com)
+- [Tail-kit](https://www.tailwind-kit.com)
+- [Illustration Kit](https://illustrationkit.com)
 
+<p>
 <a href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
-<img width="170px" src="https://res.cloudinary.com/beloved/image/upload/v1626832853/dashboards/vercel_a5chgh.svg" alt="Powered By Vercel" />
+ <img width="170px" src="https://res.cloudinary.com/beloved/image/upload/v1626832853/dashboards/vercel_a5chgh.svg" alt="Powered By Vercel" />
+</a>
+</p>
+
+## Our Amazing Sponsors
+<a href="https://www.jetbrains.com?utm_source=salvia-kit&utm_campaign=oss">
+<img width="170px" src="https://res.cloudinary.com/beloved/image/upload/v1637952838/jetbrains_cciubl.png" alt="Powered By Vercel" />
+</a>
+<br/>
+Thanks to Jetbrains for sponsoring this project by giving us a free license to use the jetbrains IDE for the entire Salvia-kit team.
+<br/>
+<br/>
+<br/>
+<a href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
+<img width="170px" src="https://res.cloudinary.com/beloved/image/upload/v1637953763/dashboards/hG77CP8UhJjUMH6f59hnUSo3p2V1608196200048_200x200_vkndbt_yufzmm.png" alt="Powered By Vercel" />
 </a>
 <br/>
 Thanks to Vercel for sponsoring this project by allowing it to be deployed for free for the entire Salvia-kit Team.
-
 
 ## Contributing
 We're open to all contributions! If you'd like to contribute in any way, please first read our [Contribution Guide](https://github.com/salvia-kit/salvia-kit-website/blob/main/contributing.md).

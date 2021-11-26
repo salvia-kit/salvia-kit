@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <footer className="relative bottom-0">
       <Container>
-        <div className="flex flex-wrap mt-28">
-          <div className="mb-12 w-full md:mb-0 md:w-4/12">
+        <div className="grid gap-10 grid-cols-1 mt-28 w-full md:grid-cols-2 lg:gap-0 lg:grid-cols-4">
+          <div>
             <h3 className="text-2xl font-bold">Contact</h3>
             <ul className="mt-5">
               <li className="pb-3">
@@ -23,7 +23,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mb-12 w-full md:mb-0 md:w-4/12">
+          <div>
             <h3 className="text-2xl font-bold">About</h3>
             <ul className="mt-5">
               <li className="pb-3">
@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-4/12">
+          <div>
             <h3 className="text-2xl font-bold">Acknowledgements</h3>
             <ul className="mt-5">
               <li className="pb-3">
@@ -51,6 +51,11 @@ export default function Footer() {
                   Tail-Kit
                 </ExternalLink>
               </li>
+              <li className="pb-3">
+                <ExternalLink href="https://illustrationkit.com">
+                  Illustration-Kit
+                </ExternalLink>
+              </li>
               <li>
                 <ExternalLink href="https://vercel.com?utm_source=salvia-kit&utm_campaign=oss">
                   <Image
@@ -59,6 +64,24 @@ export default function Footer() {
                     src="/svg/vercel.svg"
                     alt="Powered By Vercel"
                   />
+                </ExternalLink>
+              </li>
+            </ul>
+          </div>
+          <div className="lg:pl-10">
+            <h3 className="text-2xl font-bold">Sponsors</h3>
+            <div className="mt-5">
+              Thanks to our amazing sponsors for supporting Salvia-kit
+            </div>
+            <ul className="mt-5 pl-4 list-disc">
+              <li className="pb-3">
+                <ExternalLink href="https://www.jetbrains.com">
+                  Jetbrains
+                </ExternalLink>
+              </li>
+              <li className="pb-3">
+                <ExternalLink href="https://vercel.com/?utm_source=salvia-kit&utm_campaign=oss">
+                  Vercel
                 </ExternalLink>
               </li>
             </ul>
