@@ -1,7 +1,6 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
-  mode: 'jit',
   theme: {
     extend: {
       backgroundColor: {
