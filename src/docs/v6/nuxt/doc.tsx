@@ -2,11 +2,11 @@ import Image from 'next/image';
 import V6NuxtThirdSection from '@/src/docs/v6/nuxt/sections/third';
 import V6NuxtFourthSection from '@/src/docs/v6/nuxt/sections/fourth';
 
-import LintersSection from '@/src/docs/common/linters';
-import FeaturesSection from '@/src/docs/common/features';
-import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
-import { NuxtCommonFirstSectionV3AndV4AndV6 } from '@/src/docs/common/section/nuxt/firstSection';
-import { NuxtCommonSecondSectionV3AndV4AndV6 } from '@/src/docs/common/section/nuxt/secondSection';
+import LintersSection from '@/src/docs/common-sections/linters';
+import FeaturesSection from '@/src/docs/common-sections/features';
+import VueNuxtFifthSection from '@/src/docs/common-sections/section/vue-nuxt/fifthSection';
+import { NuxtCommonFirstSectionV3AndV4AndV6 } from '@/src/docs/common-sections/section/nuxt/firstSection';
+import { NuxtCommonSecondSectionV3AndV4AndV6 } from '@/src/docs/common-sections/section/nuxt/secondSection';
 
 export default function DocV6Nuxt() {
   return (

@@ -1,5 +1,5 @@
 import { FolderIcon, VueIcon } from '@/src/components/icons/icons';
-import { VueSnippetAccordion } from '@/src/docs/common/snippets';
+import { VueSnippetAccordion } from '@/src/docs/common-sections/snippets';
 
 const V8VueSecondSection = () => (
   <section className="mb-12">

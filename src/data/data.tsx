@@ -11,12 +11,12 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV1AndV2React />,
+        doc: <Doc.DocNextReact styleDir="dashboard" techno="react" />,
         source: 'https://github.com/salvia-kit/dashboard-v1-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV1AndV2Next />,
+        doc: <Doc.DocNextReact styleDir="dashboard" techno="next" />,
         source: 'https://github.com/salvia-kit/dashboard-v1-nextjs',
       },
       vue: {
@@ -40,12 +40,12 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV1AndV2React />,
+        doc: <Doc.DocNextReact styleDir="dashboard" techno="react" />,
         source: 'https://github.com/salvia-kit/dashboard-v2-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV1AndV2Next />,
+        doc: <Doc.DocNextReact styleDir="dashboard" techno="react" />,
         source: 'https://github.com/salvia-kit/dashboard-v2-nextjs',
       },
       vue: {
@@ -69,12 +69,26 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV3React />,
+        doc: (
+          <Doc.DocNextReact
+            styleDir="sidenav"
+            techno="react"
+            mainComp={true}
+            snippet="short"
+          />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v3-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV3Next />,
+        doc: (
+          <Doc.DocNextReact
+            styleDir="sidenav"
+            techno="next"
+            mainComp={true}
+            snippet="short"
+          />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v3-nextjs',
       },
       vue: {
@@ -98,12 +112,16 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV4AndV5React />,
+        doc: (
+          <Doc.DocNextReact techno="react" snippet="short" styleDir="sidenav" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v4-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV4AndV5Next />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="next" snippet="short" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v4-nextjs',
       },
       vue: {
@@ -127,12 +145,16 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV4AndV5React />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="react" snippet="short" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v5-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV4AndV5Next />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="next" snippet="short" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v5-nextjs',
       },
       vue: {
@@ -156,12 +178,16 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV6React />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="react" snippet="short" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v6-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV6Next />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="next" snippet="short" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v6-nextjs',
       },
       vue: {
@@ -185,12 +211,16 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV7React />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="react" snippet="long" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v7-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV7Next />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="next" snippet="long" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v7-nextjs',
       },
       vue: {
@@ -214,12 +244,16 @@ const data = [
     techno: {
       react: {
         name: 'react',
-        doc: <Doc.DocV8React />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="react" snippet="long" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v8-cra',
       },
       next: {
         name: 'next',
-        doc: <Doc.DocV8Next />,
+        doc: (
+          <Doc.DocNextReact styleDir="sidenav" techno="next" snippet="long" />
+        ),
         source: 'https://github.com/salvia-kit/dashboard-v8-nextjs',
       },
       vue: {

@@ -1,4 +1,4 @@
-import { VueSnippetAccordion } from '@/src/docs/common/snippets';
+import { VueSnippetAccordion } from '@/src/docs/common-sections/snippets';
 import { VueIcon, FolderIcon } from '@/src/components/icons/icons';
 
 const V8NuxtSecondSection = () => (

@@ -4,9 +4,9 @@ import V8VueSecondSection from '@/src/docs/v8/vue/sections/second';
 import V8VueThirdSection from '@/src/docs/v8/vue/sections/third';
 import V8VueFourthSection from '@/src/docs/v8/vue/sections/fourth';
 
-import LintersSection from '@/src/docs/common/linters';
-import FeaturesSection from '@/src/docs/common/features';
-import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
+import LintersSection from '@/src/docs/common-sections/linters';
+import FeaturesSection from '@/src/docs/common-sections/features';
+import VueNuxtFifthSection from '@/src/docs/common-sections/section/vue-nuxt/fifthSection';
 
 export default function DocV8Vue() {
   return (

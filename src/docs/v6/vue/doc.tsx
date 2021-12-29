@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import LintersSection from '@/src/docs/common/linters';
-import FeaturesSection from '@/src/docs/common/features';
+import LintersSection from '@/src/docs/common-sections/linters';
+import FeaturesSection from '@/src/docs/common-sections/features';
 import V6VueThirdSection from '@/src/docs/v6/vue/sections/third';
 import V6VueFourthSection from '@/src/docs/v6/vue/sections/fourth';
-import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
-import { VueCommonFirstSectionV3AndV4AndV6 } from '@/src/docs/common/section/vue/firstSection';
-import { VueCommonSecondSectionV3AndV4AndV6 } from '@/src/docs/common/section/vue/secondSection';
+import VueNuxtFifthSection from '@/src/docs/common-sections/section/vue-nuxt/fifthSection';
+import { VueCommonFirstSectionV3AndV4AndV6 } from '@/src/docs/common-sections/section/vue/firstSection';
+import { VueCommonSecondSectionV3AndV4AndV6 } from '@/src/docs/common-sections/section/vue/secondSection';
 
 export default function DocV6Vue() {
   return (

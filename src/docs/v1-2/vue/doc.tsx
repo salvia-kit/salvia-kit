@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import LintersSection from '@/src/docs/common/linters';
-import FeaturesSection from '@/src/docs/common/features';
+import LintersSection from '@/src/docs/common-sections/linters';
+import FeaturesSection from '@/src/docs/common-sections/features';
 import V1AndV2VueThirdSection from '@/src/docs/v1-2/vue/sections/third';
 import V1AndV2VueFourthSection from '@/src/docs/v1-2/vue/sections/fourth';
-import VueNuxtFifthSection from '@/src/docs/common/section/vue-nuxt/fifthSection';
-import { VueCommonFirstSectionV1AndV7 } from '@/src/docs/common/section/vue/firstSection';
-import { VueCommonSecondSectionV1AndV7 } from '@/src/docs/common/section/vue/secondSection';
+import VueNuxtFifthSection from '@/src/docs/common-sections/section/vue-nuxt/fifthSection';
+import { VueCommonFirstSectionV1AndV7 } from '@/src/docs/common-sections/section/vue/firstSection';
+import { VueCommonSecondSectionV1AndV7 } from '@/src/docs/common-sections/section/vue/secondSection';
 
 // this doc is for the version 1 and 2 of dashboard
 export default function DocV1AndV2Vue() {
