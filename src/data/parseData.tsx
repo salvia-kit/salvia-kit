@@ -57,9 +57,7 @@ function getDashboardByTechnologie(name: keyof TechnoTypes, slug: any) {
 }
 
 async function getDashboard(slug: string) {
-  const dashboards: Array<IProps> = await data.filter(
-    (dash) => dash.slug === slug,
-  );
+  const dashboards: Array<IProps> = data.filter((dash) => dash.slug === slug);
   const dashboard = dashboards[0];
   return parseData(dashboard);
 }
