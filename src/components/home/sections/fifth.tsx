@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import useForm from '@/src/hooks/useForm';
-import Button from '@/src/components/ui/button';
-import NuxtIcon from '@/src/components/icons/nuxt';
-import ReactIcon from '@/src/components/icons/react';
-import { VueIcon } from '@/src/components/icons/icons';
+import useForm from '@/hooks/useForm';
+import Button from '@/components/ui/button';
+import NuxtIcon from '@/components/icons/nuxt';
+import ReactIcon from '@/components/icons/react';
+import { VueIcon } from '@/components/icons/icons';
 
 export default function HomeFifthSection() {
   const form = useForm();

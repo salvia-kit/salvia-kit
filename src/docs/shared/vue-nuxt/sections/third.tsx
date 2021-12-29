@@ -1,4 +1,4 @@
-import { DocVueNuxtType } from '@/src/utils/globalTypes';
+import { DocVueNuxtType } from '@/utils/globalTypes';
 
 const SharedNuxtVueThirdSection = ({ techno }: DocVueNuxtType) => (
   <section className="mb-12">

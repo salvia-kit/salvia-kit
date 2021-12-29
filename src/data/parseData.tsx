@@ -1,5 +1,5 @@
 import data from './data';
-import { ChildrenType } from '@/src/utils/globalTypes';
+import { ChildrenType } from '@/utils/globalTypes';
 
 type TechnoTypes = {
   react: {

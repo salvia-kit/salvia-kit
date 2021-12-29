@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
-import useMounted from '@/src/hooks/useMounted';
-import SunIcon from '@/src/components/icons/sun';
-import MoonIcon from '@/src/components/icons/moon';
+import useMounted from '@/hooks/useMounted';
+import SunIcon from '@/components/icons/sun';
+import MoonIcon from '@/components/icons/moon';
 
 interface UseThemeProps {
   theme?: string;

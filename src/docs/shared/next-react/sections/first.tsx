@@ -1,5 +1,5 @@
-import { DocType } from '@/src/utils/globalTypes';
-import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
+import { DocType } from '@/utils/globalTypes';
+import { FileIcon, FolderIcon, JsIcon } from '@/components/icons/icons';
 
 const SharedNextReactFirstSection = ({
   mainComp,

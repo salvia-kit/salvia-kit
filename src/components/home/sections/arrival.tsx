@@ -1,5 +1,5 @@
-import data from '@/src/data/data';
-import DashboardCard from '@/src/components/dashboardCard';
+import data from '@/data/data';
+import DashboardCard from '@/components/dashboardCard';
 
 const HomeArrivalSection = () => (
   <section className="mb-16 mt-44 md:mb-32">

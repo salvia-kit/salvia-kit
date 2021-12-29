@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useToggle } from '@/src/layout/context';
-import { ChildrenType } from '@/src/utils/globalTypes';
+import { useToggle } from '@/layout/context';
+import { ChildrenType } from '@/utils/globalTypes';
 
 interface ISidenavSectionProps extends ChildrenType {
   className?: string;

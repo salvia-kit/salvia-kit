@@ -1,4 +1,4 @@
-import { DocType } from '@/src/utils/globalTypes';
+import { DocType } from '@/utils/globalTypes';
 
 const SharedNextReactThirdSection = ({ techno }: DocType) => (
   <section className="mb-12">

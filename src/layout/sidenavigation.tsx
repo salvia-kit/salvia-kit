@@ -1,16 +1,11 @@
 import Image from 'next/image';
-import NuxtIcon from '@/src/components/icons/nuxt';
-import ReactIcon from '@/src/components/icons/react';
-import { VueIcon } from '@/src/components/icons/icons';
-import dashboardVersions from '@/src/data/versions.json';
-import TailwindIcon from '@/src/components/icons/tailwind';
-import ThemeSwitcher from '@/src/components/themeSwitcher';
-
-import {
-  Sidenav,
-  SidenavItem,
-  SidenavSection,
-} from '@/src/components/ui/sidenav';
+import NuxtIcon from '@/components/icons/nuxt';
+import ReactIcon from '@/components/icons/react';
+import { VueIcon } from '@/components/icons/icons';
+import dashboardVersions from '@/data/versions.json';
+import TailwindIcon from '@/components/icons/tailwind';
+import ThemeSwitcher from '@/components/themeSwitcher';
+import { Sidenav, SidenavItem, SidenavSection } from '@/components/ui/sidenav';
 
 export default function Sidenavigation() {
   return (

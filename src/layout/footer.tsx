@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Container from '@/src/components/container';
-import ExternalLink from '@/src/components/externalLink';
+import Container from '@/components/container';
+import ExternalLink from '@/components/externalLink';
 
 export default function Footer() {
   return (

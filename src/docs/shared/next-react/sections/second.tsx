@@ -2,9 +2,9 @@ import {
   ReactSnippet,
   ReactSnippetShort,
   ReactSnippetV8,
-} from '@/src/docs/common/snippets';
-import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
-import { DocType } from '@/src/utils/globalTypes';
+} from '@/docs/common/snippets';
+import { DocType } from '@/utils/globalTypes';
+import { FileIcon, FolderIcon, JsIcon } from '@/components/icons/icons';
 
 const SharedNextReactSecondSection = ({
   snippet,

@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import CustomImage from '@/src/components/image';
-import NextIcon from '@/src/components/icons/next';
-import NuxtIcon from '@/src/components/icons/nuxt';
-import ReactIcon from '@/src/components/icons/react';
-import { VueIcon } from '@/src/components/icons/icons';
-import { Card, CardBody, CardTitle } from '@/src/components/ui/card';
+import CustomImage from '@/components/image';
+import NextIcon from '@/components/icons/next';
+import NuxtIcon from '@/components/icons/nuxt';
+import ReactIcon from '@/components/icons/react';
+import { VueIcon } from '@/components/icons/icons';
+import { Card, CardBody, CardTitle } from '@/components/ui/card';
 
 interface IDashboardCardProps {
   data: any;

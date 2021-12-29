@@ -4,18 +4,18 @@ import dynamic from 'next/dynamic';
 import { ParsedUrlQuery } from 'querystring';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-import data from '@/src/data/data';
-import Button from '@/src/components/ui/button';
-import Container from '@/src/components/container';
-import ExternalLink from '@/src/components/externalLink';
-import { getDashboard, getTechno } from '@/src/data/parseData';
+import data from '@/data/data';
+import Button from '@/components/ui/button';
+import Container from '@/components/container';
+import ExternalLink from '@/components/externalLink';
+import { getDashboard, getTechno } from '@/data/parseData';
 
-const AccordionDoc = dynamic(() => import('@/src/components/accordionDoc'), {
+const AccordionDoc = dynamic(() => import('@/components/accordionDoc'), {
   ssr: true,
 });
 
 const AccordionDocMobile = dynamic(
-  () => import('@/src/components/accordionDocMobile'),
+  () => import('@/components/accordionDocMobile'),
   {
     ssr: false,
   },

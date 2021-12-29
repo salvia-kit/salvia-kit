@@ -1,15 +1,15 @@
 import Image from 'next/image';
-import { DocType } from '@/src/utils/globalTypes';
-import NextIcon from '@/src/components/icons/next';
-import LintersSection from '@/src/docs/common/linters';
-import FeaturesSection from '@/src/docs/common/features';
-import ComponentsSection from '@/src/docs/common/components';
+import { DocType } from '@/utils/globalTypes';
+import NextIcon from '@/components/icons/next';
+import LintersSection from '@/docs/common/linters';
+import FeaturesSection from '@/docs/common/features';
+import ComponentsSection from '@/docs/common/components';
 
-import SharedNextReactFirstSection from '@/src/docs/shared/next-react/sections/first';
-import SharedNextReactThirdSection from '@/src/docs/shared/next-react/sections/third';
-import SharedReactNextFifthSection from '@/src/docs/shared/next-react/sections/fifth';
-import SharedNextReactSecondSection from '@/src/docs/shared/next-react/sections/second';
-import SharedNextReactFourthSection from '@/src/docs/shared/next-react/sections/fourth';
+import SharedNextReactFirstSection from '@/docs/shared/next-react/sections/first';
+import SharedNextReactThirdSection from '@/docs/shared/next-react/sections/third';
+import SharedReactNextFifthSection from '@/docs/shared/next-react/sections/fifth';
+import SharedNextReactSecondSection from '@/docs/shared/next-react/sections/second';
+import SharedNextReactFourthSection from '@/docs/shared/next-react/sections/fourth';
 
 // This doc is for dashboards version 1 to 8 for React and Next.js
 

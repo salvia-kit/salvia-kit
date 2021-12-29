@@ -1,4 +1,4 @@
-import { IIconProps } from '@/src/utils/globalTypes';
+import { IIconProps } from '@/utils/globalTypes';
 
 const ArrowUpIcon = ({ className }: IIconProps) => (
   <svg

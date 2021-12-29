@@ -1,4 +1,4 @@
-import { ChildrenType } from '@/src/utils/globalTypes';
+import { ChildrenType } from '@/utils/globalTypes';
 
 const style = {
   card: `relative flex flex-col rounded-lg shadow-custom`,

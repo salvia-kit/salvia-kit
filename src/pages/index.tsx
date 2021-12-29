@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Container from '@/src/components/container';
-import HomeFirstSection from '@/src/components/home/sections/first';
-import HomeSecondSection from '@/src/components/home/sections/second';
-import HomeThirdSection from '@/src/components/home/sections/third';
-import HomeFourthSection from '@/src/components/home/sections/fourth';
-import HomeFifthSection from '@/src/components/home/sections/fifth';
-import HomeArrivalSection from '@/src/components/home/sections/arrival';
+import Container from '@/components/container';
+import HomeFirstSection from '@/components/home/sections/first';
+import HomeSecondSection from '@/components/home/sections/second';
+import HomeThirdSection from '@/components/home/sections/third';
+import HomeFourthSection from '@/components/home/sections/fourth';
+import HomeFifthSection from '@/components/home/sections/fifth';
+import HomeArrivalSection from '@/components/home/sections/arrival';
 
 export default function HomePage() {
   return (

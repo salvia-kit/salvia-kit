@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
-import { useToggle } from '@/src/layout/context';
-import NuxtIcon from '@/src/components/icons/nuxt';
-import NextIcon from '@/src/components/icons/next';
-import ReactIcon from '@/src/components/icons/react';
-import { VueIcon } from '@/src/components/icons/icons';
-import dashboardVersions from '@/src/data/versions.json';
-import useScrollHeader from '@/src/hooks/useScrollHeader';
-import TailwindIcon from '@/src/components/icons/tailwind';
-import ThemeSwitcher from '@/src/components/themeSwitcher';
+import { useToggle } from '@/layout/context';
+import NuxtIcon from '@/components/icons/nuxt';
+import NextIcon from '@/components/icons/next';
+import ReactIcon from '@/components/icons/react';
+import { VueIcon } from '@/components/icons/icons';
+import dashboardVersions from '@/data/versions.json';
+import useScrollHeader from '@/hooks/useScrollHeader';
+import TailwindIcon from '@/components/icons/tailwind';
+import ThemeSwitcher from '@/components/themeSwitcher';
 
 import {
   Navbar,
@@ -16,15 +16,15 @@ import {
   NavbarCollapse,
   NavbarNav,
   NavbarItem,
-} from '@/src/components/ui/navbar';
+} from '@/components/ui/navbar';
 
 import {
   Dropdown,
   DropdownItem,
   DropdownToggle,
   DropdownMenu,
-} from '@/src/components/ui/dropdown';
-import useMounted from '@/src/hooks/useMounted';
+} from '@/components/ui/dropdown';
+import useMounted from '@/hooks/useMounted';
 
 const style = {
   home: `text-white`,

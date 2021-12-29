@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import data from '@/src/data/data';
-import Container from '@/src/components/container';
-import DashboardCard from '@/src/components/dashboardCard';
+import data from '@/data/data';
+import Container from '@/components/container';
+import DashboardCard from '@/components/dashboardCard';
 
 export default function AllDashboardsPage() {
   return (

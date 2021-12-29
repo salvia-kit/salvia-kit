@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { ChildrenType } from '@/src/utils/globalTypes';
+import { ChildrenType } from '@/utils/globalTypes';
 
 interface IContextProps {
   open?: boolean;

@@ -1,10 +1,10 @@
-import { DocVueNuxtType } from '@/src/utils/globalTypes';
-import { VueIcon, FolderIcon } from '@/src/components/icons/icons';
+import { DocVueNuxtType } from '@/utils/globalTypes';
+import { VueIcon, FolderIcon } from '@/components/icons/icons';
 import {
   VueSnippet,
   VueSnippetAccordion,
   VueSnippetShort,
-} from '@/src/docs/common/snippets';
+} from '@/docs/common/snippets';
 
 const SharedNuxtVueSecondSection = ({ section, version }: DocVueNuxtType) => (
   <section className="mb-12">

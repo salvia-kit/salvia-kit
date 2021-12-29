@@ -3,10 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import Button from '@/src/components/ui/button';
-import Container from '@/src/components/container';
-import ExternalLink from '@/src/components/externalLink';
-import { getDashboardByTechnologie, isTechno } from '@/src/data/parseData';
+import Button from '@/components/ui/button';
+import Container from '@/components/container';
+import ExternalLink from '@/components/externalLink';
+import { getDashboardByTechnologie, isTechno } from '@/data/parseData';
 
 export default function TechnoDocPage() {
   const router = useRouter();

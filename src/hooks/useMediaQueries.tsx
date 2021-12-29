@@ -1,4 +1,4 @@
-import useMounted from '@/src/hooks/useMounted';
+import useMounted from '@/hooks/useMounted';
 
 function useMediaQueries() {
   const isMounted = useMounted();

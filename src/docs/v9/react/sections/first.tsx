@@ -1,4 +1,4 @@
-import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
+import { FileIcon, FolderIcon, JsIcon } from '@/components/icons/icons';
 
 const V9ReactFirstSection = () => (
   <section className="mb-12">

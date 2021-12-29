@@ -1,8 +1,8 @@
 import React from 'react';
-import { ChildrenType } from '@/src/utils/globalTypes';
-import ArrowUpIcon from '@/src/components/icons/arrow-up';
-import ArrowDownIcon from '@/src/components/icons/arrow-down';
-import Button, { BtnProps } from '@/src/components/ui/button';
+import { ChildrenType } from '@/utils/globalTypes';
+import ArrowUpIcon from '@/components/icons/arrow-up';
+import ArrowDownIcon from '@/components/icons/arrow-down';
+import Button, { BtnProps } from '@/components/ui/button';
 
 interface IAccordionContextProps {
   className?: string;

@@ -3,12 +3,12 @@ import {
   Accordion,
   AccordionItem,
   AccordionPanel,
-} from '@/src/components/ui/accordion';
-import Button from '@/src/components/ui/button';
-import NuxtIcon from '@/src/components/icons/nuxt';
-import ReactIcon from '@/src/components/icons/react';
-import { VueIcon } from '@/src/components/icons/icons';
-import ExternalLink from '@/src/components/externalLink';
+} from '@/components/ui/accordion';
+import Button from '@/components/ui/button';
+import NuxtIcon from '@/components/icons/nuxt';
+import ReactIcon from '@/components/icons/react';
+import { VueIcon } from '@/components/icons/icons';
+import ExternalLink from '@/components/externalLink';
 
 interface IAccordionDocProps {
   techno: any;

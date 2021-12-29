@@ -1,8 +1,8 @@
 import * as img from './images';
-import DocV9Next from '@/src/docs/v9/next/doc';
-import DocV9React from '@/src/docs/v9/react/doc';
-import DocNuxtVue from '@/src/docs/shared/vue-nuxt/doc';
-import DocNextReact from '@/src/docs/shared/next-react/doc';
+import DocV9Next from '@/docs/v9/next/doc';
+import DocV9React from '@/docs/v9/react/doc';
+import DocNuxtVue from '@/docs/shared/vue-nuxt/doc';
+import DocNextReact from '@/docs/shared/next-react/doc';
 
 const data = [
   {

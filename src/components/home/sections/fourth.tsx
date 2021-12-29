@@ -1,4 +1,4 @@
-import CustomImage from '@/src/components/image';
+import CustomImage from '@/components/image';
 import oceanImg from '@/public/images/others/ocean.jpg';
 
 export default function HomeFourthSection() {

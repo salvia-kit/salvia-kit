@@ -1,5 +1,5 @@
-import { FolderIcon, JsIcon, VueIcon } from '@/src/components/icons/icons';
-import { DocVueNuxtType } from '@/src/utils/globalTypes';
+import { DocVueNuxtType } from '@/utils/globalTypes';
+import { FolderIcon, JsIcon, VueIcon } from '@/components/icons/icons';
 
 const SharedVueFirstSection = ({ section, version }: DocVueNuxtType) => (
   <section className="mb-12">

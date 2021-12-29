@@ -1,11 +1,11 @@
-import NextIcon from '@/src/components/icons/next';
-import LintersSection from '@/src/docs/common/linters';
-import FeaturesSection from '@/src/docs/common/features';
-import ComponentsSection from '@/src/docs/common/components';
-import V9NextFirstSection from '@/src/docs/v9/next/sections/first';
-import V9NextThirdSection from '@/src/docs/v9/next/sections/third';
-import V9NextReactSecondSection from '@/src/docs/v9/shared/secondSection';
-import { V9ReactNextFifthSection } from '@/src/docs/v9/shared/fifthSection';
+import NextIcon from '@/components/icons/next';
+import LintersSection from '@/docs/common/linters';
+import FeaturesSection from '@/docs/common/features';
+import ComponentsSection from '@/docs/common/components';
+import V9NextFirstSection from '@/docs/v9/next/sections/first';
+import V9NextThirdSection from '@/docs/v9/next/sections/third';
+import V9NextReactSecondSection from '@/docs/v9/shared/secondSection';
+import { V9ReactNextFifthSection } from '@/docs/v9/shared/fifthSection';
 
 export default function DocV9Next() {
   return (

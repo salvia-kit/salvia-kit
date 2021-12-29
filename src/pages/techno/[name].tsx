@@ -3,13 +3,13 @@ import Head from 'next/head';
 import { ParsedUrlQuery } from 'querystring';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 
-import Container from '@/src/components/container';
-import DashboardCard from '@/src/components/dashboardCard';
 import {
   getDashboardsByTechnologie,
   isTechno,
   parseData,
-} from '@/src/data/parseData';
+} from '@/data/parseData';
+import Container from '@/components/container';
+import DashboardCard from '@/components/dashboardCard';
 
 interface IParams extends ParsedUrlQuery {
   name: string | any;
@@ -85,7 +85,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { name } = params as IParams;
-  const dashboards = await getDashboardsByTechnologie(name);
+  const dashboards = getDashboardsByTechnologie(name);
 
   return {
     props: {

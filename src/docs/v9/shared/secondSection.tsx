@@ -1,5 +1,5 @@
-import { ReactSnippetV9 } from '@/src/docs/common/snippets';
-import { FileIcon, FolderIcon, JsIcon } from '@/src/components/icons/icons';
+import { ReactSnippetV9 } from '@/docs/common/snippets';
+import { FileIcon, FolderIcon, JsIcon } from '@/components/icons/icons';
 
 const V9NextReactSecondSection = () => (
   <section className="mb-12">

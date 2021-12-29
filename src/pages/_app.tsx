@@ -4,10 +4,10 @@ import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
 
-import '@/src/styles/globals.css';
-import Layout from '@/src/layout/layout';
-import * as gtag from '@/src/utils/gtag';
-import metaTags from '@/src/data/metaTags.json';
+import '@/styles/globals.css';
+import Layout from '@/layout/layout';
+import * as gtag from '@/utils//gtag';
+import metaTags from '@/data/metaTags.json';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

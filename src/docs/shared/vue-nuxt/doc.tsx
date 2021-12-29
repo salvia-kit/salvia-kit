@@ -2,15 +2,15 @@ import Image from 'next/image';
 import {
   SharedNuxtFirstSection,
   SharedVueFirstSection,
-} from '@/src/docs/shared/vue-nuxt/sections/first';
-import LintersSection from '@/src/docs/common/linters';
-import { DocVueNuxtType } from '@/src/utils/globalTypes';
-import FeaturesSection from '@/src/docs/common/features';
+} from '@/docs/shared/vue-nuxt/sections/first';
+import LintersSection from '@/docs/common/linters';
+import { DocVueNuxtType } from '@/utils/globalTypes';
+import FeaturesSection from '@/docs/common/features';
 
-import SharedNuxtVueFifthSection from '@/src/docs/shared/vue-nuxt/sections/fifth';
-import SharedNuxtVueThirdSection from '@/src/docs/shared/vue-nuxt/sections/third';
-import SharedNuxtVueSecondSection from '@/src/docs/shared/vue-nuxt/sections/second';
-import SharedNuxtVueFourthSection from '@/src/docs/shared/vue-nuxt/sections/fourth';
+import SharedNuxtVueFifthSection from '@/docs/shared/vue-nuxt/sections/fifth';
+import SharedNuxtVueThirdSection from '@/docs/shared/vue-nuxt/sections/third';
+import SharedNuxtVueSecondSection from '@/docs/shared/vue-nuxt/sections/second';
+import SharedNuxtVueFourthSection from '@/docs/shared/vue-nuxt/sections/fourth';
 
 // This doc is for the dashboards version 1 to 8 for Vue & Nuxt
 export default function DocNuxtVue({

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChildrenType } from '@/src/utils/globalTypes';
+import { ChildrenType } from '@/utils/globalTypes';
 
 function Main({ children }: ChildrenType) {
   return <main>{children}</main>;

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { AnchorHTMLAttributes } from 'react';
-import { ChildrenType } from '@/src/utils/globalTypes';
+import { ChildrenType } from '@/utils/globalTypes';
 
 interface INavbarProps extends ChildrenType {
   className?: string;
