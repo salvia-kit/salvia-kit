@@ -6,11 +6,15 @@ import LayoutProvider from '@/layout/context';
 import { ChildrenType } from '@/utils/globalTypes';
 import Sidenavigation from '@/layout/sidenavigation';
 import useMediaQueries from '@/hooks/useMediaQueries';
+import Alert from '@/components/alert';
+import useMounted from '@/hooks/useMounted';
 
 function Layout({ children }: ChildrenType) {
   const { isMediumOrSmallScreen } = useMediaQueries();
+  const isMounted = useMounted();
   return (
     <LayoutProvider>
+      {isMounted && <Alert />}
       <Header />
       <Overlay />
       {isMediumOrSmallScreen && <Sidenavigation />}
