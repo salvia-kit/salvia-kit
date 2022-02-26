@@ -2,6 +2,7 @@ import * as img from './images';
 import DocV9Next from '@/docs/v9/next/doc';
 import DocV9React from '@/docs/v9/react/doc';
 import DocNuxtVue from '@/docs/shared/vue-nuxt/doc';
+import DocSvelte from '@/docs/shared/svelte/doc';
 import DocNextReact from '@/docs/shared/next-react/doc';
 
 const data = [
@@ -32,6 +33,11 @@ const data = [
         doc: <DocNuxtVue techno="nuxt" section={true} />,
         source: 'https://github.com/salvia-kit/dashboard-v1-nuxt',
       },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="long" />,
+        source: 'https://github.com/salvia-kit/dashboard-v1-svelte',
+      },
     },
   },
   {
@@ -60,6 +66,11 @@ const data = [
         name: 'nuxt',
         doc: <DocNuxtVue techno="nuxt" section={true} />,
         source: 'https://github.com/salvia-kit/dashboard-v2-nuxt',
+      },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="long" />,
+        source: 'https://github.com/salvia-kit/dashboard-v2-svelte',
       },
     },
   },
@@ -104,6 +115,11 @@ const data = [
         doc: <DocNuxtVue techno="nuxt" />,
         source: 'https://github.com/salvia-kit/dashboard-v3-nuxt',
       },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="short" />,
+        source: 'https://github.com/salvia-kit/dashboard-v3-svelte',
+      },
     },
   },
   {
@@ -132,6 +148,11 @@ const data = [
         name: 'nuxt',
         doc: <DocNuxtVue techno="nuxt" />,
         source: 'https://github.com/salvia-kit/dashboard-v4-nuxt',
+      },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="short" />,
+        source: 'https://github.com/salvia-kit/dashboard-v4-svelte',
       },
     },
   },
@@ -162,6 +183,11 @@ const data = [
         doc: <DocNuxtVue techno="nuxt" />,
         source: 'https://github.com/salvia-kit/dashboard-v5-nuxt',
       },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="short" />,
+        source: 'https://github.com/salvia-kit/dashboard-v5-svelte',
+      },
     },
   },
   {
@@ -191,6 +217,11 @@ const data = [
         doc: <DocNuxtVue techno="nuxt" />,
         source: 'https://github.com/salvia-kit/dashboard-v6-nuxt',
       },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="short" />,
+        source: 'https://github.com/salvia-kit/dashboard-v6-svelte',
+      },
     },
   },
   {
@@ -218,6 +249,11 @@ const data = [
         name: 'nuxt',
         doc: <DocNuxtVue techno="vue" section={true} />,
         source: 'https://github.com/salvia-kit/dashboard-v7-nuxt',
+      },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="long" />,
+        source: 'https://github.com/salvia-kit/dashboard-v7-svelte',
       },
     },
   },
@@ -261,6 +297,11 @@ const data = [
         name: 'nuxt',
         doc: <DocNuxtVue techno="vue" section={true} version={8} />,
         source: 'https://github.com/salvia-kit/dashboard-v8-nuxt',
+      },
+      svelte: {
+        name: 'svelte',
+        doc: <DocSvelte snippet="long" version={8} />,
+        source: 'https://github.com/salvia-kit/dashboard-v8-svelte',
       },
     },
   },

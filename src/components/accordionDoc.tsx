@@ -9,6 +9,7 @@ import NuxtIcon from '@/components/icons/nuxt';
 import ReactIcon from '@/components/icons/react';
 import { VueIcon } from '@/components/icons/icons';
 import ExternalLink from '@/components/externalLink';
+import SvelteIcon from '@/components/icons/svelte';
 
 interface IAccordionDocProps {
   techno: any;
@@ -16,7 +17,7 @@ interface IAccordionDocProps {
 
 export default function AccordionDoc({ techno }: IAccordionDocProps) {
   return (
-    <div className="hidden lg:block">
+    <div className="hidden xl:block">
       <Accordion>
         <div className="flex flex-nowrap mt-12 lg:space-x-3 xl:space-x-2">
           <div className="md:w-6/12 lg:w-3/12">
@@ -25,11 +26,11 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
               <span className="mb-5 mt-2 font-semibold">React</span>
             </span>
             <div className="flex justify-center space-x-2">
-              <AccordionItem color="blue-sky" toggle={techno.react.name}>
+              <AccordionItem color="custom" toggle={techno.react.name}>
                 Doc
               </AccordionItem>
               <ExternalLink href={techno.react.source}>
-                <Button color="blue-sky" size="sm">
+                <Button color="custom" size="sm">
                   Source
                 </Button>
               </ExternalLink>
@@ -94,6 +95,24 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
               </div>
             </div>
           )}
+          {techno?.svelte && (
+            <div className="mt-8 md:w-6/12 lg:mt-0 lg:w-3/12">
+              <span className="grid place-items-center">
+                <SvelteIcon className="w-9 h-9" />
+                <span className="mb-5 mt-2 font-semibold">Svelte</span>
+              </span>
+              <div className="flex justify-center space-x-2">
+                <AccordionItem color="red" toggle={techno.svelte.name}>
+                  Doc
+                </AccordionItem>
+                <ExternalLink href={techno.svelte.source}>
+                  <Button color="red" size="sm">
+                    Source
+                  </Button>
+                </ExternalLink>
+              </div>
+            </div>
+          )}
         </div>
 
         <AccordionPanel id={techno.react.name}>
@@ -106,6 +125,11 @@ export default function AccordionDoc({ techno }: IAccordionDocProps) {
         {techno?.nuxt && (
           <AccordionPanel id={techno.nuxt.name}>
             {techno.nuxt.doc}
+          </AccordionPanel>
+        )}
+        {techno?.svelte && (
+          <AccordionPanel id={techno.svelte.name}>
+            {techno.svelte.doc}
           </AccordionPanel>
         )}
       </Accordion>

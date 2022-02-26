@@ -4,6 +4,7 @@ import Button from '@/components/ui/button';
 import NuxtIcon from '@/components/icons/nuxt';
 import ReactIcon from '@/components/icons/react';
 import { VueIcon } from '@/components/icons/icons';
+import SvelteIcon from '@/components/icons/svelte';
 
 export default function HomeFifthSection() {
   const form = useForm();
@@ -49,7 +50,7 @@ export default function HomeFifthSection() {
         </form>
       </div>
 
-      <div className="flex flex-wrap justify-center pt-32 space-x-4 md:space-x-24 lg:space-x-32">
+      <div className="flex flex-wrap justify-center pt-32 space-x-4 md:gap-x-12 lg:gap-x-20 xl:gap-x-32">
         <div>
           <Image
             src="/images/others/next.png"
@@ -68,6 +69,9 @@ export default function HomeFifthSection() {
         </div>
         <div>
           <ReactIcon className="w-12 h-12" />
+        </div>
+        <div>
+          <SvelteIcon className="w-12 h-12" />
         </div>
         <div>
           <VueIcon className="w-12 h-12" />

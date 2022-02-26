@@ -21,3 +21,8 @@ export interface DocVueNuxtType {
   section?: boolean;
   version?: number;
 }
+
+export interface SvelteDocType {
+  snippet: 'short' | 'long';
+  version?: number;
+}

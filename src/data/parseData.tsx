@@ -18,6 +18,10 @@ type TechnoTypes = {
     doc: ChildrenType;
     name: string;
   };
+  svelte: {
+    doc: ChildrenType;
+    name: string;
+  };
 };
 
 interface IProps {
@@ -77,6 +81,8 @@ function isTechno(name: string) {
       return 'Vue';
     case 'nuxt':
       return 'Nuxt.js';
+    case 'svelte':
+      return 'Svelte Kit';
     default:
       return null;
   }
