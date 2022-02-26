@@ -27,8 +27,8 @@ export default function HomeThirdSection() {
             Built with <strong>Tailwind CSS</strong>, they are fully
             customizable and without external dependencies. Each dashboard has 4
             templates. one for <strong>create-react-app</strong>,{' '}
-            <strong>Next.js</strong>, <strong>Vue with vite</strong> and{' '}
-            <strong>Nuxt</strong>.
+            <strong>Next.js</strong>, <strong>Svelte kit</strong>,{' '}
+            <strong>Vue 3 with vite</strong> and <strong>Nuxt</strong>.
           </p>
         </div>
         <div className="hidden md:flex md:w-6/12">

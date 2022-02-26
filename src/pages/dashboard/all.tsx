@@ -19,8 +19,9 @@ export default function AllDashboardsPage() {
           Our dashboard catalog
         </h1>
         <p className="mt-4 text-center text-sm">
-          Each dashboard have four templates. <br />
-          one template for React, Next, Vue and Nuxt. it's all free
+          Each dashboard have 5 templates
+          <br />
+          One for React, Next, Svelte kit, Vue and Nuxt. it's all free
         </p>
         <div className="flex flex-wrap mt-12">
           {data.map((dashboard) => (
