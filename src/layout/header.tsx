@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router';
+import useMounted from '@/hooks/useMounted';
 import { useToggle } from '@/layout/context';
 import NuxtIcon from '@/components/icons/nuxt';
 import NextIcon from '@/components/icons/next';
 import ReactIcon from '@/components/icons/react';
+import SvelteIcon from '@/components/icons/svelte';
 import { VueIcon } from '@/components/icons/icons';
 import dashboardVersions from '@/data/versions.json';
 import useScrollHeader from '@/hooks/useScrollHeader';
@@ -24,7 +26,6 @@ import {
   DropdownToggle,
   DropdownMenu,
 } from '@/components/ui/dropdown';
-import useMounted from '@/hooks/useMounted';
 
 const style = {
   home: `text-white`,
@@ -55,11 +56,17 @@ export default function Header() {
                 <DropdownToggle>Technologies</DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem href="/techno/next">
-                    <NextIcon className="w-12 h-8" />
+                    <div className="ml-4">
+                      <NextIcon className="w-12 h-8" />
+                    </div>
                   </DropdownItem>
                   <DropdownItem href="/techno/react">
                     <ReactIcon />
                     <span className="mt-0.5 pl-2">React</span>
+                  </DropdownItem>
+                  <DropdownItem href="/techno/svelte">
+                    <SvelteIcon />
+                    <span className="mt-0.5 pl-2">Svelte</span>
                   </DropdownItem>
                   <DropdownItem href="/techno/vue">
                     <VueIcon className="w-6 h-6" />

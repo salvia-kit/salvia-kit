@@ -4,14 +4,10 @@ import {
   ReactSnippetV8,
 } from '@/docs/common/snippets';
 import { DocType } from '@/utils/globalTypes';
-import { FileIcon, FolderIcon, JsIcon } from '@/components/icons/icons';
+import SvelteIcon from '@/components/icons/svelte';
+import { FolderIcon, JsIcon } from '@/components/icons/icons';
 
-const SharedNextReactSecondSection = ({
-  snippet,
-  mainComp,
-  styleDir,
-  version,
-}: DocType) => (
+const SvelteDocSecondSection = ({ snippet, version }: DocType) => (
   <section className="mb-12">
     <h2 className="text-2xl font-medium">File Structure explained</h2>
     <p className="mt-5">
@@ -20,29 +16,27 @@ const SharedNextReactSecondSection = ({
       <span className="px-1 font-semibold">subfolders</span> which contain all
       the logic.
     </p>
-
     <div className="mb-12 mt-5">
       <div className="flex">
         <FolderIcon /> <strong className="px-1">provider</strong>
       </div>
       <div className="flex flex-wrap mt-4 pl-6 md:flex-nowrap">
         <JsIcon className="w-7 h-7" />
-        <span className="px-2 font-semibold">context.js</span> :
-        <p className="pl-2">
-          contains the
-          <span className="px-1 font-semibold">DashboardProvider</span>
-          component where all the dashboard logic is placed. this will then be
-          reused in other components. it handles the closing of the sidenav when
-          the route changes or on click outside.
-        </p>
+        <span className="px-2 font-semibold">click-outside.js</span> :
+        <p className="pl-2">handle click outside to the target</p>
       </div>
       <div className="flex flex-wrap mt-6 pl-6 md:flex-nowrap">
-        <JsIcon className="w-5 h-5" />
-        <span className="px-2 font-semibold">overlay.js</span> :
+        <SvelteIcon className="w-6 h-6" />
+        <span className="px-2 font-semibold">Overlay.svelte</span> :
         <p className="pl-2">
           displays an overlay that will only be visible on small screens to
           emphasize the focus on the sidenav when it is open
         </p>
+      </div>
+      <div className="flex flex-wrap mt-4 pl-6 md:flex-nowrap">
+        <JsIcon className="w-7 h-7" />
+        <span className="px-2 font-semibold">store.js</span> :
+        <p className="pl-2">the global store to toggle sidenav state</p>
       </div>
     </div>
 
@@ -61,16 +55,15 @@ const SharedNextReactSecondSection = ({
           has an icon, this sub-folder contains the icons of each sidenav-item.
           You don't need this folder if you are using a package for icons such
           as
-          <span className="px-1 font-semibold">react-icons</span>,
           <span className="px-1 font-semibold">font-awesome</span>
-          or other
+          or others
         </p>
       </div>
       {version === 8 && (
         <div className="flex flex-wrap mt-6 pl-6 md:flex-nowrap">
-          <JsIcon /> <span className="px-2 font-semibold">accordion.js</span> :
+          <FolderIcon /> <span className="px-2 font-semibold">collapse</span> :
           <p className="pl-1">
-            contains the<span className="px-1 font-bold">Accordion</span>
+            contains the<span className="px-1 font-bold">Collapse</span>
             component which is used to toggle each section of sidenav.
           </p>
         </div>
@@ -102,14 +95,16 @@ const SharedNextReactSecondSection = ({
         </ul>
       </div>
       <div className="flex flex-wrap mt-10 pl-6 md:flex-nowrap">
-        <JsIcon /> <span className="px-2 font-semibold">header.js</span> :
+        <SvelteIcon className="w-6 h-6" />
+        <span className="px-2 font-semibold">header.svelte</span> :
         <p className="pl-1">
           The<span className="px-1 font-semibold">SidenavHeader</span>
           component contains the logo that is displayed on top of the sidenav
         </p>
       </div>
       <div className="flex flex-wrap mt-6 pl-6 md:flex-nowrap">
-        <JsIcon /> <span className="px-2 font-semibold">items.js</span> :
+        <SvelteIcon className="w-6 h-6" />
+        <span className="px-2 font-semibold">Items.svelte</span> :
         <p className="pl-1">
           This<span className="px-1 font-semibold">SidenavItems</span>
           component automatically generates each sidenav-item according to your
@@ -118,22 +113,13 @@ const SharedNextReactSecondSection = ({
         </p>
       </div>
       <div className="flex flex-wrap mt-6 pl-6 md:flex-nowrap">
-        <JsIcon /> <span className="px-2 font-semibold">index.js</span> :
+        <SvelteIcon className="w-6 h-6" />
+        <span className="px-2 font-semibold">Index.svelte</span> :
         <p className="pl-1">
           This<span className="px-1 font-semibold">Sidenavigation</span>
           component contains all the logic of the sidenav.
         </p>
       </div>
-      {styleDir === 'sidenav' && (
-        <div className="flex flex-wrap mt-6 pl-6 md:flex-nowrap">
-          <FileIcon className="w-5 h-5" />
-          <span className="px-1 font-semibold">style.module.css</span> :
-          <p className="pl-1">
-            This style sheet is used to make the scrollbar invisible for the
-            sidenav.
-          </p>
-        </div>
-      )}
     </div>
 
     <div>
@@ -141,7 +127,8 @@ const SharedNextReactSecondSection = ({
         <FolderIcon /> <strong className="px-1">topnavigation</strong>
       </div>
       <div className="flex flex-wrap mt-4 pl-6 md:flex-nowrap">
-        <JsIcon /> <span className="px-2 font-semibold">index.js</span> :
+        <SvelteIcon className="w-6 h-6" />
+        <span className="px-2 font-semibold">Index.svelte</span> :
         <p className="pl-1">
           Contains the
           <span className="px-1 font-semibold">Topnavigation</span>component.
@@ -153,31 +140,13 @@ const SharedNextReactSecondSection = ({
 
     <div>
       <div className="flex flex-wrap mt-8 md:flex-nowrap">
-        <JsIcon /> <strong className="px-1">layout.js :</strong> Contains the
+        <SvelteIcon className="w-6 h-6" />
+        <strong className="px-1">Layout.svelte :</strong> Contains the
         <span className="px-1 font-semibold">DashboardLayout</span>
         component used as the layout of the application
       </div>
     </div>
-    {styleDir === 'dashboard' && (
-      <div className="flex flex-wrap mt-8 md:flex-nowrap">
-        <FileIcon className="w-5 h-5" />
-        <span className="px-1 font-semibold">style.module.css</span> :
-        <p className="pl-1">
-          This style sheet is used to make the scrollbar invisible for the
-          sidenav and apply some filters.
-        </p>
-      </div>
-    )}
-    {mainComp && (
-      <div>
-        <div className="flex flex-wrap mt-8 md:flex-nowrap">
-          <JsIcon /> <strong className="px-1">main.js :</strong> This
-          <span className="px-1 font-semibold">Main</span>
-          component is the content of the page
-        </div>
-      </div>
-    )}
   </section>
 );
 
-export default SharedNextReactSecondSection;
+export default SvelteDocSecondSection;

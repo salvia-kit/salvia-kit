@@ -7,7 +7,7 @@ export interface BtnProps
     BtnPropsWithChildren {
   children: React.ReactNode;
   className?: string;
-  color?: 'custom' | 'white' | 'black' | 'green' | 'blue-sky';
+  color?: 'custom' | 'white' | 'black' | 'green' | 'blue-sky' | 'red';
   size?: 'sm' | 'md' | 'lg';
 }
 
@@ -27,6 +27,7 @@ const style = {
     black: 'bg-black text-white',
     green: 'bg-green-700 text-white',
     'blue-sky': 'bg-[#26a69a] text-white',
+    red: 'bg-red-500 text-white',
   },
 };
 

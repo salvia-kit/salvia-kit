@@ -38,11 +38,10 @@ export default function TechnologiePage({
           </Head>
           <Container>
             <h1 className="mt-32 text-center text-3xl font-bold">
-              Salvia-kit{' '}
               <span className="pl-1">{isTechno(name)} - Dashboards</span>
             </h1>
             <div className="flex flex-wrap mt-12">
-              {name === 'vue' || name === 'nuxt'
+              {name === 'vue' || name === 'nuxt' || name === 'svelte'
                 ? dashboards
                     .filter((dash: any) => dash.slug !== 'dashboard-v9')
                     .map((dashboard: any) => (
@@ -67,12 +66,11 @@ export default function TechnologiePage({
   );
 }
 const technos = [
-  {
-    name: 'react',
-  },
+  { name: 'react' },
   { name: 'next' },
   { name: 'vue' },
   { name: 'nuxt' },
+  { name: 'svelte' },
 ];
 
 export const getStaticPaths: GetStaticPaths = async () => {

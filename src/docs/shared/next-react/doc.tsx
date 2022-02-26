@@ -25,7 +25,7 @@ const style = {
 
 export default function DocNextReact({
   techno = 'next',
-  snippet,
+  snippet = 'long',
   styleDir,
   mainComp,
   version,

@@ -14,7 +14,9 @@ export default function ThemeSwitcher() {
   const isMounted = useMounted();
 
   const toggleTheme = React.useCallback(() => {
-    theme === 'light' ? setTheme('dark') : setTheme('light');
+    if (setTheme) {
+      theme === 'light' ? setTheme('dark') : setTheme('light');
+    }
   }, [setTheme, theme]);
 
   return (
