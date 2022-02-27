@@ -9,6 +9,7 @@ import NuxtIcon from '@/components/icons/nuxt';
 import ReactIcon from '@/components/icons/react';
 import { VueIcon } from '@/components/icons/icons';
 import ExternalLink from '@/components/externalLink';
+import SvelteIcon from '@/components/icons/svelte';
 
 interface IDOcAccordionProps {
   techno: any;
@@ -27,11 +28,11 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
               <span className="mb-5 mt-2 font-semibold">React</span>
             </span>
             <div className="flex justify-center space-x-2">
-              <AccordionItem color="blue-sky" toggle={techno.react.name}>
+              <AccordionItem color="custom" toggle={techno.react.name}>
                 Doc
               </AccordionItem>
               <ExternalLink href={techno.react.source}>
-                <Button color="blue-sky" size="sm">
+                <Button color="custom" size="sm">
                   Source
                 </Button>
               </ExternalLink>
@@ -110,6 +111,29 @@ export default function AccordionDocMobile({ techno }: IDOcAccordionProps) {
               </div>
               <AccordionPanel id={techno.nuxt.name}>
                 {techno.nuxt.doc}
+              </AccordionPanel>
+            </>
+          )}
+          {techno?.svelte && (
+            <>
+              <div className="mt-12 w-56">
+                <span className="grid place-items-center">
+                  <SvelteIcon className="w-9 h-9" />
+                  <span className="mb-5 mt-2 font-semibold">Svelte</span>
+                </span>
+                <div className="flex justify-center space-x-2">
+                  <AccordionItem color="red" toggle={techno.svelte.name}>
+                    Doc
+                  </AccordionItem>
+                  <ExternalLink href={techno.svelte.source}>
+                    <Button color="red" size="sm">
+                      Source
+                    </Button>
+                  </ExternalLink>
+                </div>
+              </div>
+              <AccordionPanel id={techno.svelte.name}>
+                {techno.svelte.doc}
               </AccordionPanel>
             </>
           )}
