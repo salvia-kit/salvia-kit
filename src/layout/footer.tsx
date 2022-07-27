@@ -17,7 +17,7 @@ export default function Footer() {
               </li>
               <li className="pb-3">Twitter</li>
               <li className="pb-3">
-                <ExternalLink href="mailto:support@salvia-kit.com">
+                <ExternalLink href="mailto:contact@salvia-kit.com">
                   Email
                 </ExternalLink>
               </li>
@@ -90,7 +90,7 @@ export default function Footer() {
         <div className="mt-16 pb-6 text-center text-sm">
           © {new Date().getFullYear()} Salvia-kit All rights reserved. Made with
           love by{' '}
-          <ExternalLink className="font-semibold" href="https://enochndika.com">
+          <ExternalLink className="font-semibold" href="https://github.com/enochndika">
             Enoch Ndika
           </ExternalLink>
         </div>
