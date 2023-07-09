@@ -57,13 +57,13 @@ export function Documentation({ techno }: DocumentationProps) {
       </div>
 
       <div className="flex items-center gap-2 mt-8">
-        <ExternalLink href={techno[item]?.source || techno.react.source}>
+        <ExternalLink href={techno[item]?.source || techno.next.source}>
           <Button
             size="sm"
             color="custom"
             className="flex gap-x-2 items-center py-2"
           >
-            {icons[item] || icons.react} Source code
+            {icons[item] || icons.next} Source code
           </Button>
         </ExternalLink>
       </div>

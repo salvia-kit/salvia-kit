@@ -16,7 +16,7 @@ describe('Dashboard Exploration', () => {
 
     cy.get('h1').contains('Our dashboard catalog');
     cy.wait(1000);
-    cy.get('a[href*="/dashboard-v1"]').click();
+    cy.get('a[href*="/dashboard-v1"]').click({ multiple: true });
     cy.url().should('include', '/dashboard-v1');
     cy.go('back');
 
