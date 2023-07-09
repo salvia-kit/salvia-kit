@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import css from './first.module.css';
-import Button from '@/components/ui/button';
+import Button from '@/components/ui/Button';
 
 const HomeFirstSection = () => (
   <section className="mt-32 xl:mt-64 2xl:mt-72 2xl:pb-20 text-white">

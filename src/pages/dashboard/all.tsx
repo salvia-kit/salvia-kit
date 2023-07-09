@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import data from '@/data/data';
-import Container from '@/components/container';
-import DashboardCard from '@/components/dashboardCard';
+import Container from '@/components/Container';
+import { dashboards } from '@/data/dashboards';
+import DashboardCard from '@/components/DashboardCard';
 
 export default function AllDashboardsPage() {
   return (
@@ -19,15 +19,16 @@ export default function AllDashboardsPage() {
           Our dashboard catalog
         </h1>
         <p className="mt-4 text-center text-sm">
-          Each dashboard have 5 templates
+          Each dashboard has 7 templates
           <br />
-          One for React, Next, Svelte kit, Vue and Nuxt. it's all free
+          One for React, Next, Svelte kit, Vue ,Nuxt, Solid and Angular. it's
+          all free
         </p>
         <div className="flex flex-wrap mt-12">
-          {data.map((dashboard) => (
+          {dashboards.map((dashboard) => (
             <DashboardCard
-              key={dashboard.id}
               data={dashboard}
+              key={dashboard.id}
               className="pb-12 w-full md:mb-8 md:p-4 md:w-4/12"
             />
           ))}

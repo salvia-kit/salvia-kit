@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import useForm from '@/hooks/useForm';
-import Button from '@/components/ui/button';
-import NuxtIcon from '@/components/icons/nuxt';
-import ReactIcon from '@/components/icons/react';
-import { VueIcon } from '@/components/icons/icons';
-import SvelteIcon from '@/components/icons/svelte';
+import Button from '@/components/ui/Button';
+import NuxtIcon from '@/components/icons/NuxtIcon';
+import ReactIcon from '@/components/icons/ReactIcon';
+import { VueIcon } from '@/components/icons/others';
+import SvelteIcon from '@/components/icons/SvelteIcon';
 
 export default function HomeFifthSection() {
   const form = useForm();
@@ -50,21 +50,27 @@ export default function HomeFifthSection() {
         </form>
       </div>
 
-      <div className="flex flex-wrap justify-center pt-32 space-x-4 md:gap-x-12 lg:gap-x-20 xl:gap-x-32">
-        <div>
-          <Image
-            src="/images/others/next.png"
-            height={50}
-            width={50}
-            alt="next.js"
-          />
-        </div>
+      <div className="flex flex-wrap justify-center pt-32 gap-x-20 md:gap-x-32">
         <div className="-mt-1">
           <Image
             src="/svg/tailwindcss.svg"
             height={60}
             width={60}
             alt="Tailwind CSS"
+          />
+        </div>
+        <div className="-mt-1">
+          <Image src="/svg/solid.png" height={60} width={60} alt="Solid js" />
+        </div>
+        <div className="-mt-1">
+          <Image src="/svg/angular.png" height={60} width={60} alt="Angular" />
+        </div>
+        <div>
+          <Image
+            src="/images/others/next.png"
+            height={50}
+            width={50}
+            alt="next.js"
           />
         </div>
         <div>

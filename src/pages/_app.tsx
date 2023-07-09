@@ -5,9 +5,9 @@ import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
 
 import '@/styles/globals.css';
-import Layout from '@/layout/layout';
+import Layout from '@/layout/Layout';
 import * as gtag from '@/utils//gtag';
-import metaTags from '@/data/metaTags.json';
+import metaTags from '@/data/meta-tags.json';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

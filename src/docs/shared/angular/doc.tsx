@@ -1,12 +1,13 @@
 import { DocType } from '@/utils/globalTypes';
-import { VueSnippet } from '@/docs/common/snippets';
 import FeaturesSection from '@/docs/common/features';
-import { TSIcon, FolderIcon, VueIcon } from '@/components/icons/others';
+import { AngularSnippet } from '@/docs/common/snippets';
+import { FolderIcon, AngularIcon } from '@/components/icons/others';
 
-export function VueNuxtDoc({ snippet, version }: DocType) {
+export function AngularDoc({ snippet, version }: DocType) {
   return (
     <div className="mt-12 max-w-full">
       <FeaturesSection />
+
       <section className="mb-12">
         <h2 className="text-2xl font-medium">File Structure</h2>
         <div className="pl-2 mt-3">
@@ -15,142 +16,146 @@ export function VueNuxtDoc({ snippet, version }: DocType) {
             <span className="pl-2">dashboard</span>
           </div>
           <div className="mb-3 flex pl-11">
-            <FolderIcon />
-            <span className="pl-2">sidebar</span>
-          </div>
-          <div className="mb-3 flex pl-16">
-            <FolderIcon />
+            <FolderIcon className="h-6 w-6" />
             <span className="pl-2">icons</span>
+          </div>
+          <div className="mb-3 flex pl-11">
+            <FolderIcon className="h-6 w-6" />
+            <span className="pl-2">sidebar</span>
           </div>
 
           {version === 8 && (
             <div className="mb-3 flex pl-16">
-              <VueIcon />
-              <span className="pl-2">Collapse.vue</span>
+              <AngularIcon />
+              <span className="pl-2">collapse</span>
             </div>
           )}
 
           <div className="mb-3 flex pl-16">
-            <VueIcon />
-            <span className="pl-2">Sidebar.vue</span>
+            <AngularIcon />
+            <span className="pl-2">sidebar</span>
           </div>
           <div className="mb-3 flex pl-16">
-            <VueIcon />
-            <span className="pl-2">SidebarHeader.vue</span>
+            <AngularIcon />
+            <span className="pl-2">sidebar-header</span>
           </div>
           <div className="mb-3 flex pl-16">
-            <VueIcon />
-            <span className="pl-2">SidebarItem.vue</span>
+            <AngularIcon />
+            <span className="pl-2">sidebar-item</span>
           </div>
 
           {snippet === 'long' && (
             <div className="mb-3 flex pl-16">
-              <VueIcon />
-              <span className="pl-2">SidebarItemSection.vue</span>
+              <AngularIcon />
+              <span className="pl-2">sidebar-item-section</span>
             </div>
           )}
 
           <div className="mb-3 flex pl-16">
-            <VueIcon />
-            <span className="pl-2">SidebarItems.vue</span>
+            <AngularIcon />
+            <span className="pl-2">sidebar-items</span>
           </div>
           <div className="mb-3 flex pl-11">
-            <VueIcon />
-            <span className="pl-2">Layout.vue</span>
+            <AngularIcon />
+            <span className="pl-2">layout</span>
           </div>
           <div className="mb-3 flex pl-11">
-            <VueIcon />
-            <span className="pl-2">Overlay.vue</span>
+            <AngularIcon />
+            <span className="pl-2">overlay</span>
           </div>
           <div className="mb-3 flex pl-11">
-            <VueIcon />
-            <span className="pl-2">TopBar.vue</span>
+            <AngularIcon />
+            <span className="pl-2">top-bar</span>
           </div>
           <div className="mb-3 flex pl-11">
-            <TSIcon />
-            <span className="pl-3">store.ts</span>
+            <AngularIcon color="yellow" />
+            <span className="pl-2">dashboard.service.ts</span>
           </div>
         </div>
       </section>
+
       <section className="mb-12">
         <h2 className="text-2xl font-medium">File Structure explained</h2>
-
         <div className="mb-8 mt-4">
-          <div className="flex">
-            <FolderIcon /> <strong className="px-1">sidebar</strong>
+          <div>
+            <div className="flex mb-4">
+              <FolderIcon />
+              <strong className="px-1">icons</strong> :
+              <p className="pl-1">
+                Icons used for each sidebar-item. You don't need this folder if
+                you can provide your own icons.
+              </p>
+            </div>
           </div>
-
-          <div className="mt-4 flex flex-wrap pl-6 md:flex-nowrap">
-            <FolderIcon className="h-7 w-7" />
-            <span className="px-2 font-medium">icons</span> :
-            <p className="pl-1">
-              Icons used for each sidebar-item. You don't need this folder if
-              you can provide your own icons.
-            </p>
+          <div className="flex">
+            <FolderIcon />
+            <strong className="px-1">sidebar</strong>
           </div>
 
           {version === 8 && (
             <div className="mt-4 flex flex-wrap pl-6 md:flex-nowrap">
-              <VueIcon /> <span className="px-2 font-medium">Collapse.vue</span>{' '}
-              :<p className="pl-1">used to toggle each sidebar section</p>
+              <AngularIcon />
+              <span className="px-2 font-medium">collapse</span> :
+              <p className="pl-1">used to toggle each sidebar section</p>
             </div>
           )}
 
           <div className="mt-4 flex flex-wrap pl-6 md:flex-nowrap">
-            <VueIcon /> <span className="px-2 font-medium">Sidebar.vue</span> :
+            <AngularIcon />
+            <span className="px-2 font-medium">sidebar</span> :
             <p className="pl-1">responsable of the sidebar.</p>
             <p className="pl-1">
-              compose <strong>SidebarHeader</strong> and
-              <strong>SidebarItems</strong> components.
+              compose <strong>sidebar-header</strong> and
+              <strong>sidebar-items</strong> components.
             </p>
           </div>
-
           <div className="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
-            <VueIcon />{' '}
-            <span className="px-2 font-medium">SidebarHeader.vue</span>:
+            <AngularIcon />
+            <span className="px-2 font-medium">sidebar-header</span>:
             <p className="pl-1">
               contains the logo displayed on top of the sidebar
             </p>
           </div>
-
           <div className="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
-            <VueIcon />{' '}
-            <span className="px-2 font-medium">SidebarItem.vue</span> :
+            <AngularIcon />
+            <span className="px-2 font-medium">sidebar-item</span> :
             <p className="pl-1">represents each sidebar-item of the sidebar.</p>
           </div>
 
           {snippet === 'long' && (
             <div className="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
-              <VueIcon />
-              <span className="px-2 font-medium">SidebarItemSection.vue</span> :
-              <p className="pl-1">represents each section of sidebar-items.</p>
+              <AngularIcon />
+              <span className="px-2 font-medium">sidebar-item-section</span> :
+              <p className="pl-1">represents each section of sidebar-items</p>
             </div>
           )}
 
           <div className="mt-6 flex flex-wrap pl-6 md:flex-nowrap">
-            <VueIcon />{' '}
-            <span className="px-2 font-medium">SidebarItems.vue</span> :
-            <p className="pl-1">compose many SidebarItem components</p>
+            <AngularIcon />
+            <span className="px-2 font-medium">sidebar-items</span> :
+            <p className="pl-1">compose many sidebar-item components</p>
           </div>
           <div className="mt-8 flex flex-wrap pl-8">
             <div>
-              <VueSnippet type={snippet} />
+              <AngularSnippet type={snippet} />
             </div>
           </div>
         </div>
 
         <div>
           <div className="mt-8 flex flex-wrap md:flex-nowrap">
-            <VueIcon /> <span className="px-1 font-medium">Layout.vue :</span>
+            <AngularIcon />
+            <span className="px-1 font-medium">layout :</span>
             contains the
-            <strong className="px-1">DashboardLayout</strong>
+            <strong className="px-1">dashboard-layout</strong>
             component used as the layout of the application
           </div>
         </div>
 
         <div>
           <div className="mt-8 flex flex-wrap md:flex-nowrap">
-            <VueIcon /> <span className="px-1 font-medium">Overlay.vue :</span>
+            <AngularIcon />
+            <span className="px-1 font-medium">overlay :</span>
             displays an overlay that will only be visible on small screens to
             emphasize the focus on sidebar when it is open. it's also used to
             close sidebar on click outside
@@ -159,45 +164,23 @@ export function VueNuxtDoc({ snippet, version }: DocType) {
 
         <div>
           <div className="mt-8 flex flex-wrap md:flex-nowrap">
-            <VueIcon /> <span className="px-1 font-medium">TopBar.vue :</span>
+            <AngularIcon />
+            <span className="px-1 font-medium">top-bar :</span>
             You can customize it or replace it with your own TopBar but don't
             forget to add a button to toggle sidebar on mobile
           </div>
         </div>
 
         <div className="mt-8 flex flex-wrap md:flex-nowrap">
-          <TSIcon className="h-5 w-5" />
-          <span className="pl-3 font-medium">store.ts</span> :
+          <AngularIcon color="yellow" />
+          <span className="pl-2 pr-1 font-medium">dashboard.service.ts</span> :
           <p className="pl-1">
             where all states for handling opening and closing sidebar are
             defined
           </p>
         </div>
       </section>
-      source: 'git@github.com:salvia-kit/svelte-dashboards.git ./dashboard-v10',
-      <section className="mb-12">
-        <h2 className="text-2xl font-medium">Export</h2>
-        <p className="mt-4">
-          As there is no vendor lock-in, if you already have a dashboard, you
-          can copy the
-          <strong className="px-1">dashboard</strong>folder into your project
-        </p>
-        <div className="mt-8">
-          <ul className="mt-4 list-disc pl-6">
-            <li className="mb-3">
-              Add your routes in the
-              <strong className="px-1">
-                dashboard/sidebar/SidebarItems.vue
-              </strong>
-              file
-            </li>
-            <li className="mb-3">
-              Replace your layout by the
-              <strong className="px-1">DashboardLayout</strong>component
-            </li>
-          </ul>
-        </div>
-      </section>
+
       <section className="mb-12">
         <h2 className="text-2xl font-medium">Customization</h2>
         <p className="mt-5">
@@ -210,9 +193,9 @@ export function VueNuxtDoc({ snippet, version }: DocType) {
           with the keyboards if you have several sidebar-items.
         </p>
         <p className="mt-5">
-          In the <strong> dashboard/Layout.vue</strong> file,
-          <strong className="pl-1">Sidebar</strong> component has as prop
-          <strong className="pl-1">mobile-orientation</strong>, which indicates
+          In the <strong> dashboard-layout</strong> component,
+          <strong className="pl-1">sidebar</strong> component has as input
+          <strong className="pl-1">mobileOrientation</strong>, which indicates
           the orientation of the sidebar on small devices (viewport {'<'}{' '}
           1024px).
         </p>
