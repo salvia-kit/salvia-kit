@@ -14,38 +14,45 @@ const dashboards = [
     techno: {
       react: {
         name: 'react',
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v1',
         doc: <ReactNextSolidDoc version={1} techno="react" snippet="long" />,
       },
       next: {
         name: 'next',
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v1',
         doc: <ReactNextSolidDoc version={1} techno="next" snippet="long" />,
       },
       solid: {
         name: 'solid',
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v1',
         doc: <ReactNextSolidDoc version={1} techno="solid" snippet="long" />,
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={1} snippet="long" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v1',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={1} snippet="long" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v1',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="long" version={1} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v1',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="long" version={1} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v1',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v1',
       },
     },
   },
@@ -59,37 +66,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={2} snippet="long" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v2',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={2} snippet="long" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v2',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={2} snippet="long" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v2',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={2} snippet="long" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v2',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={2} snippet="long" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v2',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="long" version={2} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v2',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="long" version={2} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v2',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v2',
       },
     },
   },
@@ -103,37 +117,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={3} snippet="short" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v3',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={3} snippet="short" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v3',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={3} snippet="short" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v3',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={3} snippet="short" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v3',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={3} snippet="short" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v3',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="short" version={3} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v3',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="short" version={3} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v3',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v3',
       },
     },
   },
@@ -147,37 +168,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={4} snippet="short" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v4',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={4} snippet="short" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v4',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={4} snippet="short" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v4',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={4} snippet="short" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v4',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={4} snippet="short" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v4',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="short" version={4} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v4',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="short" version={4} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v4',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v4',
       },
     },
   },
@@ -191,37 +219,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={5} snippet="short" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v5',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={5} snippet="short" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v5',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={5} snippet="short" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v5',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={5} snippet="short" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v5',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={5} snippet="short" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v5',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="short" version={5} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v5',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="short" version={5} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v5',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v5',
       },
     },
   },
@@ -235,37 +270,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={6} snippet="short" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v6',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={6} snippet="short" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v6',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={6} snippet="short" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v6',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={6} snippet="short" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v6',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={6} snippet="short" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v6',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="short" version={6} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v6',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="short" version={6} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v6',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v6',
       },
     },
   },
@@ -279,37 +321,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={7} snippet="long" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v7',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={7} snippet="long" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v7',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={7} snippet="long" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v7',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={7} snippet="long" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v7',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={7} snippet="long" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v7',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="long" version={7} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v7',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="long" version={7} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v7',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v7',
       },
     },
   },
@@ -323,37 +372,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={8} snippet="special" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v8',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={8} snippet="special" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v8',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={8} snippet="special" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v8',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={8} snippet="special" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v8',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={8} snippet="special" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v8',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="special" version={8} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v8',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="special" version={8} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v8',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v8',
       },
     },
   },
@@ -367,37 +423,44 @@ const dashboards = [
       react: {
         name: 'react',
         doc: <ReactNextSolidDoc techno="react" version={9} snippet="long" />,
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v9',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={9} snippet="long" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v9',
       },
       solid: {
         name: 'solid',
         doc: <ReactNextSolidDoc techno="solid" version={9} snippet="long" />,
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v9',
       },
       vue: {
         name: 'vue',
         doc: <VueNuxtDoc techno="vue" version={9} snippet="short" />,
-        source: 'https://github.com/salvia-kit/vue-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/vue-dashboards/tree/main/dashboard-v9',
       },
       nuxt: {
         name: 'nuxt',
         doc: <VueNuxtDoc techno="nuxt" version={9} snippet="short" />,
-        source: 'https://github.com/salvia-kit/nuxt-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/nuxt-dashboards/tree/main/dashboard-v9',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="long" version={9} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v9',
       },
       angular: {
         name: 'angular',
         doc: <AngularDoc snippet="short" version={9} />,
-        source: 'https://github.com/salvia-kit/angular-dashboards/dashboard-v9',
+        source:
+          'https://github.com/salvia-kit/angular-dashboards/tree/main/dashboard-v9',
       },
     },
   },
@@ -413,24 +476,28 @@ const dashboards = [
         doc: (
           <ReactNextSolidDoc techno="react" version={10} snippet="special" />
         ),
-        source: 'https://github.com/salvia-kit/react-dashboards/dashboard-v10',
+        source:
+          'https://github.com/salvia-kit/react-dashboards/tree/main/dashboard-v10',
       },
       next: {
         name: 'next',
         doc: <ReactNextSolidDoc techno="next" version={10} snippet="special" />,
-        source: 'https://github.com/salvia-kit/next-dashboards/dashboard-v10',
+        source:
+          'https://github.com/salvia-kit/next-dashboards/tree/main/dashboard-v10',
       },
       solid: {
         name: 'solid',
         doc: (
           <ReactNextSolidDoc techno="solid" version={10} snippet="special" />
         ),
-        source: 'https://github.com/salvia-kit/solid-dashboards/dashboard-v10',
+        source:
+          'https://github.com/salvia-kit/solid-dashboards/tree/main/dashboard-v10',
       },
       svelte: {
         name: 'svelte',
         doc: <SvelteDoc snippet="short" version={10} />,
-        source: 'https://github.com/salvia-kit/svelte-dashboards/dashboard-v10',
+        source:
+          'https://github.com/salvia-kit/svelte-dashboards/tree/main/dashboard-v10',
       },
     },
   },
