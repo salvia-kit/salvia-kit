@@ -12,7 +12,7 @@ export function Alert() {
   };
 
   React.useEffect(() => {
-    timeOut.current = setTimeout(() => onClose(), 6000);
+    timeOut.current = setTimeout(() => onClose(), 15000);
 
     return () => {
       clearTimeout(timeOut.current);
@@ -24,8 +24,11 @@ export function Alert() {
       {seen !== 'true' && (
         <div className="w-full bg-black py-3 fixed z-40 top-0">
           <div className="shadow text-white md:text-lg text-center px-2 md:px-0 font-title">
-            2 new dashboards are added in the catalogue. Dashboards for Angular,
-            Svelte and Solid are now available
+            2 new dashboards have been added to the catalog
+          </div>
+          <div className="shadow text-white md:text-lg text-center px-2 md:px-0 font-title">
+            Dashboards for Angular, Svelte-kit (stable v1) and Solid.js are now
+            available
             <button onClick={onClose} className="text-2xl pl-2">
               &times;
             </button>
