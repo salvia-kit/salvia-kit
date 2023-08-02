@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Container from '@/components/container';
+import Container from '@/components/Container';
 import HomeFirstSection from '@/components/home/sections/first';
 import HomeSecondSection from '@/components/home/sections/second';
 import HomeThirdSection from '@/components/home/sections/third';

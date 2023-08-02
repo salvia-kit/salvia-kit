@@ -1,5 +1,5 @@
-import data from '@/data/data';
-import DashboardCard from '@/components/dashboardCard';
+import { dashboards } from '@/data/dashboards';
+import DashboardCard from '@/components/DashboardCard';
 
 const HomeArrivalSection = () => (
   <section className="mb-16 mt-44 md:mb-32">
@@ -10,7 +10,7 @@ const HomeArrivalSection = () => (
     </h2>
     <div className="flex justify-center mt-12">
       <DashboardCard
-        data={data[8]}
+        data={dashboards[9]}
         className="pb-12 w-full md:p-3 md:pb-0 md:w-6/12"
       />
     </div>

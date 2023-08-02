@@ -1,6 +1,6 @@
 {
   "name": "salvia-kit-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": {
     "name": "Enoch ndika"
   },
@@ -11,15 +11,18 @@
   },
   "keywords": [
     "ui",
+    "Vue",
+    "Nuxt",
     "react",
+    "Svelte",
+    "Angular",
+    "Solid js",
+    "Svelte-kit",
     "components",
     "dashboard",
     "admin",
     "tailwindcss",
-    "next",
-    "Next.js",
     "layout",
-    "nuxt",
     "react dashboard",
     "vue dashboard",
     "admin dashboard"
@@ -44,17 +47,17 @@
     "next-themes": "^0.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "sharp": "^0.30.1"
+    "sharp": "^0.32.1"
   },
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@typescript-eslint/parser": "^5.12.1",
     "autoprefixer": "^10.4.2",
-    "cypress": "^9.2.0",
+    "cypress": "^12.17.0",
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",
     "eslint-config-prettier": "^8.4.0",
-    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-cypress": "^2.13.3",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^7.0.4",

@@ -9,6 +9,7 @@ import dashV6 from '@/public/images/dashboards/dashv6.jpg';
 import dashV7 from '@/public/images/dashboards/dashv7.jpg';
 import dashV8 from '@/public/images/dashboards/dashv8.jpg';
 import dashV9 from '@/public/images/dashboards/dashv9.png';
+import dashV10 from '@/public/images/dashboards/dashv10.png';
 
 export {
   dashV1,
@@ -20,4 +21,5 @@ export {
   dashV7,
   dashV8,
   dashV9,
+  dashV10,
 };

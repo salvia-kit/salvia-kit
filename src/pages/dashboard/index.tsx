@@ -3,10 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import Button from '@/components/ui/button';
-import Container from '@/components/container';
-import ExternalLink from '@/components/externalLink';
-import { getDashboardByTechnologie, isTechno } from '@/data/parseData';
+import Button from '@/components/ui/Button';
+import Container from '@/components/Container';
+import ExternalLink from '@/components/ExternalLink';
+import { getDashboardByTechnologie, isTechno } from '@/data/parse';
 
 export default function TechnoDocPage() {
   const router = useRouter();
@@ -22,21 +22,15 @@ export default function TechnoDocPage() {
     }
   }, [router]);
 
-  // Because dashboard v9 for Vue and Nuxt are unavailable now
+  // Because dashboard v10 for Vue, Nuxt and Angular are unavailable now
   // we redirect to dashboard catalog
   React.useEffect(() => {
     if (router.isReady) {
-      if (
-        router.query?.name === 'dashboard-v9' &&
-        router.query.techno === 'nuxt'
-      ) {
-        router.push('/dashboard/all');
-      }
-      if (
-        router.query?.name === 'dashboard-v9' &&
-        router.query.techno === 'vue'
-      ) {
-        router.push('/dashboard/all');
+      if (router.query.name === 'dashboard-v10') {
+        const lists = ['angular', 'nuxt', 'vue'];
+        if (lists.includes(router.query.techno as string)) {
+          router.push('/dashboard/all');
+        }
       }
     }
   }, [router]);

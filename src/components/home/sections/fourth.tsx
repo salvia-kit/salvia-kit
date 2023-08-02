@@ -1,4 +1,4 @@
-import CustomImage from '@/components/image';
+import CustomImage from '@/components/CustomImage';
 import oceanImg from '@/public/images/others/ocean.jpg';
 
 export default function HomeFourthSection() {
@@ -11,15 +11,15 @@ export default function HomeFourthSection() {
       </h2>
       <div className="flex items-center justify-center mt-12">
         <div className="mx-2 md:mx-12">
-          <span className="flex justify-center text-2xl font-bold">5</span>
+          <span className="flex justify-center text-2xl font-bold">7</span>
           <span className="block mt-4 text-sm">Technologies</span>
         </div>
         <div className="mx-4 md:mx-12">
-          <span className="flex justify-center text-2xl font-bold">9</span>
+          <span className="flex justify-center text-2xl font-bold">10</span>
           <span className="block mt-4 text-sm">Dashboards</span>
         </div>
         <div className="mx-4 md:mx-12">
-          <span className="flex justify-center text-2xl font-bold">40+</span>
+          <span className="flex justify-center text-2xl font-bold">65+</span>
           <span className="block mt-4 text-sm">Templates</span>
         </div>
       </div>

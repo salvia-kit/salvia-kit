@@ -15,8 +15,8 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-react-react-line no-unused-vars
+// eslint-disable-react-next-solid-react-line no-unused-vars
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-}
+};
